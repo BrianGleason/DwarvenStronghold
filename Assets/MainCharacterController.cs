@@ -44,17 +44,18 @@ public class MainCharacterController : MonoBehaviour
         if (movement != Vector2.zero && !isAttacking)
         {
             rb.velocity = Vector2.ClampMagnitude(rb.velocity + (movement * moveSpeed * Time.deltaTime), maxSpeed);
-
-            if (movement.x > mousePos.x)
-            {
-                spriteRenderer.flipX = false;
-            } else if (movement.x < mousePos.x)
-            {
-                spriteRenderer.flipX = true;
-            }
         } else
         {
             rb.velocity = Vector2.Lerp(rb.velocity, Vector2.zero, idleFriction);
+        }
+        // flip sprite based on mouse pos
+        if (rb.transform.position.x < mousePos.x)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if (rb.transform.position.x > mousePos.x)
+        {
+            spriteRenderer.flipX = true;
         }
     }
 
