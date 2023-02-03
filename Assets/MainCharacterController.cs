@@ -8,8 +8,11 @@ public class MainCharacterController : MonoBehaviour
     public float maxSpeed = 4f;
     public float idleFriction = 0.1f;
     public float attackOffsetScalar = 1.5f;
-    public int hitPoints = 50;
+    public float attackSizeScalar = 1f;
+    public float attackDuration = 0.25f;
     public float attackCooldownDuration = 0.25f;
+    public int hitPoints = 50;
+    public int attackDamage = 10;
     private bool isAttacking = false;
 
     private Vector2 movement;
@@ -75,7 +78,12 @@ public class MainCharacterController : MonoBehaviour
 
     void instantiateAttack(GameObject attackPrefab, Vector2 attackPosn, Quaternion selfToMouseRotation)
     {
-        Instantiate(attackPrefab, attackPosn, selfToMouseRotation);
+        GameObject attack = Instantiate(attackPrefab, attackPosn, selfToMouseRotation);
+        AttackDecay attackScript = attack.GetComponent<AttackDecay>();
+        if (attackScript != null)
+        {
+            attackScript.InitializeConstants(attackDuration, attackDamage, attackSizeScalar);
+        }
     }
 
     IEnumerator attackCooldown()
