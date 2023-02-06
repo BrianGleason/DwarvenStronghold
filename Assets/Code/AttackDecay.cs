@@ -7,6 +7,7 @@ public class AttackDecay : MonoBehaviour
     public float duration = 1f;
     public float sizeScalar = 1f;
     public int damage = 5;
+    public Vector2 attackOrigin;
 
     // Start is called before the first frame update
     void Start()
@@ -22,17 +23,18 @@ public class AttackDecay : MonoBehaviour
 
     void OnTriggerEnter2D (Collider2D col)
     {
-        EnemyDummy enemy = col.GetComponent<EnemyDummy>();
-        if (enemy != null)
+        Health target = col.GetComponent<Health>();
+        if (target != null)
         {
-            enemy.TakeDamage(5);
+            target.TakeDamage(5, attackOrigin);
         }
     }
 
-    public void InitializeConstants(float newDuration, int newDamage, float newSizeScalar)
+    public void InitializeConstants(float newDuration, int newDamage, float newSizeScalar, Vector2 playerPos)
     {
         duration = newDuration;
         damage = newDamage;
         sizeScalar = newSizeScalar;
+        attackOrigin = playerPos;
     }
 }

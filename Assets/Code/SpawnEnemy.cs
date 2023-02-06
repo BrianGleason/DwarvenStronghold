@@ -7,7 +7,7 @@ public class SpawnEnemy : MonoBehaviour
 {
     public GameObject enemyPrefab;
     private int enemyCount;
-    private int waveNumber = 2;
+    public int waveNumber = 2;
     private int curwave;
 
     public float timeBetweenEnemySpawn;

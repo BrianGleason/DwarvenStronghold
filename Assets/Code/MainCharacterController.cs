@@ -14,6 +14,7 @@ public class MainCharacterController : MonoBehaviour
     public int hitPoints = 50;
     public int attackDamage = 10;
     private bool isAttacking = false;
+    public float knockback = 5000;
 
     private Vector2 movement;
     private Vector2 mousePos;
@@ -27,6 +28,7 @@ public class MainCharacterController : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -68,25 +70,26 @@ public class MainCharacterController : MonoBehaviour
     void OnAttack()
     {
         animator.SetTrigger("attackTrigger");
-        Vector2 selfToMouseVector = mousePos - rb.position;
+        Vector2 playerPos = rb.position;
+        Vector2 selfToMouseVector = mousePos - playerPos;
         float selfToMouseAngle = Mathf.Atan2(selfToMouseVector.y, selfToMouseVector.x) * Mathf.Rad2Deg;
         Quaternion selfToMouseRotation = Quaternion.Euler(new Vector3(0, 0, selfToMouseAngle));
 
         Vector2 attackOffset = selfToMouseVector.normalized * attackOffsetScalar;
         Vector3 attackOffsetV3 = attackOffset;
 
-        instantiateAttack(meleeAttackPrefab, rb.transform.position + attackOffsetV3, selfToMouseRotation);
+        instantiateAttack(meleeAttackPrefab, rb.transform.position + attackOffsetV3, selfToMouseRotation, playerPos);
         isAttacking = true;
         StartCoroutine(attackCooldown());
     }
 
-    void instantiateAttack(GameObject attackPrefab, Vector2 attackPosn, Quaternion selfToMouseRotation)
+    void instantiateAttack(GameObject attackPrefab, Vector2 attackPosn, Quaternion selfToMouseRotation, Vector2 playerPos)
     {
         GameObject attack = Instantiate(attackPrefab, attackPosn, selfToMouseRotation);
         AttackDecay attackScript = attack.GetComponent<AttackDecay>();
         if (attackScript != null)
         {
-            attackScript.InitializeConstants(attackDuration, attackDamage, attackSizeScalar);
+            attackScript.InitializeConstants(attackDuration, attackDamage, attackSizeScalar, playerPos);
         }
     }
 

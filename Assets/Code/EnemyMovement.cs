@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking.Types;
 
 public class EnemyMovement : MonoBehaviour
 {
-    float health;
     float movespeed;
     [SerializeField] float range;
     Rigidbody2D rb;
@@ -17,14 +17,15 @@ public class EnemyMovement : MonoBehaviour
     public float attackDuration = 0.1f;
     public float attackCooldownDuration = 2.50f;
     public int attackDamage = 10;
+    public float knockback = 1;
+    public bool stunned = false;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         target = GameObject.FindWithTag("Player").transform;
-        health = 1f;
-        movespeed = 2.5f;
+        movespeed = 0.5f;
         range = 1.5f;
     }
 
@@ -39,11 +40,19 @@ public class EnemyMovement : MonoBehaviour
             rb.rotation = ang;
             direction = dir;
         }
+
+        
     }
 
     private void FixedUpdate()
     {
         float distance = Vector3.Distance(target.transform.position, transform.position);
+        if (stunned)
+        {
+            rb.velocity = Vector2.zero;
+            return;
+        }
+
         if (target & (distance > range))
         {
             rb.velocity = new Vector2(direction.x, direction.y) * movespeed;
@@ -79,7 +88,7 @@ public class EnemyMovement : MonoBehaviour
         AttackDecay attackScript = attack.GetComponent<AttackDecay>();
         if (attackScript != null)
         {
-            attackScript.InitializeConstants(attackDuration, attackDamage, attackSizeScalar);
+            attackScript.InitializeConstants(attackDuration, attackDamage, attackSizeScalar, rb.position);
         }
     }
 
@@ -88,17 +97,17 @@ public class EnemyMovement : MonoBehaviour
         yield return new WaitForSeconds(attackCooldownDuration);
         isAttacking = false;
     }
-    public void TakeDamage(int damage)
+
+    public void ApplyStun()
     {
-        health -= damage;
-        if (health <= 0)
-        {
-            Die();
-        }
+        stunned = true;
+        StartCoroutine(stun());
     }
 
-    void Die()
+    IEnumerator stun()
     {
-        Destroy(gameObject);
+        yield return new WaitForSeconds(1);
+        stunned = false;
     }
+
 }

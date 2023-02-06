@@ -5,11 +5,11 @@ using UnityEngine;
 public class Dwarf : MonoBehaviour
 {
     bool enemyClose;
-    int hp;
+    int hitpoint;
     int atk;
     int speed = 1;
 
-    public enemy[] enemies;
+    public EnemyMovement[] enemies;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +23,10 @@ public class Dwarf : MonoBehaviour
         if (FindClosestEnemy().Item2 < 3)
         {
             enemyClose = true;
+        }
+        else
+        {
+            enemyClose = false;
         }
 
         if (!enemyClose) {
@@ -50,10 +54,10 @@ public class Dwarf : MonoBehaviour
 
     (Transform, float) FindClosestEnemy()
     {
-        enemies = FindObjectsOfType<enemy>();
+        enemies = FindObjectsOfType<EnemyMovement>();
         Transform closest = null;
         float closestDistance = Mathf.Infinity;
-        foreach (enemy enemy in enemies)
+        foreach (EnemyMovement enemy in enemies)
         {
             float distance = Vector2.Distance(transform.position, enemy.transform.position);
             if (distance < closestDistance)
