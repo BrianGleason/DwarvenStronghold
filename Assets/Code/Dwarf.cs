@@ -8,6 +8,12 @@ public class Dwarf : MonoBehaviour
     int hitpoint;
     int atk;
     int speed = 1;
+    public float attackOffset = 0.01f;
+    public float attackCooldownDuration = 2f;
+    RangedProjectile rangedProjectileScript;
+    Rigidbody2D rb;
+    Transform closestEnemy;
+    private bool attackOnCooldown = true;
 
     public EnemyMovement[] enemies;
 
@@ -15,11 +21,15 @@ public class Dwarf : MonoBehaviour
     void Start()
     {
         enemyClose = false;
+        rangedProjectileScript = GetComponent<RangedProjectile>();
+        rb = GetComponent<Rigidbody2D>();
+        StartCoroutine(attackCooldown());
     }
 
     // Update is called once per frame
     void Update()
     {
+        closestEnemy = FindClosestEnemy().Item1;
         if (FindClosestEnemy().Item2 < 3)
         {
             enemyClose = true;
@@ -32,7 +42,11 @@ public class Dwarf : MonoBehaviour
         if (!enemyClose) {
             Move();
         }   else {
-            Attack();
+            if (!attackOnCooldown)
+            {
+                Attack();
+                StartCoroutine(attackCooldown());
+            }
         }
 
 
@@ -40,7 +54,6 @@ public class Dwarf : MonoBehaviour
 
     private void Move()
     {
-        Transform closestEnemy = FindClosestEnemy().Item1;
         if (closestEnemy != null)
         {
             transform.position = Vector2.MoveTowards(this.transform.position, closestEnemy.position, speed * Time.deltaTime);
@@ -49,7 +62,8 @@ public class Dwarf : MonoBehaviour
 
     private void Attack()
     {
-        return;
+        attackOnCooldown = true;
+        rangedProjectileScript.Fire(this.transform.position, closestEnemy.position, attackOffset);
     }
 
     (Transform, float) FindClosestEnemy()
@@ -67,5 +81,11 @@ public class Dwarf : MonoBehaviour
             }
         }
         return (closest, closestDistance);
+    }
+
+    IEnumerator attackCooldown()
+    {
+        yield return new WaitForSeconds(attackCooldownDuration);
+        attackOnCooldown = false;
     }
 }
