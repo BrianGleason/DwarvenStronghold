@@ -21,10 +21,12 @@ public class MainCharacterController : MonoBehaviour
     public Rigidbody2D rb;
     public Camera cam;
     public GameObject meleeAttackPrefab;
+    public Animator animator;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -33,6 +35,7 @@ public class MainCharacterController : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        animator.SetFloat("speed", movement.sqrMagnitude);
         if (Input.GetMouseButtonDown(0) && !isAttacking)
         {
             OnAttack();
@@ -64,6 +67,7 @@ public class MainCharacterController : MonoBehaviour
 
     void OnAttack()
     {
+        animator.SetTrigger("attackTrigger");
         Vector2 selfToMouseVector = mousePos - rb.position;
         float selfToMouseAngle = Mathf.Atan2(selfToMouseVector.y, selfToMouseVector.x) * Mathf.Rad2Deg;
         Quaternion selfToMouseRotation = Quaternion.Euler(new Vector3(0, 0, selfToMouseAngle));
