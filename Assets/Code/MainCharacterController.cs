@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class MainCharacterController : MonoBehaviour
 {
@@ -23,11 +24,13 @@ public class MainCharacterController : MonoBehaviour
     public GameObject meleeAttackPrefab;
     public Animator animator;
 
+    public SpriteRenderer healthbar;
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-
+        healthbar.transform.parent = transform;
     }
 
     void Update()
@@ -45,6 +48,10 @@ public class MainCharacterController : MonoBehaviour
         {
             transform.position = new Vector2(8.5f, transform.position.y);
         }
+
+
+        healthbar.transform.position = transform.position + Vector3.up;
+        healthbar.transform.localScale = new Vector3(0.06f*this.GetComponent<Health>().hpPercent(this), 0.1f, 0.6f);
     }
 
     void FixedUpdate()

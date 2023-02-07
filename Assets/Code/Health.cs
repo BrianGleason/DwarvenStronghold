@@ -8,6 +8,7 @@ public class Health : MonoBehaviour
     public int health = 50;
     public Rigidbody2D rb;
     private EnemyMovement enemyScript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,10 +36,13 @@ public class Health : MonoBehaviour
         rb.AddForce((rb.position - atkOrigin).normalized * 100);
     }
 
-
-
     void Die ()
     {
         Destroy(gameObject);
+    }
+
+    public float hpPercent(object target)
+    {
+        return (float)health/(float)maxHP;
     }
 }
