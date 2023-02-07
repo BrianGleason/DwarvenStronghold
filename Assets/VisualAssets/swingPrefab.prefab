@@ -137,5 +137,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 0.25
-  damage: 5
   sizeScalar: 1
+  damage: 5
+  attackOrigin: {x: 0, y: 0}

@@ -48,7 +48,7 @@ public class MousePreview : MonoBehaviour
             return;
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(1))
         {
             Instantiate(prefabs[selectedPrefabIndex], previewObject.transform.position, previewObject.transform.rotation);
             Destroy(previewObject);
@@ -73,6 +73,10 @@ public class MousePreview : MonoBehaviour
 
         Vector3 mousePos = Input.mousePosition;
         Vector3 worldPos = mainCamera.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, mainCamera.nearClipPlane));
+        if (worldPos.x > -2)
+        {
+            worldPos = new Vector2(-2, worldPos.y);
+        }
         previewObject.transform.position = worldPos;
     }
 }

@@ -119,4 +119,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b9a22cfd41d74914b3a15d1174b5d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackOffset: 0.01
+  attackCooldownDuration: 2
   enemies: []

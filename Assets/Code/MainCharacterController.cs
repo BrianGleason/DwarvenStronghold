@@ -14,13 +14,12 @@ public class MainCharacterController : MonoBehaviour
     public int hitPoints = 50;
     public int attackDamage = 10;
     private bool isAttacking = false;
-    public float knockback = 5000;
 
     private Vector2 movement;
     private Vector2 mousePos;
     private SpriteRenderer spriteRenderer;
     public Rigidbody2D rb;
-    public Camera cam;
+    public Camera cam;  // ?
     public GameObject meleeAttackPrefab;
     public Animator animator;
 
@@ -31,7 +30,6 @@ public class MainCharacterController : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
@@ -42,9 +40,13 @@ public class MainCharacterController : MonoBehaviour
         {
             OnAttack();
         }
+
+        if (transform.position.x > 8.5)
+        {
+            transform.position = new Vector2(8.5f, transform.position.y);
+        }
     }
 
-    // Fixed update is called at fixed intervals
     void FixedUpdate()
     {
         // if movement inputs not zero, apply clamped velocity up to maximum speed. If mouse to left/right of player, flip sprite
@@ -98,6 +100,5 @@ public class MainCharacterController : MonoBehaviour
         yield return new WaitForSeconds(attackCooldownDuration);
         isAttacking = false;
     }
-
 
 }

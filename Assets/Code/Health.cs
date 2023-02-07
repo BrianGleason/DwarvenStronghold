@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    public int maxHP = 50;
     public int health = 50;
     public Rigidbody2D rb;
     private EnemyMovement enemyScript;
