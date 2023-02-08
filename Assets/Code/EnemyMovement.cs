@@ -5,7 +5,7 @@ using UnityEngine.Networking.Types;
 
 public class EnemyMovement : MonoBehaviour
 {
-    float movespeed;
+    public float movespeed;
     [SerializeField] float range;
     Rigidbody2D rb;
     Transform target;
@@ -16,23 +16,25 @@ public class EnemyMovement : MonoBehaviour
     public float attackSizeScalar = 1f;
     public float attackDuration = 0.1f;
     public float attackCooldownDuration = 2.50f;
+    public string targ;
     public int attackDamage = 10;
     public float knockback = 1;
     public bool stunned = false;
+    public bool selfDestruct;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        target = GameObject.FindWithTag("Player").transform;
-        movespeed = 0.5f;
-        range = 1.5f;
+        target = GameObject.FindWithTag(targ).transform;
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
         if (target)
         {
             Vector3 dir = (target.position - transform.position).normalized;
@@ -93,6 +95,10 @@ public class EnemyMovement : MonoBehaviour
 
     IEnumerator attackCooldown()
     {
+        if(selfDestruct == true)
+        {
+            Destroy(gameObject);
+        }
         yield return new WaitForSeconds(attackCooldownDuration);
         isAttacking = false;
     }
