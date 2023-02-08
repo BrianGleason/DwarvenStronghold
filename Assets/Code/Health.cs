@@ -9,6 +9,9 @@ public class Health : MonoBehaviour
     public Rigidbody2D rb;
     private EnemyMovement enemyScript;
 
+    public GameObject deathTextPrefab;
+    public GameObject deathText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,9 +39,18 @@ public class Health : MonoBehaviour
         rb.AddForce((rb.position - atkOrigin).normalized * 100);
     }
 
-    void Die ()
+    private void Die ()
     {
         Destroy(gameObject);
+
+        if (enemyScript != null)
+        {
+            deathText = Instantiate(deathTextPrefab, enemyScript.transform.position, Quaternion.identity);
+            TextMesh txt = deathText.transform.GetComponent<TextMesh>();
+            txt.text = "+$1";
+            Destroy(deathText, 1f);
+            SystemControl.instance.AddGold(1);
+        }
     }
 
     public float hpPercent(object target)

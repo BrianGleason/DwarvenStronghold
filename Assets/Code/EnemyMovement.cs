@@ -40,6 +40,7 @@ public class EnemyMovement : MonoBehaviour
             rb.rotation = ang;
             direction = dir;
         }
+
     }
 
     private void FixedUpdate()

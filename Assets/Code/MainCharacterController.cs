@@ -49,9 +49,8 @@ public class MainCharacterController : MonoBehaviour
             transform.position = new Vector2(8.5f, transform.position.y);
         }
 
-
-        healthbar.transform.position = transform.position + Vector3.up;
-        healthbar.transform.localScale = new Vector3(0.06f*this.GetComponent<Health>().hpPercent(this), 0.1f, 0.6f);
+        healthbar.transform.position = transform.position + Vector3.up / 2;
+        healthbar.transform.localScale = new Vector3(0.06f*this.GetComponent<Health>().hpPercent(this), 0.1f, 1);
     }
 
     void FixedUpdate()

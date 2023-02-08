@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7249741737546345008}
   - component: {fileID: 7249741737546345012}
   - component: {fileID: 7328354282892377700}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EnemyBasic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,6 +128,8 @@ MonoBehaviour:
   attackDuration: 0.1
   attackCooldownDuration: 2.5
   attackDamage: 10
+  knockback: 1
+  stunned: 0
 --- !u!61 &7249741737546345012
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -166,5 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adf7cfe5cfcd34d4fb1ac8ba339be3ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHP: 50
   health: 50
   rb: {fileID: 0}
+  deathTextPrefab: {fileID: 800238655446659967, guid: 45fdf1bf80cf546bf95cf64726b24073, type: 3}
