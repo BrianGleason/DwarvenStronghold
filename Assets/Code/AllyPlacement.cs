@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MousePreview : MonoBehaviour
+public class AllyPlacement : MonoBehaviour
 {
     // Need cooldown/gold constraints?
 
@@ -13,6 +13,8 @@ public class MousePreview : MonoBehaviour
 
     private int selectedPrefabIndex = -1;
 
+    public float[] cooldowns = new float[3];
+
     private void Start()
     {
         mainCamera = Camera.main;
@@ -20,6 +22,14 @@ public class MousePreview : MonoBehaviour
 
     private void Update()
     {
+        for (int i = 0; i < 3; i++)
+        {
+            if (cooldowns[i] > 0)
+            {
+                cooldowns[i] -= Time.deltaTime;
+            }
+        }
+
         if (Input.GetKeyDown(KeyCode.Alpha1)) // 1
         {   if (selectedPrefabIndex == 0)
             {
@@ -48,11 +58,16 @@ public class MousePreview : MonoBehaviour
             return;
         }
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && selectedPrefabIndex != -1)
         {
-            Instantiate(prefabs[selectedPrefabIndex], previewObject.transform.position, previewObject.transform.rotation);
-            Destroy(previewObject);
-            selectedPrefabIndex = -1;
+            if (SystemControl.instance.gold >= (2 + selectedPrefabIndex) && cooldowns[selectedPrefabIndex] == 0)
+            {
+                Instantiate(prefabs[selectedPrefabIndex], previewObject.transform.position, previewObject.transform.rotation);
+                Destroy(previewObject);
+                SystemControl.instance.UseGold(2 + selectedPrefabIndex);
+                cooldowns[selectedPrefabIndex] = 10;
+                selectedPrefabIndex = -1;
+            }
             return;
         }
 
