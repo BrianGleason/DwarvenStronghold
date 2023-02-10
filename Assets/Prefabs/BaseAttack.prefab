@@ -176,3 +176,4 @@ MonoBehaviour:
   knockback: 1
   stunned: 0
   selfDestruct: 1
+  ExplosionPrefab: {fileID: 3028432481471332243, guid: 749d9cdad54e24701b2478aed626dacf, type: 3}

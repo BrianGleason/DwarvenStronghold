@@ -21,6 +21,7 @@ public class EnemyMovement : MonoBehaviour
     public float knockback = 1;
     public bool stunned = false;
     public bool selfDestruct;
+    public GameObject ExplosionPrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -63,7 +64,18 @@ public class EnemyMovement : MonoBehaviour
             rb.velocity = Vector2.zero;
             if (!isAttacking)
             {
-                OnAttack();
+                if (selfDestruct == true)
+                {
+                    Health x = GameObject.FindWithTag(targ).GetComponent<Health>();
+                    x.TakeDamage(25, Vector2.zero);
+                    Instantiate(ExplosionPrefab, transform.position, Quaternion.identity);
+                    Destroy(gameObject);
+                }
+                else
+                {
+                    OnAttack();
+                }
+
             }
         }
 
@@ -95,10 +107,7 @@ public class EnemyMovement : MonoBehaviour
 
     IEnumerator attackCooldown()
     {
-        if(selfDestruct == true)
-        {
-            Destroy(gameObject);
-        }
+
         yield return new WaitForSeconds(attackCooldownDuration);
         isAttacking = false;
     }
