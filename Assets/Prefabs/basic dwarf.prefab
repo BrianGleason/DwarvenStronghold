@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 168605003482585793}
   - component: {fileID: 168605003482585794}
   - component: {fileID: 168605003482585795}
-  - component: {fileID: 168605003482585792}
-  - component: {fileID: 458064650322134820}
   - component: {fileID: -7767440603766098849}
   - component: {fileID: 1743145309518466922}
+  - component: {fileID: -6044158468127650588}
+  - component: {fileID: 7730310371467875598}
   m_Layer: 8
   m_Name: basic dwarf
   m_TagString: Untagged
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: e747f209ed24ef245a215e925a9943ab, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: af81c16a6d022dc48bda93a24233c5a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -111,34 +111,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &168605003482585792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 168605003482585788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b9a22cfd41d74914b3a15d1174b5d0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackOffset: 1
-  attackCooldownDuration: 2
-  enemies: []
---- !u!114 &458064650322134820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 168605003482585788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e0d5afcf463f2d45bc2e87df7305b6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackPrefab: {fileID: 7645936307827756496, guid: 466b6e0e508fe2f469c32b7df3d0f5a7, type: 3}
 --- !u!61 &-7767440603766098849
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -180,6 +152,36 @@ MonoBehaviour:
   maxHP: 50
   health: 50
   rb: {fileID: 0}
+  deathTextPrefab: {fileID: 0}
+  deathText: {fileID: 0}
+--- !u!114 &-6044158468127650588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168605003482585788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b9a22cfd41d74914b3a15d1174b5d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackOffset: 0.01
+  attackCooldownDuration: 2
+  enemies: []
+--- !u!114 &7730310371467875598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168605003482585788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e0d5afcf463f2d45bc2e87df7305b6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackPrefab: {fileID: 0}
 --- !u!1001 &8904513733793700871
 PrefabInstance:
   m_ObjectHideFlags: 0
