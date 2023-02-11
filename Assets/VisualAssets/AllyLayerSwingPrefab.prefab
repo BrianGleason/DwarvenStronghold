@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 407911258417789259}
   - component: {fileID: 597046233619243454}
   - component: {fileID: -3231505131894652002}
-  m_Layer: 0
-  m_Name: swingPrefab
+  m_Layer: 8
+  m_Name: AllyLayerSwingPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 1a350b1ff7a13814692a8f0e80cd2fd6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

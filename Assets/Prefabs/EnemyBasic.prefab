@@ -166,7 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movespeed: 0.5
   range: 1.5
-  meleeAttackPrefab: {fileID: 2792615685811339556, guid: 123e18ef672842242ad792df34e876b7, type: 3}
+  meleeAttackPrefab: {fileID: 2792615685811339556, guid: 9ec340967f1cc1940a9725512a474505, type: 3}
   attackOffsetScalar: 1.5
   attackSizeScalar: 1
   attackDuration: 0.1
@@ -176,4 +176,4 @@ MonoBehaviour:
   knockback: 1
   stunned: 0
   selfDestruct: 0
-  ExplosionPrefab: {fileID: 0}
+  ExplosionPrefab: {fileID: 3028432481471332243, guid: 749d9cdad54e24701b2478aed626dacf, type: 3}
