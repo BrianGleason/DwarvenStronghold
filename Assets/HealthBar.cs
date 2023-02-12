@@ -5,7 +5,7 @@ using UnityEngine;
 public class HealthBar : MonoBehaviour
 {
     private Health healthScript;
-    public Transform healthBar;
+    public SpriteRenderer healthBar;
 
     // Start is called before the first frame update
     void Start()
@@ -16,8 +16,8 @@ public class HealthBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healthBar.position = transform.position + Vector3.up / 2;
-        healthBar.localScale = new Vector3(0.06f * healthScript.hpPercent(), 0.1f, 1);
-        Debug.Log(healthBar.localScale);
+        healthBar.transform.position = transform.position + Vector3.up / 2;
+        healthBar.transform.localScale = new Vector3(0.06f * healthScript.hpPercent(), 0.1f, 1);
+        Debug.Log(healthBar.transform.localScale);
     }
 }
