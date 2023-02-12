@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4157711041546228249}
   - component: {fileID: 4157711041546228255}
   - component: {fileID: 4157711041546228252}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RangedDwarf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e0d5afcf463f2d45bc2e87df7305b6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackPrefab: {fileID: 7645936307827756496, guid: 466b6e0e508fe2f469c32b7df3d0f5a7, type: 3}
+  attackPrefab: {fileID: 7645936307827756496, guid: efccb8439dbac1246a397d26d60e9d08, type: 3}
 --- !u!50 &4157711041546228249
 Rigidbody2D:
   serializedVersion: 4
