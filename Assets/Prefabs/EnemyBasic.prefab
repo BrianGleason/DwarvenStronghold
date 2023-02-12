@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7249741737546345012}
   - component: {fileID: 7328354282892377700}
   - component: {fileID: -4597270707836654626}
+  - component: {fileID: 6972662027549290532}
   m_Layer: 7
   m_Name: EnemyBasic
   m_TagString: Untagged
@@ -179,6 +180,19 @@ MonoBehaviour:
   selfDestruct: 0
   ExplosionPrefab: {fileID: 0}
   healthbar: {fileID: 1694228666889077781, guid: cc0b9a0a5f73449f6a8ea83f3d09716c, type: 3}
+--- !u!114 &6972662027549290532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7249741737546345011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7459d8bd2d6934195b056df8c275eea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 1694228666889077780, guid: cc0b9a0a5f73449f6a8ea83f3d09716c, type: 3}
 --- !u!1001 &4101655195714525342
 PrefabInstance:
   m_ObjectHideFlags: 0
