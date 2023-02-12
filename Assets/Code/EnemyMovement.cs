@@ -40,7 +40,6 @@ public class EnemyMovement : MonoBehaviour
         {
             Vector3 dir = (target.position - transform.position).normalized;
             float ang = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            rb.rotation = ang;
             direction = dir;
         }
 

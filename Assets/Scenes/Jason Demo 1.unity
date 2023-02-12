@@ -6445,7 +6445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabs:
-  - {fileID: 168605003482585788, guid: f0ddea4789b35438d8feb37734a8f5dd, type: 3}
+  - {fileID: 4157711041546228244, guid: adec8222d84e3b44c8607621440b3f18, type: 3}
   - {fileID: 1910562898810740419, guid: e95b42885aba74156b13038a444423a0, type: 3}
   - {fileID: 6557424132170831711, guid: 305328d47939347c88bdce8e64d78f81, type: 3}
   cooldowns:
@@ -7618,6 +7618,7 @@ MonoBehaviour:
   timeBetweenEnemySpawn: 2
   timeBetweenWaves: 10
   totalWaves: 2
+  healthBarSprite: {fileID: 21300000, guid: a220dab9dc506467bb13b545cff5f85b, type: 3}
 --- !u!4 &1922586305
 Transform:
   m_ObjectHideFlags: 0

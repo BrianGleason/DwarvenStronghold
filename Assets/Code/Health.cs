@@ -53,7 +53,7 @@ public class Health : MonoBehaviour
         }
     }
 
-    public float hpPercent(object target)
+    public float hpPercent(object target = null)
     {
         return (float)health/(float)maxHP;
     }
