@@ -58,7 +58,6 @@ public class SystemControl : MonoBehaviour
     public void AddGold(int gain)
     {
         gold += gain;
-        Debug.Log(gold);
     }
 
     public void UseGold(int loss)

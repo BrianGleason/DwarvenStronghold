@@ -23,13 +23,15 @@ public class EnemyMovement : MonoBehaviour
     public bool selfDestruct;
     public GameObject ExplosionPrefab;
 
+    public SpriteRenderer healthbar;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         target = GameObject.FindWithTag(targ).transform;
 
-
+        //healthbar.transform.parent = transform;
     }
 
     // Update is called once per frame
@@ -43,6 +45,9 @@ public class EnemyMovement : MonoBehaviour
             direction = dir;
         }
 
+        healthbar.transform.position = transform.position + Vector3.up / 2;
+        healthbar.transform.localScale = new Vector3(0.06f * this.GetComponent<Health>().hpPercent(), 0.1f, 1);
+        Debug.Log(this.GetComponent<Health>().hpPercent());
     }
 
     private void FixedUpdate()

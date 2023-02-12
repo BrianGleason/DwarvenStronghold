@@ -177,3 +177,4 @@ MonoBehaviour:
   stunned: 0
   selfDestruct: 1
   ExplosionPrefab: {fileID: 3028432481471332243, guid: 749d9cdad54e24701b2478aed626dacf, type: 3}
+  healthbar: {fileID: 1694228666889077781, guid: cc0b9a0a5f73449f6a8ea83f3d09716c, type: 3}

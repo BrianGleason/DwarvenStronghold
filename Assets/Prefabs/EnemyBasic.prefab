@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 7249741737546345012}
   - component: {fileID: 7328354282892377700}
   - component: {fileID: -4597270707836654626}
-  - component: {fileID: -4996944063412587215}
   m_Layer: 7
   m_Name: EnemyBasic
   m_TagString: Untagged
@@ -168,7 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movespeed: 0.5
   range: 1.5
-  meleeAttackPrefab: {fileID: 2792615685811339556, guid: 123e18ef672842242ad792df34e876b7, type: 3}
+  meleeAttackPrefab: {fileID: 2792615685811339556, guid: 9ec340967f1cc1940a9725512a474505, type: 3}
   attackOffsetScalar: 1.5
   attackSizeScalar: 1
   attackDuration: 0.1
@@ -179,19 +178,7 @@ MonoBehaviour:
   stunned: 0
   selfDestruct: 0
   ExplosionPrefab: {fileID: 0}
---- !u!114 &-4996944063412587215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7249741737546345011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 016e3a796f1cb40e7a4b5d1e2d97e94b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 1694228666889077780, guid: cc0b9a0a5f73449f6a8ea83f3d09716c, type: 3}
+  healthbar: {fileID: 1694228666889077781, guid: cc0b9a0a5f73449f6a8ea83f3d09716c, type: 3}
 --- !u!1001 &4101655195714525342
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -202,6 +189,10 @@ PrefabInstance:
     - target: {fileID: 1694228666889077780, guid: cc0b9a0a5f73449f6a8ea83f3d09716c, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694228666889077780, guid: cc0b9a0a5f73449f6a8ea83f3d09716c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 1694228666889077780, guid: cc0b9a0a5f73449f6a8ea83f3d09716c, type: 3}
       propertyPath: m_LocalPosition.x
