@@ -6,9 +6,9 @@ using UnityEngine.UI;
 
 public class SpawnEnemy : MonoBehaviour
 {
-    public GameObject enemyPrefab;
+    public GameObject[] enemyPrefabs;
     private int enemyCount;
-    public int waveNumber = 2;
+    public int waveNumber = 4;
     private int curwave;
 
     public float timeBetweenEnemySpawn;
@@ -46,7 +46,17 @@ public class SpawnEnemy : MonoBehaviour
         {
             float yloc = Random.Range(-4f, 4f);
             Vector2 pos = new Vector2(11f, yloc);
-            GameObject enemySpawn = Instantiate(enemyPrefab, pos, enemyPrefab.transform.rotation);
+            GameObject enemySpawn = Instantiate(enemyPrefabs[0], pos, enemyPrefabs[0].transform.rotation);
+
+
+            yield return new WaitForSeconds(timeBetweenEnemySpawn); //We wait here to give a bit of time between each enemy spawn
+        }
+
+        for (int i = 0; i < enemiesToSpawn - 1; i++)
+        {
+            float yloc = Random.Range(-4f, 4f);
+            Vector2 pos = new Vector2(11f, yloc);
+            GameObject enemySpawn = Instantiate(enemyPrefabs[1], pos, enemyPrefabs[1].transform.rotation);
 
 
             yield return new WaitForSeconds(timeBetweenEnemySpawn); //We wait here to give a bit of time between each enemy spawn

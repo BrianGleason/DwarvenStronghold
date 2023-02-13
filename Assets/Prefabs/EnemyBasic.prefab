@@ -179,6 +179,7 @@ MonoBehaviour:
   stunned: 0
   selfDestruct: 0
   ExplosionPrefab: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!114 &6972662027549290532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,7 +210,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1694228666889077780, guid: cc0b9a0a5f73449f6a8ea83f3d09716c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1694228666889077780, guid: cc0b9a0a5f73449f6a8ea83f3d09716c, type: 3}
       propertyPath: m_LocalPosition.y

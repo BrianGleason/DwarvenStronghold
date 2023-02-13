@@ -60,8 +60,10 @@ public class AllyPlacement : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1) && selectedPrefabIndex != -1)
         {
-            if (SystemControl.instance.gold >= (2 + selectedPrefabIndex) && cooldowns[selectedPrefabIndex] == 0)
+            Debug.Log("try place");
+            if (SystemControl.instance.gold >= (2 + selectedPrefabIndex) && cooldowns[selectedPrefabIndex] <= 0)
             {
+                Debug.Log("placed");
                 Instantiate(prefabs[selectedPrefabIndex], previewObject.transform.position, previewObject.transform.rotation);
                 Destroy(previewObject);
                 SystemControl.instance.UseGold(2 + selectedPrefabIndex);
