@@ -1,0 +1,827 @@
+fileFormatVersion: 2
+guid: 51af8d47d7d374b37a67a11e0d391215
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 965
+        width: 80
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b63b341d316d44738c099cba2e08d09
+      internalID: 514073677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_1
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 965
+        width: 80
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1608e215ed73842618ac966bf86aaa8b
+      internalID: -974803823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_2
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 965
+        width: 85
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64ebf6ce52d849278b5a8ee20bfbb3a
+      internalID: -1107051836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_3
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 965
+        width: 85
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a140ccc6e5b9646dcaf138ff20d9974a
+      internalID: -321205902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_4
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 805
+        width: 85
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13535ed942e074e728d57e7caf1c7e25
+      internalID: -1140005855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_5
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 805
+        width: 85
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19fdad289fa94b2fb4aee18d425bb93
+      internalID: 414403624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_6
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 805
+        width: 80
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3aaa49f297a4847be3df1414dfbc1c
+      internalID: -1187100257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_7
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 805
+        width: 85
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f21405bd51e4a07b0fb5fa290e7fd6
+      internalID: -66932091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_8
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 805
+        width: 85
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c620a1d2ee641d4b56e97493b8a056
+      internalID: -26147494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_9
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 805
+        width: 80
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97e764ebb6a544a9874e68d5973095d
+      internalID: -335675358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_10
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 645
+        width: 85
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe5398192f784c73a9938f6aff0311f
+      internalID: 1796619725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_11
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 645
+        width: 90
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114ef62d772134afb9e8633616133c73
+      internalID: -74304380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_12
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 645
+        width: 85
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac18108e1045d44c6932f97585b2922a
+      internalID: 569135717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_13
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 485
+        width: 80
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c193751cd63cf4c18a91d9969d4b1f7a
+      internalID: 1425494712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_14
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 485
+        width: 80
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50dc49e0873541a295c118632eb78bd
+      internalID: 626001070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_15
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 485
+        width: 105
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c6607747e5c4778bbb4c19ea5471a0
+      internalID: 922555108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_16
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 485
+        width: 90
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39284009cd3a64d3189c464ac4ab2480
+      internalID: 1449897498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_17
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 485
+        width: 85
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f188dd26c975344be892391c76919081
+      internalID: 787723534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_18
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 485
+        width: 80
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f0af9f2cadd4a4884483d931467a0a
+      internalID: 151423851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_19
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 485
+        width: 80
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebea1e8306f82428c94ae095fcb5543c
+      internalID: -1130142811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_20
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 325
+        width: 85
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 587ea8734f2bd4c81b4191dbe4512fd5
+      internalID: 1441313358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_21
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 325
+        width: 80
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2439bdf74e08454aaf3427838094893
+      internalID: -211864475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_22
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 325
+        width: 95
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0945c0504d0c44a068e8c2f4f2e5b73f
+      internalID: 322754725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_23
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 325
+        width: 90
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f59c42b32353346bc8874f0fc9272e6e
+      internalID: -1186957967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_24
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 325
+        width: 85
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b64232cd2715478fa584915147ffb88
+      internalID: -1628163124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_25
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 325
+        width: 85
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c350a7eaa9b04a65b9d44906d77d271
+      internalID: 669495099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_26
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 165
+        width: 95
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47bd577402c3d4458b3cfa63acc13220
+      internalID: 355917590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_27
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 165
+        width: 85
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db92da960a0a4483970f6edf504cd65
+      internalID: 1243454510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_28
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 5
+        width: 110
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090b3aaf7ecf04b9a884bbeb41b83d8e
+      internalID: -2071519783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_29
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 5
+        width: 120
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e65f454269584548bc6d891bec08757
+      internalID: -219193217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_30
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 5
+        width: 135
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59e8c77ba3a4492f995fe22c04257c0
+      internalID: -532036488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfRifleman_scaled_5x_pngcrushed_31
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 5
+        width: 135
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 448350a3288f74c29b7e939cb56bd4f6
+      internalID: 501007296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      MiniDwarfRifleman_scaled_5x_pngcrushed_31: 501007296
+      MiniDwarfRifleman_scaled_5x_pngcrushed_6: -1187100257
+      MiniDwarfRifleman_scaled_5x_pngcrushed_9: -335675358
+      MiniDwarfRifleman_scaled_5x_pngcrushed_21: -211864475
+      MiniDwarfRifleman_scaled_5x_pngcrushed_5: 414403624
+      MiniDwarfRifleman_scaled_5x_pngcrushed_28: -2071519783
+      MiniDwarfRifleman_scaled_5x_pngcrushed_1: -974803823
+      MiniDwarfRifleman_scaled_5x_pngcrushed_23: -1186957967
+      MiniDwarfRifleman_scaled_5x_pngcrushed_16: 1449897498
+      MiniDwarfRifleman_scaled_5x_pngcrushed_25: 669495099
+      MiniDwarfRifleman_scaled_5x_pngcrushed_18: 151423851
+      MiniDwarfRifleman_scaled_5x_pngcrushed_7: -66932091
+      MiniDwarfRifleman_scaled_5x_pngcrushed_3: -321205902
+      MiniDwarfRifleman_scaled_5x_pngcrushed_0: 514073677
+      MiniDwarfRifleman_scaled_5x_pngcrushed_17: 787723534
+      MiniDwarfRifleman_scaled_5x_pngcrushed_8: -26147494
+      MiniDwarfRifleman_scaled_5x_pngcrushed_20: 1441313358
+      MiniDwarfRifleman_scaled_5x_pngcrushed_22: 322754725
+      MiniDwarfRifleman_scaled_5x_pngcrushed_24: -1628163124
+      MiniDwarfRifleman_scaled_5x_pngcrushed_29: -219193217
+      MiniDwarfRifleman_scaled_5x_pngcrushed_11: -74304380
+      MiniDwarfRifleman_scaled_5x_pngcrushed_4: -1140005855
+      MiniDwarfRifleman_scaled_5x_pngcrushed_14: 626001070
+      MiniDwarfRifleman_scaled_5x_pngcrushed_10: 1796619725
+      MiniDwarfRifleman_scaled_5x_pngcrushed_12: 569135717
+      MiniDwarfRifleman_scaled_5x_pngcrushed_15: 922555108
+      MiniDwarfRifleman_scaled_5x_pngcrushed_2: -1107051836
+      MiniDwarfRifleman_scaled_5x_pngcrushed_30: -532036488
+      MiniDwarfRifleman_scaled_5x_pngcrushed_26: 355917590
+      MiniDwarfRifleman_scaled_5x_pngcrushed_19: -1130142811
+      MiniDwarfRifleman_scaled_5x_pngcrushed_27: 1243454510
+      MiniDwarfRifleman_scaled_5x_pngcrushed_13: 1425494712
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

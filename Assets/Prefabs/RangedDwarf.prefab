@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4157711041546228249}
   - component: {fileID: 4157711041546228255}
   - component: {fileID: 4157711041546228252}
+  - component: {fileID: 7235399499719659077}
   m_Layer: 8
   m_Name: RangedDwarf
   m_TagString: Untagged
@@ -78,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: af81c16a6d022dc48bda93a24233c5a2, type: 3}
+  m_Sprite: {fileID: 514073677, guid: 51af8d47d7d374b37a67a11e0d391215, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -104,6 +105,7 @@ MonoBehaviour:
   attackOffset: 1
   attackCooldownDuration: 2
   enemies: []
+  animator: {fileID: 0}
 --- !u!114 &4157711041546228248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,7 +157,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.8, y: 0.6}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -181,3 +183,23 @@ MonoBehaviour:
   rb: {fileID: 0}
   deathTextPrefab: {fileID: 0}
   deathText: {fileID: 0}
+--- !u!95 &7235399499719659077
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4157711041546228244}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1f3d6f25ca9514448a78b143e7ad85d8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0

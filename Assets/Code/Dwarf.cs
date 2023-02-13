@@ -17,6 +17,8 @@ public class Dwarf : MonoBehaviour
 
     public EnemyMovement[] enemies;
 
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,8 @@ public class Dwarf : MonoBehaviour
         rangedProjectileScript = GetComponent<RangedProjectile>();
         rb = GetComponent<Rigidbody2D>();
         StartCoroutine(attackCooldown());
+
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -38,6 +42,8 @@ public class Dwarf : MonoBehaviour
         {
             enemyClose = false;
         }
+
+        animator.SetBool("Moving", !enemyClose);
 
         if (!enemyClose) {
             Move();
@@ -62,7 +68,14 @@ public class Dwarf : MonoBehaviour
 
     private void Attack()
     {
+        animator.SetTrigger("attackTrigger");
         attackOnCooldown = true;
+        StartCoroutine(fire());
+    }
+
+    IEnumerator fire()
+    {
+        yield return new WaitForSeconds(0.3f);
         rangedProjectileScript.Fire(this.transform.position, closestEnemy.position, attackOffset);
     }
 
