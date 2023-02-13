@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7459d8bd2d6934195b056df8c275eea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 1694228666889077781, guid: cc0b9a0a5f73449f6a8ea83f3d09716c, type: 3}
+  healthBar: {fileID: 3417979591376379019}
 --- !u!1001 &4101655195714525342
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -256,5 +256,10 @@ PrefabInstance:
 --- !u!4 &3417979591376379018 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1694228666889077780, guid: cc0b9a0a5f73449f6a8ea83f3d09716c, type: 3}
+  m_PrefabInstance: {fileID: 4101655195714525342}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &3417979591376379019 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1694228666889077781, guid: cc0b9a0a5f73449f6a8ea83f3d09716c, type: 3}
   m_PrefabInstance: {fileID: 4101655195714525342}
   m_PrefabAsset: {fileID: 0}

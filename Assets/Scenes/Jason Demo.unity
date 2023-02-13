@@ -276,6 +276,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gold: 0
+--- !u!212 &94289470 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3417979591376379019, guid: 43a8c87ae406a4163ac46357a5a78717, type: 3}
+  m_PrefabInstance: {fileID: 799729408}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &129781440
 GameObject:
   m_ObjectHideFlags: 0
@@ -6498,6 +6503,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6972662027549290532, guid: 43a8c87ae406a4163ac46357a5a78717, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 94289470}
     - target: {fileID: 7249741737546345011, guid: 43a8c87ae406a4163ac46357a5a78717, type: 3}
       propertyPath: m_Name
       value: EnemyBasic

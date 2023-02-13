@@ -16,7 +16,7 @@ public class HealthBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healthBar.transform.position = transform.position + Vector3.up / 2;
+        healthBar.transform.position = transform.position + Vector3.up * 2 / 3;
         healthBar.transform.localScale = new Vector3(0.06f * healthScript.hpPercent(), 0.1f, 1);
         Debug.Log(healthBar.transform.localScale);
     }
