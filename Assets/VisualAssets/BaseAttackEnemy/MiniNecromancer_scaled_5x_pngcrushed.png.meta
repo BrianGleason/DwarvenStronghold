@@ -1,0 +1,1103 @@
+fileFormatVersion: 2
+guid: 5276d85cc4c044fe7a06aee54ec05650
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 965
+        width: 65
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0296cf9d2844177911658465a7b2cd
+      internalID: -614235828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_1
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 965
+        width: 65
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6f6a4a58e8a4a86a5574a6733d9e75
+      internalID: 1972926822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_2
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 965
+        width: 65
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00bc79c952dc14de8a45f55ac75ef22c
+      internalID: 752613321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_3
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 965
+        width: 65
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a768d15fecf84a5c82beb8fbb3fe8f3
+      internalID: -1152382224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_4
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 805
+        width: 50
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2815467c743742ffbfe798b3564ab17
+      internalID: -1474754075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_5
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 805
+        width: 40
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8213f7216eb484b669ff6a7426fec987
+      internalID: -1378229278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_6
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 805
+        width: 45
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 751987f8a4294485d8fc1d4bd67da9e6
+      internalID: -954531379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_7
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 805
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddbe292b79dd24db4a53994759d2be3a
+      internalID: -1791224609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_8
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 805
+        width: 70
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cbc031f21216454ba08067ba4897ce2
+      internalID: 188524111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_9
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 805
+        width: 65
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4519e9b2ee8004fb09eaf9740b6bb52b
+      internalID: -1126412486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_10
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 645
+        width: 75
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc8e899de2a234bc68241968ba2e6bdd
+      internalID: 1415716690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_11
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 645
+        width: 70
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9464d86c6a1a94c338ca7e39f2c43957
+      internalID: -769771317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_12
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 645
+        width: 70
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62cd63e4bd2ee4d64b478496e09efdc3
+      internalID: -1418170033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_13
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 485
+        width: 65
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf6c854e4a6ac49adaedb26f12c44b02
+      internalID: 1123067499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_14
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 485
+        width: 80
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872b6a4c4c78649bd89eef6507e02667
+      internalID: 1768965341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_15
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 485
+        width: 85
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542b5d35127424bb8beb0569d501e3c3
+      internalID: -1971194267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_16
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 485
+        width: 85
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e6c0367a72343b1879ef0199a41d62
+      internalID: -1120278370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_17
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 485
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd5f7cca247943f18938ff9a9810e86
+      internalID: -1134500896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_18
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 445
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df6efdba9c4b4da2a868eaaaf04d31a
+      internalID: -680992377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_19
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 325
+        width: 75
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8995911b4ec6481994ee6231dffcfef
+      internalID: -1171902740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_20
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 425
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eddc4376ffe74d599b8e2f9cb916fea
+      internalID: -44286342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_21
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 325
+        width: 70
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa9e7389aa264859b3d078f1e56808e
+      internalID: -2001625648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_22
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 325
+        width: 70
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f50eeaab8d42d486b9e5663f90ec7522
+      internalID: -2053094131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_23
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 325
+        width: 75
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 026a643406b6847d8a5b234a6dbcb7ad
+      internalID: -2024754530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_24
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 325
+        width: 75
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36378775e1ba6458c91afa8082ba156b
+      internalID: -207670611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_25
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 325
+        width: 75
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642ef9d09153d44a088756f1d9422244
+      internalID: -366335310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_26
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 325
+        width: 65
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3efa7a9c058482e8c80782a46c9666
+      internalID: -1627811639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_27
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 165
+        width: 75
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ce1b1ebf92b40c4bd598ef4d6fa994
+      internalID: 1752905691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_28
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 165
+        width: 70
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97dc90f2ea3e04ff69e89af53e3bb3b2
+      internalID: 2000917670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_29
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 130
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 352b0cfba349042e3954743ccdebe51a
+      internalID: -1195178962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_30
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 115
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c43b73962089480f9b112f683dbc5f2
+      internalID: 1241282221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_31
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 85
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c2e9d510f5f54ec5a8103b3a6acd430
+      internalID: 1389700838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_32
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 95
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed98cd9e0b8d44fe906350a5acf6627
+      internalID: -1657566057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_33
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 5
+        width: 70
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3506e6172c2e6401a9178f00d2866dcd
+      internalID: -859375038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_34
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 5
+        width: 80
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4985493900604a22ba741be79d25e03
+      internalID: 2088373466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_35
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 90
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d21944d1aee45d69e7c0b1c6998be5
+      internalID: 912117257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_36
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 5
+        width: 70
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6222f84e13bc4d5086d432f0733e332
+      internalID: 43765983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_37
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 70
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca9db79902a64833b04bf0ffc788d97
+      internalID: 329573499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_38
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 75
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc8ac93b828c41cd8585c833583597c
+      internalID: 261972004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_39
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 5
+        width: 60
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 341d6c0d4771c4b82bd5985b53c08e21
+      internalID: 691063348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_40
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 5
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d1f6b26424a04bbfb2a976d0eac5f10
+      internalID: -1484734785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_41
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 5
+        width: 70
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88a18ccb8dba4997b63d285eec38972
+      internalID: -333527752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_42
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 5
+        width: 70
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec4a93459bda5464bb7fbdac4dbcdec5
+      internalID: -530798964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniNecromancer_scaled_5x_pngcrushed_43
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 5
+        width: 70
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155b529f6262044489842feeea72a165
+      internalID: -1521562859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      MiniNecromancer_scaled_5x_pngcrushed_17: -1134500896
+      MiniNecromancer_scaled_5x_pngcrushed_11: -769771317
+      MiniNecromancer_scaled_5x_pngcrushed_20: -44286342
+      MiniNecromancer_scaled_5x_pngcrushed_6: -954531379
+      MiniNecromancer_scaled_5x_pngcrushed_19: -1171902740
+      MiniNecromancer_scaled_5x_pngcrushed_34: 2088373466
+      MiniNecromancer_scaled_5x_pngcrushed_18: -680992377
+      MiniNecromancer_scaled_5x_pngcrushed_31: 1389700838
+      MiniNecromancer_scaled_5x_pngcrushed_26: -1627811639
+      MiniNecromancer_scaled_5x_pngcrushed_8: 188524111
+      MiniNecromancer_scaled_5x_pngcrushed_3: -1152382224
+      MiniNecromancer_scaled_5x_pngcrushed_32: -1657566057
+      MiniNecromancer_scaled_5x_pngcrushed_41: -333527752
+      MiniNecromancer_scaled_5x_pngcrushed_22: -2053094131
+      MiniNecromancer_scaled_5x_pngcrushed_43: -1521562859
+      MiniNecromancer_scaled_5x_pngcrushed_0: -614235828
+      MiniNecromancer_scaled_5x_pngcrushed_21: -2001625648
+      MiniNecromancer_scaled_5x_pngcrushed_30: 1241282221
+      MiniNecromancer_scaled_5x_pngcrushed_15: -1971194267
+      MiniNecromancer_scaled_5x_pngcrushed_25: -366335310
+      MiniNecromancer_scaled_5x_pngcrushed_37: 329573499
+      MiniNecromancer_scaled_5x_pngcrushed_7: -1791224609
+      MiniNecromancer_scaled_5x_pngcrushed_10: 1415716690
+      MiniNecromancer_scaled_5x_pngcrushed_28: 2000917670
+      MiniNecromancer_scaled_5x_pngcrushed_40: -1484734785
+      MiniNecromancer_scaled_5x_pngcrushed_2: 752613321
+      MiniNecromancer_scaled_5x_pngcrushed_38: 261972004
+      MiniNecromancer_scaled_5x_pngcrushed_39: 691063348
+      MiniNecromancer_scaled_5x_pngcrushed_4: -1474754075
+      MiniNecromancer_scaled_5x_pngcrushed_35: 912117257
+      MiniNecromancer_scaled_5x_pngcrushed_5: -1378229278
+      MiniNecromancer_scaled_5x_pngcrushed_14: 1768965341
+      MiniNecromancer_scaled_5x_pngcrushed_9: -1126412486
+      MiniNecromancer_scaled_5x_pngcrushed_42: -530798964
+      MiniNecromancer_scaled_5x_pngcrushed_13: 1123067499
+      MiniNecromancer_scaled_5x_pngcrushed_24: -207670611
+      MiniNecromancer_scaled_5x_pngcrushed_23: -2024754530
+      MiniNecromancer_scaled_5x_pngcrushed_33: -859375038
+      MiniNecromancer_scaled_5x_pngcrushed_27: 1752905691
+      MiniNecromancer_scaled_5x_pngcrushed_36: 43765983
+      MiniNecromancer_scaled_5x_pngcrushed_29: -1195178962
+      MiniNecromancer_scaled_5x_pngcrushed_12: -1418170033
+      MiniNecromancer_scaled_5x_pngcrushed_1: 1972926822
+      MiniNecromancer_scaled_5x_pngcrushed_16: -1120278370
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

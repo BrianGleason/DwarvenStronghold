@@ -23,11 +23,15 @@ public class EnemyMovement : MonoBehaviour
     public bool selfDestruct;
     public GameObject ExplosionPrefab;
 
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         target = GameObject.FindWithTag(targ).transform;
+
+        animator = GetComponent<Animator>();
 
 
     }
@@ -65,10 +69,7 @@ public class EnemyMovement : MonoBehaviour
             {
                 if (selfDestruct == true)
                 {
-                    Health x = GameObject.FindWithTag(targ).GetComponent<Health>();
-                    x.TakeDamage(25, Vector2.zero);
-                    Instantiate(ExplosionPrefab, transform.position, Quaternion.identity);
-                    Destroy(gameObject);
+                    StartCoroutine(BlowUp());
                 }
                 else
                 {
@@ -120,4 +121,16 @@ public class EnemyMovement : MonoBehaviour
         yield return new WaitForSeconds(1);
         stunned = false;
     }
+
+    IEnumerator BlowUp() {
+        animator.SetTrigger("Attack");
+        yield return new WaitForSeconds(1.5f);
+        Health x = GameObject.FindWithTag(targ).GetComponent<Health>();
+        x.TakeDamage(25, Vector2.zero);
+        Instantiate(ExplosionPrefab, transform.position, Quaternion.identity);
+        Destroy(gameObject);
+
+    }
+
+
 }
