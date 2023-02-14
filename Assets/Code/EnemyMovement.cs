@@ -22,6 +22,7 @@ public class EnemyMovement : MonoBehaviour
     public bool stunned = false;
     public bool selfDestruct;
     public GameObject ExplosionPrefab;
+    public SpriteRenderer sprit;
 
     public Animator animator;
 
@@ -30,6 +31,7 @@ public class EnemyMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         target = GameObject.FindWithTag(targ).transform;
+        sprit = GetComponent<SpriteRenderer>();
 
         animator = GetComponent<Animator>();
 
@@ -55,16 +57,27 @@ public class EnemyMovement : MonoBehaviour
         if (stunned)
         {
             rb.velocity = Vector2.zero;
+            animator.SetBool("Moving", false);
             return;
         }
 
         if (target & (distance > range))
         {
+            animator.SetBool("Moving", true);
             rb.velocity = new Vector2(direction.x, direction.y) * movespeed;
+            if (direction.x < 0)
+            {
+                sprit.flipX = true;
+            }
+            else
+            {
+                sprit.flipX = false;
+            }
         }
         else
         {
             rb.velocity = Vector2.zero;
+            animator.SetBool("Moving", false);
             if (!isAttacking)
             {
                 if (selfDestruct == true)
@@ -73,6 +86,7 @@ public class EnemyMovement : MonoBehaviour
                 }
                 else
                 {
+                    //animator.SetTrigger("Attack");
                     OnAttack();
                 }
             }
@@ -81,6 +95,8 @@ public class EnemyMovement : MonoBehaviour
 
     void OnAttack()
     {
+        
+        
         Vector2 targ = new Vector2(target.transform.position.x, target.transform.position.y);
         Vector2 selfToMouseVector = targ - rb.position;
         float selfToMouseAngle = Mathf.Atan2(selfToMouseVector.y, selfToMouseVector.x) * Mathf.Rad2Deg;
@@ -89,13 +105,18 @@ public class EnemyMovement : MonoBehaviour
         Vector2 attackOffset = selfToMouseVector.normalized * attackOffsetScalar;
         Vector3 attackOffsetV3 = attackOffset;
 
+        
+        //StartCoroutine(attackdelay());
         instantiateAttack(meleeAttackPrefab, rb.transform.position + attackOffsetV3, selfToMouseRotation);
+        
         isAttacking = true;
         StartCoroutine(attackCooldown());
     }
 
     void instantiateAttack(GameObject attackPrefab, Vector2 attackPosn, Quaternion selfToMouseRotation)
     {
+        animator.SetTrigger("Attack");
+        StartCoroutine(attackdelay());
         GameObject attack = Instantiate(attackPrefab, attackPosn, selfToMouseRotation);
         AttackDecay attackScript = attack.GetComponent<AttackDecay>();
         if (attackScript != null)
@@ -108,6 +129,11 @@ public class EnemyMovement : MonoBehaviour
     {
         yield return new WaitForSeconds(attackCooldownDuration);
         isAttacking = false;
+    }
+
+    IEnumerator attackdelay()
+    {
+        yield return new WaitForSeconds(0.8f);
     }
 
     public void ApplyStun()
