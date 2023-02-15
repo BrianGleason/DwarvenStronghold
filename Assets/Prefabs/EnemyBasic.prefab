@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7328354282892377700}
   - component: {fileID: -4597270707836654626}
   - component: {fileID: 6972662027549290532}
+  - component: {fileID: 5610845728959918262}
   m_Layer: 7
   m_Name: EnemyBasic
   m_TagString: Untagged
@@ -79,8 +80,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: -1921012579, guid: a70b4aa77d84544bab6ba4aeda2eae1a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -128,14 +129,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.65, y: 0.75}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5, y: 0.8}
   m_EdgeRadius: 0
 --- !u!114 &7328354282892377700
 MonoBehaviour:
@@ -167,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movespeed: 0.5
-  range: 1.5
+  range: 1
   meleeAttackPrefab: {fileID: 2792615685811339556, guid: 9ec340967f1cc1940a9725512a474505, type: 3}
   attackOffsetScalar: 1.5
   attackSizeScalar: 1
@@ -179,6 +180,7 @@ MonoBehaviour:
   stunned: 0
   selfDestruct: 0
   ExplosionPrefab: {fileID: 0}
+  sprit: {fileID: 0}
   animator: {fileID: 0}
 --- !u!114 &6972662027549290532
 MonoBehaviour:
@@ -193,6 +195,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 3417979591376379019}
+--- !u!95 &5610845728959918262
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7249741737546345011}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 811d222d247f84920ae3b75bc41a0c9f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1001 &4101655195714525342
 PrefabInstance:
   m_ObjectHideFlags: 0
