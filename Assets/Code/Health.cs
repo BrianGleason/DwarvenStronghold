@@ -47,6 +47,7 @@ public class Health : MonoBehaviour
         {
             deathText = Instantiate(deathTextPrefab, enemyScript.transform.position, Quaternion.identity);
             TextMesh txt = deathText.transform.GetComponent<TextMesh>();
+            txt.fontSize = 18;
             txt.text = "+$1";
             Destroy(deathText, 1f);
             SystemControl.instance.AddGold(1);

@@ -277,6 +277,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hpBar
       objectReference: {fileID: 0}
+    - target: {fileID: 1694228666889077783, guid: cc0b9a0a5f73449f6a8ea83f3d09716c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc0b9a0a5f73449f6a8ea83f3d09716c, type: 3}
 --- !u!4 &6005455066482433998 stripped

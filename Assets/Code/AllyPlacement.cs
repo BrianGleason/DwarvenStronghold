@@ -8,6 +8,8 @@ public class AllyPlacement : MonoBehaviour
 
     public GameObject[] prefabs;
     private GameObject previewObject;
+    public Transform placementRange;
+    public SpriteRenderer range;
 
     private Camera mainCamera;
 
@@ -18,6 +20,7 @@ public class AllyPlacement : MonoBehaviour
     private void Start()
     {
         mainCamera = Camera.main;
+        range = placementRange.GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -29,6 +32,8 @@ public class AllyPlacement : MonoBehaviour
                 cooldowns[i] -= Time.deltaTime;
             }
         }
+
+        range.color = new Color(0, 0, 0, 0);
 
         if (Input.GetKeyDown(KeyCode.Alpha1)) // 1
         {   if (selectedPrefabIndex == 0)
@@ -60,12 +65,11 @@ public class AllyPlacement : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1) && selectedPrefabIndex != -1)
         {
-            Debug.Log("try place");
             if (SystemControl.instance.gold >= (2 + selectedPrefabIndex) && cooldowns[selectedPrefabIndex] <= 0)
             {
-                Debug.Log("placed");
                 Instantiate(prefabs[selectedPrefabIndex], previewObject.transform.position, previewObject.transform.rotation);
                 Destroy(previewObject);
+
                 SystemControl.instance.UseGold(2 + selectedPrefabIndex);
                 cooldowns[selectedPrefabIndex] = 10;
                 selectedPrefabIndex = -1;
@@ -86,6 +90,11 @@ public class AllyPlacement : MonoBehaviour
             previewObject = Instantiate(prefabs[selectedPrefabIndex]);
             SpriteRenderer renderer = previewObject.GetComponent<SpriteRenderer>();
             renderer.color = new Color(renderer.color.r, renderer.color.g, renderer.color.b, 0.5f);
+        }
+
+        if (selectedPrefabIndex != -1)
+        {
+            range.color = new Color(range.color.r, range.color.g, range.color.b, 0.2f);
         }
 
         Vector3 mousePos = Input.mousePosition;
