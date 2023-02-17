@@ -23,6 +23,8 @@ public class EnemyMovement : MonoBehaviour
     public bool selfDestruct;
     public GameObject ExplosionPrefab;
     public SpriteRenderer sprit;
+    public Placeholder[] enemies;
+    private float distance;
 
     public Animator animator;
 
@@ -30,7 +32,6 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        target = GameObject.FindWithTag(targ).transform;
         sprit = GetComponent<SpriteRenderer>();
 
         animator = GetComponent<Animator>();
@@ -41,19 +42,26 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (target)
-        {
-            Vector3 dir = (target.position - transform.position).normalized;
-            float ang = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            direction = dir;
-        }
 
         
     }
 
     private void FixedUpdate()
     {
-        float distance = Vector3.Distance(target.transform.position, transform.position);
+        if (selfDestruct == true) {
+            target = GameObject.FindWithTag(targ).transform;
+            distance = Vector3.Distance(target.transform.position, transform.position);
+        }
+        else
+        {
+            target = FindClosestEnemy().Item1;
+            distance = FindClosestEnemy().Item2;
+        }
+
+        Vector3 dir = (target.position - transform.position).normalized;
+        float ang = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        direction = dir;
+
         if (stunned)
         {
             rb.velocity = Vector2.zero;
@@ -156,6 +164,23 @@ public class EnemyMovement : MonoBehaviour
         Instantiate(ExplosionPrefab, transform.position, Quaternion.identity);
         Destroy(gameObject);
 
+    }
+
+    (Transform, float) FindClosestEnemy()
+    {
+        enemies = FindObjectsOfType<Placeholder>();
+        Transform closest = null;
+        float closestDistance = Mathf.Infinity;
+        foreach (Placeholder enemy in enemies)
+        {
+            float distance = Vector2.Distance(transform.position, enemy.transform.position);
+            if (distance < closestDistance)
+            {
+                closest = enemy.transform;
+                closestDistance = distance;
+            }
+        }
+        return (closest, closestDistance);
     }
 
 

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7193202349218045}
   - component: {fileID: 7193202349218044}
   - component: {fileID: 7193202349218047}
+  - component: {fileID: -935871546261903914}
   m_Layer: 8
   m_Name: HealerDwarf
   m_TagString: Untagged
@@ -192,3 +193,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &-935871546261903914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7193202349218039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b76e66487664013b56ae3c99b60a10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
