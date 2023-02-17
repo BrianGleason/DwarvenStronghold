@@ -19,7 +19,7 @@ public class StatsUI : MonoBehaviour
     {
         Text.text = "Gold: $" + SystemControl.instance.gold.ToString()
             + "\nBase HP: " + Base.GetComponent<Health>().hpPercent()*100 + "%";
-        Text.fontSize = 14;
+        Text.fontSize = 20;
 
     }
 }
