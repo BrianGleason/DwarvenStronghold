@@ -39,6 +39,13 @@ public class Health : MonoBehaviour
         rb.AddForce((rb.position - atkOrigin).normalized * 100);
     }
 
+    public void HealDamage(int damage)
+    {
+        int missingHealth = maxHP - health;
+
+        health += Mathf.Min(missingHealth, damage);
+    }
+
     private void Die ()
     {
         Destroy(gameObject);

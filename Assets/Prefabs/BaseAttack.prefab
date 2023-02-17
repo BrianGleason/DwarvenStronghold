@@ -153,7 +153,7 @@ MonoBehaviour:
   maxHP: 50
   health: 50
   rb: {fileID: 0}
-  deathTextPrefab: {fileID: 800238655446659967, guid: 45fdf1bf80cf546bf95cf64726b24073, type: 3}
+  deathTextPrefab: {fileID: 800238655446659967, guid: 822aa4cb08db56946a897698f817a994, type: 3}
   deathText: {fileID: 0}
 --- !u!114 &7573857184086488429
 MonoBehaviour:
@@ -180,6 +180,7 @@ MonoBehaviour:
   stunned: 0
   selfDestruct: 1
   ExplosionPrefab: {fileID: 3028432481471332243, guid: 749d9cdad54e24701b2478aed626dacf, type: 3}
+  sprit: {fileID: 0}
   animator: {fileID: 0}
 --- !u!95 &5123203149019688535
 Animator:
