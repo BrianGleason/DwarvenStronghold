@@ -17,13 +17,17 @@ public class SpawnEnemy : MonoBehaviour
 
     bool spawningWave;
 
-    //public Sprite healthBarSprite;
-
 
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(SpawnEnemyWave(waveNumber));
+
+        /*StartCoroutine(WaveOne());
+        StartCoroutine(WaveTwo());
+        StartCoroutine(WaveThree());
+        StartCoroutine(WaveFour());
+        StartCoroutine(Boss());*/
     }
 
     // Update is called once per frame
@@ -62,5 +66,36 @@ public class SpawnEnemy : MonoBehaviour
             yield return new WaitForSeconds(timeBetweenEnemySpawn); //We wait here to give a bit of time between each enemy spawn
         }
         spawningWave = false;
+    }
+
+
+    private Vector2 spawnPos()
+    {
+        return new Vector2(11f, Random.Range(-4f, 4f));
+    }
+
+    IEnumerator WaveOne()
+    {
+        yield return null;
+    }
+
+    IEnumerator WaveTwo()
+    {
+        yield return null;
+    }
+
+    IEnumerator WaveThree()
+    {
+        yield return null;
+    }
+
+    IEnumerator WaveFour()
+    {
+        yield return null;
+    }
+
+    IEnumerator Boss()
+    {
+        return null;
     }
 }
