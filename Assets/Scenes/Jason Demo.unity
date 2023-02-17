@@ -6306,7 +6306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabs:
   - {fileID: 4157711041546228244, guid: adec8222d84e3b44c8607621440b3f18, type: 3}
-  - {fileID: 1910562898810740419, guid: e95b42885aba74156b13038a444423a0, type: 3}
+  - {fileID: 7193202349218039, guid: 5f626e59737e5224c95bf1915b8070a1, type: 3}
   - {fileID: 6557424132170831711, guid: 305328d47939347c88bdce8e64d78f81, type: 3}
   placementRange: {fileID: 2107930624}
   range: {fileID: 0}
@@ -7453,10 +7453,7 @@ MonoBehaviour:
   - {fileID: 7249741737546345011, guid: 43a8c87ae406a4163ac46357a5a78717, type: 3}
   - {fileID: 5599322260865315968, guid: bc9782a98b6444f54a0f5aa7b3bd8e23, type: 3}
   - {fileID: 7249741737546345011, guid: 176ca6077d0ec40c4bc9b89805343788, type: 3}
-  waveNumber: 1
-  timeBetweenEnemySpawn: 2
-  timeBetweenWaves: 5
-  totalWaves: 2
+  currentWave: 0
 --- !u!1 &1981805929
 GameObject:
   m_ObjectHideFlags: 0

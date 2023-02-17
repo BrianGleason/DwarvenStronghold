@@ -17,7 +17,7 @@ public class Ally3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Text.text = "Ranged Dwarf\nCost: $4\nCooldown: "
+        Text.text = "Berserker Dwarf\nCost: $4\nCooldown: "
             + Mathf.Round((ally.cooldowns[2] * 100.0f) / 100.0f).ToString();
         Text.fontSize = 20;
     }

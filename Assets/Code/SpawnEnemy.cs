@@ -7,95 +7,109 @@ using UnityEngine.UI;
 public class SpawnEnemy : MonoBehaviour
 {
     public GameObject[] enemyPrefabs;
-    private int enemyCount;
-    public int waveNumber = 4;
-    private int curwave;
 
-    public float timeBetweenEnemySpawn;
-    public float timeBetweenWaves;
-    public int totalWaves;
-
-    bool spawningWave;
-
+    public int currentWave;
 
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(SpawnEnemyWave(waveNumber));
-
-        /*StartCoroutine(WaveOne());
-        StartCoroutine(WaveTwo());
-        StartCoroutine(WaveThree());
-        StartCoroutine(WaveFour());
-        StartCoroutine(Boss());*/
+        currentWave = 1;
+        StartCoroutine(WaveOne());
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if (enemyCount == 0 && !spawningWave && curwave!=totalWaves)
-        {
-            waveNumber++;
-            curwave++;
-            StartCoroutine(SpawnEnemyWave(waveNumber));
-        }
+        Debug.Log(currentWave);
     }
-
-    IEnumerator SpawnEnemyWave(int enemiesToSpawn)
-    {
-        spawningWave = true;
-        yield return new WaitForSeconds(timeBetweenWaves); //We wait here to pause between wave spawning
-        for (int i = 0; i < enemiesToSpawn; i++)
-        {
-            float yloc = Random.Range(-4f, 4f);
-            Vector2 pos = new Vector2(11f, yloc);
-            GameObject enemySpawn = Instantiate(enemyPrefabs[0], pos, enemyPrefabs[0].transform.rotation);
-
-
-            yield return new WaitForSeconds(timeBetweenEnemySpawn); //We wait here to give a bit of time between each enemy spawn
-        }
-
-        for (int i = 0; i < enemiesToSpawn - 1; i++)
-        {
-            float yloc = Random.Range(-4f, 4f);
-            Vector2 pos = new Vector2(11f, yloc);
-            GameObject enemySpawn = Instantiate(enemyPrefabs[1], pos, enemyPrefabs[1].transform.rotation);
-
-
-            yield return new WaitForSeconds(timeBetweenEnemySpawn); //We wait here to give a bit of time between each enemy spawn
-        }
-        spawningWave = false;
-    }
-
 
     private Vector2 spawnPos()
     {
         return new Vector2(11f, Random.Range(-4f, 4f));
     }
 
+    private void SpawnEnemyOfType(int enemyType, int amount)
+    {
+        for (int i = 0; i < amount; i++)
+        {
+            Instantiate(enemyPrefabs[enemyType], spawnPos(), enemyPrefabs[enemyType].transform.rotation);
+        }
+    }
+
     IEnumerator WaveOne()
     {
-        yield return null;
+        SpawnEnemyOfType(0, 2);
+        yield return new WaitForSeconds(10);
+        SpawnEnemyOfType(0, 4);
+        yield return new WaitForSeconds(10);
+        SpawnEnemyOfType(0, 4);
+        yield return new WaitForSeconds(10);
+
+        while (FindObjectsOfType<EnemyMovement>().Length > 0)
+        {
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(30);
+        
+        StartCoroutine(WaveTwo());
     }
 
     IEnumerator WaveTwo()
     {
-        yield return null;
+        currentWave = 2;
+
+        SpawnEnemyOfType(0, 3);
+        yield return new WaitForSeconds(10);
+        SpawnEnemyOfType(0, 5);
+        SpawnEnemyOfType(1, 1);
+        yield return new WaitForSeconds(10);
+        SpawnEnemyOfType(0, 7);
+        SpawnEnemyOfType(1, 2);
+        yield return new WaitForSeconds(10);
+
+        while (FindObjectsOfType<EnemyMovement>().Length > 0)
+        {
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(30);
+
+        StartCoroutine(WaveThree());
     }
 
     IEnumerator WaveThree()
     {
-        yield return null;
-    }
+        currentWave = 3;
+        // SPAWN HERE
+        // 20 basic enemies 5 + 6 + 9
+        // 6 base enemies 1 + 2 + 3
+        // ? dash enemies
+        SpawnEnemyOfType(0, 5);
+        SpawnEnemyOfType(1, 1);
+        yield return new WaitForSeconds(10);
+        SpawnEnemyOfType(0, 6);
+        SpawnEnemyOfType(1, 2);
+        yield return new WaitForSeconds(10);
+        SpawnEnemyOfType(0, 9);
+        SpawnEnemyOfType(1, 3);
+        yield return new WaitForSeconds(10);
 
-    IEnumerator WaveFour()
-    {
-        yield return null;
+
+        while (FindObjectsOfType<EnemyMovement>().Length > 0)
+        {
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(30);
+
+        StartCoroutine(Boss());
     }
 
     IEnumerator Boss()
     {
-        return null;
+        currentWave = 4;
+        // Spawn boss
+        yield return null;
     }
 }
