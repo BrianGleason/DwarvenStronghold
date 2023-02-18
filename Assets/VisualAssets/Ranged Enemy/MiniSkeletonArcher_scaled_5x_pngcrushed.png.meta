@@ -1,0 +1,949 @@
+fileFormatVersion: 2
+guid: 24dbe288a99a74719aabaa7b05c61207
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 965
+        width: 70
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e3dfb02b21548049750da0dbcdb04b
+      internalID: -34613502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_1
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 965
+        width: 70
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c56c39f375144e88ebc5d25e05f54d
+      internalID: 1357034477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_2
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 965
+        width: 70
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f236f4018ec9462ca4f1e5eb174cb4e
+      internalID: 502922115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_3
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 965
+        width: 70
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a62e675202ec94973b59fd22f7c4e736
+      internalID: -996033494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_4
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 805
+        width: 70
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f319ac78632044b3ade9109cf97cbce
+      internalID: 236158181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_5
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 805
+        width: 60
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54b20cb6a3c6241408568ae2d33dda02
+      internalID: 993477710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_6
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 805
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d3a64c3faa25449a957106c120407b6
+      internalID: -1783821641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_7
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 805
+        width: 55
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2c8f047d8d4495cbdd8ce520176bba
+      internalID: -1806204714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_8
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 805
+        width: 60
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8dbd5f44179448cfacb4528795dbf0a
+      internalID: -1546082205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_9
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 805
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: defb9eee85b0b466782971d43674b25e
+      internalID: -1019872591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 645
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c7d5ff9bdd34b4191b81f34610fb4a
+      internalID: 435076087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_11
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 645
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b8eb5f3e07c41c98dad13cdf24dfc3
+      internalID: -680056699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_12
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 645
+        width: 75
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3d9ee0fd0de4f45aedc8e5e9870fda
+      internalID: 1298002726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_13
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 485
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc67984995b641b1b47b09c0c88e0da
+      internalID: -192515601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_14
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 485
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ba7810866c246799976eda4f8826e5
+      internalID: -1573886915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_15
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 485
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f040c20e15fc4151adfe09b1a6e295f
+      internalID: 982826661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_16
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 485
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a8064b09cef04219880a1c11432dc8c
+      internalID: 107178912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_17
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 485
+        width: 85
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e0f8aefb605847e99d848120328c31f
+      internalID: -316775946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_18
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 485
+        width: 80
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e73f56096c89470481b1676078ce505
+      internalID: -1089213786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_19
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 485
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09b2ff78f19147459c71c659e13b138
+      internalID: 427313380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_20
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 485
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c3b4a9155e08426997a6eed305406e4
+      internalID: 1182580113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_21
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 485
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 059264231b40e4583b6f039f35bb1026
+      internalID: 396149205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_22
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 485
+        width: 70
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f12122c5d7f94d7fbc8271d05cb5295
+      internalID: 1096298638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_23
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 325
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d8d919535d34b779801d5666bd8fe8
+      internalID: 1677512483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_24
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 325
+        width: 60
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 203b6a46e1ebc45eaae105d6fdedf4be
+      internalID: -35833895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_25
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 325
+        width: 60
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb483939e7e094d58a52f29dd8c609cf
+      internalID: 626471872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_26
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 325
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6404ea824aed041639f744c388f03106
+      internalID: -1148323339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_27
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 325
+        width: 75
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628bf04558dc44618800786cfb8028ed
+      internalID: -1235009788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_28
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 165
+        width: 80
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea1c77d6e36a498da073e5414848563
+      internalID: 1051484413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_29
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 165
+        width: 80
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd0de37f68fc425baa5d815b8a60c60
+      internalID: 1853930251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_30
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 165
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed8079c861664488a139705cc3044e8
+      internalID: 1504318988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_31
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 5
+        width: 65
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416617112a68645ec8eb96d1dd09470e
+      internalID: 2064671911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_32
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 5
+        width: 55
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f6db7db1b88461ca85e12a93389cbd
+      internalID: -1696716222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_33
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 5
+        width: 65
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa511b50a4e994cedae0a24cc1537486
+      internalID: -533549379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_34
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 5
+        width: 65
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1994ddad58f6848098313e03701ed468
+      internalID: -917541958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_35
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 5
+        width: 65
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b57a53425524722a26f9072cb36c50
+      internalID: -1846940573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkeletonArcher_scaled_5x_pngcrushed_36
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 5
+        width: 65
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70f24c38d5c84ca19ba2140a12f6547
+      internalID: 2045186934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      MiniSkeletonArcher_scaled_5x_pngcrushed_28: 1051484413
+      MiniSkeletonArcher_scaled_5x_pngcrushed_9: -1019872591
+      MiniSkeletonArcher_scaled_5x_pngcrushed_34: -917541958
+      MiniSkeletonArcher_scaled_5x_pngcrushed_4: 236158181
+      MiniSkeletonArcher_scaled_5x_pngcrushed_3: -996033494
+      MiniSkeletonArcher_scaled_5x_pngcrushed_10: 435076087
+      MiniSkeletonArcher_scaled_5x_pngcrushed_26: -1148323339
+      MiniSkeletonArcher_scaled_5x_pngcrushed_35: -1846940573
+      MiniSkeletonArcher_scaled_5x_pngcrushed_8: -1546082205
+      MiniSkeletonArcher_scaled_5x_pngcrushed_15: 982826661
+      MiniSkeletonArcher_scaled_5x_pngcrushed_31: 2064671911
+      MiniSkeletonArcher_scaled_5x_pngcrushed_21: 396149205
+      MiniSkeletonArcher_scaled_5x_pngcrushed_23: 1677512483
+      MiniSkeletonArcher_scaled_5x_pngcrushed_20: 1182580113
+      MiniSkeletonArcher_scaled_5x_pngcrushed_29: 1853930251
+      MiniSkeletonArcher_scaled_5x_pngcrushed_32: -1696716222
+      MiniSkeletonArcher_scaled_5x_pngcrushed_36: 2045186934
+      MiniSkeletonArcher_scaled_5x_pngcrushed_2: 502922115
+      MiniSkeletonArcher_scaled_5x_pngcrushed_0: -34613502
+      MiniSkeletonArcher_scaled_5x_pngcrushed_11: -680056699
+      MiniSkeletonArcher_scaled_5x_pngcrushed_6: -1783821641
+      MiniSkeletonArcher_scaled_5x_pngcrushed_14: -1573886915
+      MiniSkeletonArcher_scaled_5x_pngcrushed_5: 993477710
+      MiniSkeletonArcher_scaled_5x_pngcrushed_13: -192515601
+      MiniSkeletonArcher_scaled_5x_pngcrushed_25: 626471872
+      MiniSkeletonArcher_scaled_5x_pngcrushed_7: -1806204714
+      MiniSkeletonArcher_scaled_5x_pngcrushed_30: 1504318988
+      MiniSkeletonArcher_scaled_5x_pngcrushed_22: 1096298638
+      MiniSkeletonArcher_scaled_5x_pngcrushed_1: 1357034477
+      MiniSkeletonArcher_scaled_5x_pngcrushed_27: -1235009788
+      MiniSkeletonArcher_scaled_5x_pngcrushed_18: -1089213786
+      MiniSkeletonArcher_scaled_5x_pngcrushed_19: 427313380
+      MiniSkeletonArcher_scaled_5x_pngcrushed_33: -533549379
+      MiniSkeletonArcher_scaled_5x_pngcrushed_24: -35833895
+      MiniSkeletonArcher_scaled_5x_pngcrushed_12: 1298002726
+      MiniSkeletonArcher_scaled_5x_pngcrushed_17: -316775946
+      MiniSkeletonArcher_scaled_5x_pngcrushed_16: 107178912
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

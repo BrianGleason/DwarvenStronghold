@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking.Types;
+using UnityEngine.Timeline;
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class EnemyMovement : MonoBehaviour
     Rigidbody2D rb;
     Transform target;
     Vector2 direction;
+    RangedProjectile rangedProjectileScript;
+    public float attackOffset = 1f;
     public GameObject meleeAttackPrefab;
     private bool isAttacking = false;
     public float attackOffsetScalar = 1.5f;
@@ -21,6 +24,7 @@ public class EnemyMovement : MonoBehaviour
     public float knockback = 1;
     public bool stunned = false;
     public bool selfDestruct;
+    public bool ranged;
     public GameObject ExplosionPrefab;
     public SpriteRenderer sprit;
     public Placeholder[] enemies;
@@ -33,7 +37,7 @@ public class EnemyMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sprit = GetComponent<SpriteRenderer>();
-
+        rangedProjectileScript = GetComponent<RangedProjectile>();
         animator = GetComponent<Animator>();
 
 
@@ -92,6 +96,13 @@ public class EnemyMovement : MonoBehaviour
                 {
                     StartCoroutine(BlowUp());
                 }
+                else if(ranged == true){
+                    
+                    StartCoroutine(fire());
+                    animator.SetTrigger("Attack");
+                    isAttacking = true;
+                    StartCoroutine(attackCooldown());
+                }
                 else
                 {
                     //animator.SetTrigger("Attack");
@@ -99,6 +110,12 @@ public class EnemyMovement : MonoBehaviour
                 }
             }
         }
+    }
+
+    IEnumerator fire()
+    {
+        yield return new WaitForSeconds(0.3f);
+        rangedProjectileScript.Fire(this.transform.position, target.position, attackOffset);
     }
 
     void OnAttack()
