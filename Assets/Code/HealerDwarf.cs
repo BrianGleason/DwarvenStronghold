@@ -12,7 +12,6 @@ public class HealerDwarf : MonoBehaviour
     public int healAmount = 5;
     public GameObject healTextPrefab;
 
-    Rigidbody2D rb;
     Transform closestDamagedAlly;
     Health closestDamagedAllyHealthScript;
     float distanceFromClosestDamagedAlly = float.MinValue;
@@ -26,7 +25,6 @@ public class HealerDwarf : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         StartCoroutine(healCooldown());
 
