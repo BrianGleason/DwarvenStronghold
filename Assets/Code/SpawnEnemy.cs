@@ -9,6 +9,7 @@ public class SpawnEnemy : MonoBehaviour
     public GameObject[] enemyPrefabs;
 
     public int currentWave;
+    public int countDown;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,7 @@ public class SpawnEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(currentWave);
+
     }
 
     private Vector2 spawnPos()
@@ -50,8 +51,13 @@ public class SpawnEnemy : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(30);
-        
+        countDown = 30;
+        for (int i = 0; i < 30; i++)
+        {
+            yield return new WaitForSeconds(1);
+            countDown--;
+        }
+
         StartCoroutine(WaveTwo());
     }
 
@@ -73,8 +79,13 @@ public class SpawnEnemy : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(30);
-
+        countDown = 30;
+        for (int i = 0; i < 30; i++)
+        {
+            yield return new WaitForSeconds(1);
+            countDown--;
+        }
+        
         StartCoroutine(WaveThree());
     }
 
@@ -101,7 +112,12 @@ public class SpawnEnemy : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSeconds(30);
+        countDown = 30;
+        for (int i = 0; i < 30; i++)
+        {
+            yield return new WaitForSeconds(1);
+            countDown--;
+        }
 
         StartCoroutine(Boss());
     }

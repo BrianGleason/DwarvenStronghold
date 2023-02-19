@@ -7694,6 +7694,7 @@ MonoBehaviour:
   - {fileID: 5599322260865315968, guid: bc9782a98b6444f54a0f5aa7b3bd8e23, type: 3}
   - {fileID: 7249741737546345011, guid: 176ca6077d0ec40c4bc9b89805343788, type: 3}
   currentWave: 0
+  waiting: 0
 --- !u!1 &1981805929
 GameObject:
   m_ObjectHideFlags: 0
@@ -8315,6 +8316,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1694228666889077781, guid: cc0b9a0a5f73449f6a8ea83f3d09716c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bdeeda868d5d946bead9dec0f49280ea, type: 3}
     - target: {fileID: 1694228666889077783, guid: cc0b9a0a5f73449f6a8ea83f3d09716c, type: 3}
       propertyPath: m_Name
       value: hpBar

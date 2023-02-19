@@ -7,6 +7,8 @@ public class WaveInfo : MonoBehaviour
     public TextMesh Text;
     public SpawnEnemy waveStats;
 
+    public string cdtext;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +19,17 @@ public class WaveInfo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Text.text = "Current wave: " + waveStats.currentWave + "\nNext wave in ...";
+        if (waveStats.countDown == 0)
+        {
+            cdtext = "...";
+        }
+        else
+        {
+            cdtext = waveStats.countDown.ToString();
+        }
+        Text.text = "Current wave: " + waveStats.currentWave + "\nNext wave in: " + cdtext;
+
         Text.fontSize = 20;
     }
+
 }
