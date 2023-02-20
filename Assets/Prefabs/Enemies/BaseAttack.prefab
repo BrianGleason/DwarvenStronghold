@@ -80,8 +80,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -614235828, guid: 5276d85cc4c044fe7a06aee54ec05650, type: 3}
-  m_Color: {r: 1, g: 0.5990566, b: 0.5990566, a: 1}
+  m_Sprite: {fileID: 499126908, guid: ca818ad3f541b419eb97ac4229bfbc10, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
@@ -129,7 +129,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.65, y: 0.8}
+    oldSize: {x: 0.55, y: 0.9}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -169,6 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movespeed: 0.25
   range: 2.2
+  attackOffset: 0.01
   meleeAttackPrefab: {fileID: 2792615685811339556, guid: 123e18ef672842242ad792df34e876b7, type: 3}
   attackOffsetScalar: 1.5
   attackSizeScalar: 1
@@ -179,8 +180,10 @@ MonoBehaviour:
   knockback: 1
   stunned: 0
   selfDestruct: 1
+  ranged: 0
   ExplosionPrefab: {fileID: 3028432481471332243, guid: 749d9cdad54e24701b2478aed626dacf, type: 3}
   sprit: {fileID: 0}
+  enemies: []
   animator: {fileID: 0}
 --- !u!95 &5123203149019688535
 Animator:

@@ -1,0 +1,685 @@
+fileFormatVersion: 2
+guid: ca818ad3f541b419eb97ac4229bfbc10
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MiniGhost_scaled_5x_pngcrushed_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 650
+        width: 55
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fdaec5ba07c648ebac5c5a0691ab270
+      internalID: 499126908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGhost_scaled_5x_pngcrushed_1
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 650
+        width: 55
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7992ad84553244deae36cf862c4a9bb
+      internalID: -2131338312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGhost_scaled_5x_pngcrushed_2
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 645
+        width: 55
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ec4cf65128e4c35a2f6a60208604aa
+      internalID: 855205797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGhost_scaled_5x_pngcrushed_3
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 645
+        width: 55
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6405e0279fa8244b4b889144e503f8b2
+      internalID: 184367085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGhost_scaled_5x_pngcrushed_4
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 500
+        width: 55
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf4f8337ca9f440681db439d69920b0
+      internalID: -1259846741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGhost_scaled_5x_pngcrushed_5
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 495
+        width: 55
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4efdfcae90e9464fa9f155c18e15b39
+      internalID: -682587765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGhost_scaled_5x_pngcrushed_6
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 495
+        width: 55
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0627d65722a4995b6a579e4b7845ed
+      internalID: 1891331073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGhost_scaled_5x_pngcrushed_7
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 495
+        width: 55
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8df1840b205450ca4aa80d87594b25
+      internalID: -1241493447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGhost_scaled_5x_pngcrushed_8
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 505
+        width: 55
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8d97f809c244039a2e1425ab1537f1
+      internalID: -1678275752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGhost_scaled_5x_pngcrushed_9
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 505
+        width: 55
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf964a9804f74befa992160d6ae7a9f
+      internalID: -1300484525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGhost_scaled_5x_pngcrushed_10
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 335
+        width: 60
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcbafbe3bdba748d6a68227a642d1b24
+      internalID: 581896314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGhost_scaled_5x_pngcrushed_11
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 335
+        width: 65
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d81e60d78d8243b488413ac0267f70b
+      internalID: 1367950893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGhost_scaled_5x_pngcrushed_12
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 330
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 914b366a67ab74034a3bb99bb935432c
+      internalID: 635346572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGhost_scaled_5x_pngcrushed_13
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 330
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de55b8a3bce034b118b1f2b091dc6b22
+      internalID: -183983226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGhost_scaled_5x_pngcrushed_14
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 340
+        width: 70
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc9248987588466fac97f13b4fd9778
+      internalID: -260138167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGhost_scaled_5x_pngcrushed_15
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 335
+        width: 55
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1432a1989944668af8c3397ff6c551
+      internalID: 398801019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGhost_scaled_5x_pngcrushed_16
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 330
+        width: 50
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8677165ef0c6b4540a948f57682d4999
+      internalID: -394293639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGhost_scaled_5x_pngcrushed_17
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 330
+        width: 55
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d711545cdd4c1415ab7182cd54c0ae38
+      internalID: 2033521523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGhost_scaled_5x_pngcrushed_18
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 180
+        width: 75
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5749d1b0891a04dfd81bddc9c5e8018c
+      internalID: 1091113124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGhost_scaled_5x_pngcrushed_19
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 175
+        width: 65
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd2f597821ddb4a1eb381d15a6106144
+      internalID: -1098487359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGhost_scaled_5x_pngcrushed_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 10
+        width: 55
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e82fcdde16f4c89bb8d770c115ebda
+      internalID: 372553925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGhost_scaled_5x_pngcrushed_21
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 10
+        width: 65
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995f91a57ef2c461888b76d1d1767a6a
+      internalID: 2050913047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGhost_scaled_5x_pngcrushed_22
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 5
+        width: 85
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8dd06f90965143529323a24a7f2e29b
+      internalID: -583738036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGhost_scaled_5x_pngcrushed_23
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 5
+        width: 85
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07693db173fc49caa499eab3d0cf253
+      internalID: -2025228657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGhost_scaled_5x_pngcrushed_24
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 5
+        width: 95
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd49c38ab5350465a9c84997f976e11e
+      internalID: -1087782974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      MiniGhost_scaled_5x_pngcrushed_8: -1678275752
+      MiniGhost_scaled_5x_pngcrushed_14: -260138167
+      MiniGhost_scaled_5x_pngcrushed_18: 1091113124
+      MiniGhost_scaled_5x_pngcrushed_23: -2025228657
+      MiniGhost_scaled_5x_pngcrushed_10: 581896314
+      MiniGhost_scaled_5x_pngcrushed_19: -1098487359
+      MiniGhost_scaled_5x_pngcrushed_11: 1367950893
+      MiniGhost_scaled_5x_pngcrushed_7: -1241493447
+      MiniGhost_scaled_5x_pngcrushed_5: -682587765
+      MiniGhost_scaled_5x_pngcrushed_3: 184367085
+      MiniGhost_scaled_5x_pngcrushed_17: 2033521523
+      MiniGhost_scaled_5x_pngcrushed_15: 398801019
+      MiniGhost_scaled_5x_pngcrushed_22: -583738036
+      MiniGhost_scaled_5x_pngcrushed_2: 855205797
+      MiniGhost_scaled_5x_pngcrushed_0: 499126908
+      MiniGhost_scaled_5x_pngcrushed_9: -1300484525
+      MiniGhost_scaled_5x_pngcrushed_24: -1087782974
+      MiniGhost_scaled_5x_pngcrushed_20: 372553925
+      MiniGhost_scaled_5x_pngcrushed_13: -183983226
+      MiniGhost_scaled_5x_pngcrushed_1: -2131338312
+      MiniGhost_scaled_5x_pngcrushed_16: -394293639
+      MiniGhost_scaled_5x_pngcrushed_4: -1259846741
+      MiniGhost_scaled_5x_pngcrushed_12: 635346572
+      MiniGhost_scaled_5x_pngcrushed_6: 1891331073
+      MiniGhost_scaled_5x_pngcrushed_21: 2050913047
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
