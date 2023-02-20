@@ -11,7 +11,7 @@ public class SystemControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gold = 100;
+        gold = 0;
     }
 
     private void Awake()
@@ -30,22 +30,17 @@ public class SystemControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Force reset
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
-
         // Pause/Resume
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (Time.timeScale == 0f)
+            if (Time.timeScale == 0f) //continue
             {
                 Time.timeScale = 1f;
             }
-            else
+            else //pause
             {
                 Time.timeScale = 0f;
+
             }
         }
 
