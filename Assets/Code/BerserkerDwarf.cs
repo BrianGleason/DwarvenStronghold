@@ -8,8 +8,8 @@ public class BerserkerDwarf : MonoBehaviour
     int speed = 1;
     public float attackOffset = 0.01f;
     public float dashCooldownDuration = 2f;
-    public float dashDuration = 0.5f;
-    public float dashChannelDuration = 0.5f;
+    public float dashDuration = 0.01f;
+    public float dashChannelDuration = 0.75f;
     public bool isDashing = false;
     public float dashSpeed = 50f;
     public int dashDamage = 20;
@@ -23,12 +23,12 @@ public class BerserkerDwarf : MonoBehaviour
     public EnemyMovement[] enemies;
     public GameObject meleeAttack;
 
-    //public Animator animator;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
-        //animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         StartCoroutine(dashCooldown());
     }
 
@@ -59,19 +59,19 @@ public class BerserkerDwarf : MonoBehaviour
         if (!enemyWithinAttackRange)
         {
             Move();
-            //animator.SetBool("moving", true);
+            animator.SetBool("isMoving", true);
         }
         else if (!dashOnCooldown)
         {
             Dash();
-            isDashing = true;
             dashEndLocation = this.transform.position + ((closestEnemyTransform.position - this.transform.position).normalized * 3);
             StartCoroutine(dashCooldown());
-            //animator.SetBool("moving", false);
+            animator.SetBool("isMoving", false);
+
         }
         else
         {
-            //animator.SetBool("moving", false);
+            animator.SetBool("isMoving", false);
         }
         
     }
@@ -127,7 +127,6 @@ public class BerserkerDwarf : MonoBehaviour
 
     private void Dash()
     {
-       // animator.SetTrigger("Heal");
         dashOnCooldown = true;
         StartCoroutine(dash());
     }
@@ -135,7 +134,10 @@ public class BerserkerDwarf : MonoBehaviour
     IEnumerator dash()
     {
         yield return new WaitForSeconds(dashChannelDuration);
+        isDashing = true;
+        animator.SetBool("dashTrigger", true);
         yield return new WaitForSeconds(dashDuration);
+        animator.SetBool("dashTrigger", false);
         isDashing = false;
     }
 

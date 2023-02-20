@@ -486,7 +486,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142151591}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.54, y: 0.14, z: 0}
+  m_LocalPosition: {x: 3.05, y: 2.42, z: 0}
   m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6532,8 +6532,9 @@ GameObject:
   - component: {fileID: 922344276}
   - component: {fileID: 922344275}
   - component: {fileID: 922344274}
+  - component: {fileID: 922344280}
   m_Layer: 0
-  m_Name: DwarfBerserkerSpriteSheet_13
+  m_Name: BerserkerDwarf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6560,6 +6561,7 @@ MonoBehaviour:
   dashDamage: 20
   enemies: []
   meleeAttack: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!114 &922344275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6691,6 +6693,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &922344280
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922344273}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4f1a1e30a57c58b46b4c7424c4641c58, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1001 &945247730
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7292,7 +7314,7 @@ PrefabInstance:
     - target: {fileID: 8417912805464656322, guid: 45fdf1bf80cf546bf95cf64726b24073, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 793828b9fee207847907b00245c9e573, type: 2}
+      objectReference: {fileID: 2100000, guid: a48ce9912b61e744a9e86302d4a82a51, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45fdf1bf80cf546bf95cf64726b24073, type: 3}
 --- !u!1 &1552260788
@@ -7837,6 +7859,7 @@ MonoBehaviour:
   - {fileID: 5599322260865315968, guid: bc9782a98b6444f54a0f5aa7b3bd8e23, type: 3}
   - {fileID: 7249741737546345011, guid: 176ca6077d0ec40c4bc9b89805343788, type: 3}
   currentWave: 0
+  countDown: 0
 --- !u!1 &1981805929
 GameObject:
   m_ObjectHideFlags: 0
