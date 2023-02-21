@@ -653,8 +653,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 356049526148067185, guid: 822aa4cb08db56946a897698f817a994, type: 3}
       propertyPath: m_Text
-      value: "How to play:\n  Movement - WASD\n  Attack - Left click\n  Select Ally
-        - 1/2/3\n  Place Ally - Right click"
+      value: 'How to play:
+
+        Movement - WASD
+
+        Attack - Left click
+
+        Select
+        Ally - 1/2/3
+
+        Place Ally - Right click
+
+        Pause - Esc'
       objectReference: {fileID: 0}
     - target: {fileID: 356049526148067185, guid: 822aa4cb08db56946a897698f817a994, type: 3}
       propertyPath: m_Anchor
@@ -663,6 +673,14 @@ PrefabInstance:
     - target: {fileID: 356049526148067185, guid: 822aa4cb08db56946a897698f817a994, type: 3}
       propertyPath: m_FontSize
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 356049526148067185, guid: 822aa4cb08db56946a897698f817a994, type: 3}
+      propertyPath: m_Alignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 356049526148067185, guid: 822aa4cb08db56946a897698f817a994, type: 3}
+      propertyPath: m_LineSpacing
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 800238655446659960, guid: 822aa4cb08db56946a897698f817a994, type: 3}
       propertyPath: m_Pivot.x
@@ -730,7 +748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 800238655446659960, guid: 822aa4cb08db56946a897698f817a994, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 5.63
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 800238655446659960, guid: 822aa4cb08db56946a897698f817a994, type: 3}
       propertyPath: m_AnchoredPosition.y

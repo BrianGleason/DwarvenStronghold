@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 6d4e1ef0c1211419099b0ad455ab0bf7
+  - enabled: 1
+    path: Assets/Scenes/Jason Demo.unity
+    guid: 9a507ab336f3b6349b62765c1b389038
   m_configObjects: {}

@@ -26,7 +26,7 @@ public class SpawnEnemy : MonoBehaviour
 
     private Vector2 spawnPos()
     {
-        return new Vector2(11f, Random.Range(-4f, 4f));
+        return new Vector2(9.3f, Random.Range(-4f, 4f));
     }
 
     private void SpawnEnemyOfType(int enemyType, int amount)
@@ -44,7 +44,9 @@ public class SpawnEnemy : MonoBehaviour
         SpawnEnemyOfType(0, 4);
         yield return new WaitForSeconds(10);
         SpawnEnemyOfType(0, 4);
+        SpawnEnemyOfType(2, 1);
         yield return new WaitForSeconds(10);
+
 
         while (FindObjectsOfType<EnemyMovement>().Length > 0)
         {
@@ -66,12 +68,15 @@ public class SpawnEnemy : MonoBehaviour
         currentWave = 2;
 
         SpawnEnemyOfType(0, 3);
+        SpawnEnemyOfType(2, 2);
         yield return new WaitForSeconds(10);
         SpawnEnemyOfType(0, 5);
         SpawnEnemyOfType(1, 1);
+        SpawnEnemyOfType(2, 4);
         yield return new WaitForSeconds(10);
         SpawnEnemyOfType(0, 7);
         SpawnEnemyOfType(1, 2);
+        SpawnEnemyOfType(2, 4);
         yield return new WaitForSeconds(10);
 
         while (FindObjectsOfType<EnemyMovement>().Length > 0)
@@ -95,15 +100,19 @@ public class SpawnEnemy : MonoBehaviour
         // SPAWN HERE
         // 20 basic enemies 5 + 6 + 9
         // 6 base enemies 1 + 2 + 3
-        // ? dash enemies
+        // 9 archers 3 + 3 + 3
+        // DASH ENEMIES
         SpawnEnemyOfType(0, 5);
         SpawnEnemyOfType(1, 1);
+        SpawnEnemyOfType(2, 3);
         yield return new WaitForSeconds(10);
         SpawnEnemyOfType(0, 6);
         SpawnEnemyOfType(1, 2);
+        SpawnEnemyOfType(2, 3);
         yield return new WaitForSeconds(10);
         SpawnEnemyOfType(0, 9);
         SpawnEnemyOfType(1, 3);
+        SpawnEnemyOfType(2, 3);
         yield return new WaitForSeconds(10);
 
 

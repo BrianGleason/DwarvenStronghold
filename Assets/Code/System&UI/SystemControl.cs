@@ -11,7 +11,7 @@ public class SystemControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gold = 0;
+        gold = 10;
     }
 
     private void Awake()
@@ -30,24 +30,7 @@ public class SystemControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Pause/Resume
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (Time.timeScale == 0f) //continue
-            {
-                Time.timeScale = 1f;
-            }
-            else //pause
-            {
-                Time.timeScale = 0f;
 
-            }
-        }
-
-        //Enemy spawning
-
-
-        //Ally spawning
     }
 
     public void AddGold(int gain)
