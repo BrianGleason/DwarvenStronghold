@@ -17,8 +17,8 @@ public class StatsUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Text.text = "Gold: $" + SystemControl.instance.gold.ToString()
-            + "\nBase HP: " + Base.GetComponent<Health>().hpPercent()*100 + "%";
-        Text.fontSize = 20;
+        Text.text = "Gold: $" + SystemControl.instance.gold.ToString();
+        Text.fontSize = 30;
+        Text.color = Color.yellow;
     }
 }

@@ -169,7 +169,7 @@ MonoBehaviour:
   cam: {fileID: 0}
   meleeAttackPrefab: {fileID: 2792615685811339556, guid: 123e18ef672842242ad792df34e876b7, type: 3}
   animator: {fileID: 0}
-  healthbar: {fileID: 1694228666889077781, guid: f5110352a5417497fb10177e626f8471, type: 3}
+  healthbar: {fileID: 3396411229958165601}
 --- !u!61 &6866614492092269215
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -257,6 +257,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1694228666889077780, guid: f5110352a5417497fb10177e626f8471, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694228666889077780, guid: f5110352a5417497fb10177e626f8471, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -305,5 +309,10 @@ PrefabInstance:
 --- !u!4 &3396411229958165600 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1694228666889077780, guid: f5110352a5417497fb10177e626f8471, type: 3}
+  m_PrefabInstance: {fileID: 4080650471444369524}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &3396411229958165601 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1694228666889077781, guid: f5110352a5417497fb10177e626f8471, type: 3}
   m_PrefabInstance: {fileID: 4080650471444369524}
   m_PrefabAsset: {fileID: 0}

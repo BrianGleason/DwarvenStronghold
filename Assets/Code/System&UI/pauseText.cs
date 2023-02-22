@@ -19,7 +19,7 @@ public class pauseText : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (Time.timeScale == 0f)
+            if (Time.timeScale == 1f)
             {
                 Text.text = "";
             }
