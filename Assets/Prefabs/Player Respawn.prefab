@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8839783060475464034}
   - component: {fileID: 8839783060475464035}
   m_Layer: 8
-  m_Name: Player 1
+  m_Name: Player Respawn
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -262,11 +262,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1694228666889077780, guid: cc0b9a0a5f73449f6a8ea83f3d09716c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.012021542
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1694228666889077780, guid: cc0b9a0a5f73449f6a8ea83f3d09716c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.54968107
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1694228666889077780, guid: cc0b9a0a5f73449f6a8ea83f3d09716c, type: 3}
       propertyPath: m_LocalPosition.z
