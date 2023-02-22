@@ -64,6 +64,17 @@ public class Dwarf : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(this.transform.position, closestEnemy.position, speed * Time.deltaTime);
         }
+
+        if (transform.position.x >= 1)
+        {
+            transform.position = Vector2.MoveTowards(this.transform.position, this.transform.position + Vector3.left * 2, speed * Time.deltaTime);
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+        else
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+
     }
 
     private void Attack()
@@ -83,7 +94,7 @@ public class Dwarf : MonoBehaviour
     {
         enemies = FindObjectsOfType<EnemyMovement>();
         Transform closest = null;
-        float closestDistance = Mathf.Infinity;
+        float closestDistance = 5f;
         foreach (EnemyMovement enemy in enemies)
         {
             float distance = Vector2.Distance(transform.position, enemy.transform.position);
