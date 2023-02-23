@@ -12,16 +12,20 @@ public class HealthBar : MonoBehaviour
     void Start()
     {
         healthScript = GetComponent<Health>();
+        if (!isBase)
+        {
+            healthBar.color = new Color(healthBar.color.r, healthBar.color.g, healthBar.color.b, 0.6f);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        healthBar.transform.position = transform.position + Vector3.up * 2 / 3;
+        //healthBar.transform.position = transform.position + Vector3.up * 2 / 3;
         healthBar.transform.localScale = new Vector3(0.06f * healthScript.hpPercent(), 0.1f, 1);
         if (isBase)
         {
-            healthBar.transform.position = transform.position + Vector3.up * 2 + Vector3.right * 0.5f;
+            healthBar.transform.position = transform.position + Vector3.up * 2f + Vector3.right * 0.5f;
             healthBar.transform.localScale = new Vector3(0.2f * healthScript.hpPercent(), 0.3f, 1);
         }
     }

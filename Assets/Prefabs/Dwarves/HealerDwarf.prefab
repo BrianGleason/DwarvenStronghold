@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7193202349218044}
   - component: {fileID: 7193202349218047}
   - component: {fileID: -935871546261903914}
+  - component: {fileID: 7079278923456573585}
   m_Layer: 8
   m_Name: HealerDwarf
   m_TagString: Untagged
@@ -206,6 +207,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73b76e66487664013b56ae3c99b60a10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7079278923456573585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7193202349218039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7459d8bd2d6934195b056df8c275eea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 1239012170500985885}
+  isBase: 0
 --- !u!1001 &482660307860049928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -270,5 +285,10 @@ PrefabInstance:
 --- !u!4 &1239012170500985884 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1694228666889077780, guid: f5110352a5417497fb10177e626f8471, type: 3}
+  m_PrefabInstance: {fileID: 482660307860049928}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1239012170500985885 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1694228666889077781, guid: f5110352a5417497fb10177e626f8471, type: 3}
   m_PrefabInstance: {fileID: 482660307860049928}
   m_PrefabAsset: {fileID: 0}

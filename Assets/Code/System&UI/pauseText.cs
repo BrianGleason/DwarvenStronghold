@@ -25,7 +25,8 @@ public class pauseText : MonoBehaviour
             }
             else
             {
-                Text.text = "The game is paused. Press esc to continue.";
+                Text.text = "The game is paused. Press esc to continue.\n" +
+                    "Press R to return to home screen.";
                 Text.fontSize = 20;
             }
         }

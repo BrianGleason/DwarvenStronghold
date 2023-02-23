@@ -43,7 +43,7 @@ public class Dwarf : MonoBehaviour
             enemyClose = false;
         }
 
-        animator.SetBool("Moving", !enemyClose);
+        animator.SetBool("Moving", !enemyClose && closestEnemy != null);
 
         if (!enemyClose) {
             Move();
@@ -65,7 +65,7 @@ public class Dwarf : MonoBehaviour
             transform.position = Vector2.MoveTowards(this.transform.position, closestEnemy.position, speed * Time.deltaTime);
         }
 
-        if (transform.position.x >= 1)
+        if (transform.position.x >= -1)
         {
             transform.position = Vector2.MoveTowards(this.transform.position, this.transform.position + Vector3.left * 2, speed * Time.deltaTime);
             transform.localScale = new Vector3(-1, 1, 1);

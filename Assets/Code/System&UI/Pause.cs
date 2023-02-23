@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Pause : MonoBehaviour
@@ -29,6 +30,12 @@ public class Pause : MonoBehaviour
                 panel.enabled = true;
                 Time.timeScale = 0f;
             }
+        }
+
+        if (Time.timeScale == 0f && Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene("Menu");
+            Time.timeScale = 1f;
         }
     }
 }
