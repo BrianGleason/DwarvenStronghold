@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Health : MonoBehaviour
 {
@@ -55,9 +56,15 @@ public class Health : MonoBehaviour
             deathText = Instantiate(deathTextPrefab, enemyScript.transform.position, Quaternion.identity);
             TextMesh txt = deathText.transform.GetComponent<TextMesh>();
             txt.fontSize = 18;
-            txt.text = "+$1";
+            System.Random rand = new System.Random();
+            int goldDrop = rand.Next(8, 15);
+            if (enemyScript.ExplosionPrefab != null)
+            {
+                goldDrop += goldDrop;
+            }
+            txt.text = "+$" + goldDrop.ToString();
             Destroy(deathText, 1f);
-            SystemControl.instance.AddGold(1);
+            SystemControl.instance.AddGold(goldDrop);
         }
     }
 

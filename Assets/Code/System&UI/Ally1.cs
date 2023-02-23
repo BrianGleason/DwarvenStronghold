@@ -17,7 +17,12 @@ public class Ally1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Text.text = "Ranged Dwarf\nCost: $2";
+        int cost = 10 + 5 * (FindObjectsOfType<Dwarf>().Length + FindObjectsOfType<HealerDwarf>().Length + FindObjectsOfType<BerserkerDwarf>().Length);
+        if (FindObjectOfType<AllyPlacement>().previewing)
+        {
+            cost -= 5;
+        }
+        Text.text = "Ranged (1)\nCost: $" + cost.ToString();
         Text.fontSize = 20;
     }
 }

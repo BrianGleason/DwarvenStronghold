@@ -14,6 +14,7 @@ public class AllyPlacement : MonoBehaviour
     private Camera mainCamera;
 
     private int selectedPrefabIndex = -1;
+    public bool previewing;
 
     public float[] cooldowns = new float[3];
 
@@ -60,17 +61,22 @@ public class AllyPlacement : MonoBehaviour
 
         if (selectedPrefabIndex == -1)
         {
+            previewing = false;
             return;
+        }
+        else
+        {
+            previewing = true;
         }
 
         if (Input.GetMouseButtonDown(1) && selectedPrefabIndex != -1)
         {
-            if (SystemControl.instance.gold >= (2 + selectedPrefabIndex) && cooldowns[selectedPrefabIndex] <= 0)
+            if (SystemControl.instance.gold >= (20 + 10 * selectedPrefabIndex) && cooldowns[selectedPrefabIndex] <= 0)
             {
                 Instantiate(prefabs[selectedPrefabIndex], previewObject.transform.position, previewObject.transform.rotation);
                 Destroy(previewObject);
-
-                SystemControl.instance.UseGold(2 + selectedPrefabIndex);
+                int allies = FindObjectsOfType<Dwarf>().Length + FindObjectsOfType<HealerDwarf>().Length + FindObjectsOfType<BerserkerDwarf>().Length;
+                SystemControl.instance.UseGold(10 + 10 * selectedPrefabIndex + allies * 5);
                 cooldowns[selectedPrefabIndex] = 0.5f;
                 selectedPrefabIndex = -1;
             }
