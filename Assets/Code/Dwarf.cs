@@ -5,9 +5,8 @@ using UnityEngine;
 public class Dwarf : MonoBehaviour
 {
     bool enemyClose;
-    int hitpoint;
-    int atk;
     int speed = 1;
+    private float pos;
     public float attackOffset = 0.01f;
     public float attackCooldownDuration = 2f;
     RangedProjectile rangedProjectileScript;
@@ -16,6 +15,8 @@ public class Dwarf : MonoBehaviour
     private bool attackOnCooldown = true;
 
     public EnemyMovement[] enemies;
+    public SpawnEnemy waveStats;
+    
 
     public Animator animator;
 
@@ -27,6 +28,7 @@ public class Dwarf : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         StartCoroutine(attackCooldown());
 
+        waveStats = FindObjectOfType<SpawnEnemy>();
         animator = GetComponent<Animator>();
     }
 
@@ -55,7 +57,6 @@ public class Dwarf : MonoBehaviour
             }
         }
 
-
     }
 
     private void Move()
@@ -63,18 +64,35 @@ public class Dwarf : MonoBehaviour
         if (closestEnemy != null)
         {
             transform.position = Vector2.MoveTowards(this.transform.position, closestEnemy.position, speed * Time.deltaTime);
+            if (this.transform.position.x > closestEnemy.position.x)
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
+            else
+            {
+                transform.localScale = new Vector3(1, 1, 1);
+            }
         }
 
-        if (transform.position.x >= -1)
-        {
-            transform.position = Vector2.MoveTowards(this.transform.position, this.transform.position + Vector3.left * 2, speed * Time.deltaTime);
-            transform.localScale = new Vector3(-1, 1, 1);
-        }
-        else
-        {
-            transform.localScale = new Vector3(1, 1, 1);
-        }
+        // MOVING BACK
+        //else
+        //{
+        //    System.Random rand = new System.Random();
+        //    pos = (float)(rand.NextDouble() * 2 - 3);
 
+        //    if (this.transform.position.x > pos)
+        //    {
+        //        this.transform.position = Vector2.MoveTowards(this.transform.position,
+        //                                                    new Vector2(pos, this.transform.position.y + rand.Next(-1, 1)),
+        //                                                    Time.deltaTime);
+        //        this.transform.localScale = new Vector3(-1, 1, 1);
+        //    }
+        //    else
+        //    {
+        //        this.transform.localScale = new Vector3(1, 1, 1);
+        //    }
+        //    Debug.Log(pos);
+        //}
     }
 
     private void Attack()
@@ -94,7 +112,7 @@ public class Dwarf : MonoBehaviour
     {
         enemies = FindObjectsOfType<EnemyMovement>();
         Transform closest = null;
-        float closestDistance = 5f;
+        float closestDistance = Mathf.Infinity;
         foreach (EnemyMovement enemy in enemies)
         {
             float distance = Vector2.Distance(transform.position, enemy.transform.position);

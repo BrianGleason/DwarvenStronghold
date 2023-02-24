@@ -10,6 +10,7 @@ public class SpawnEnemy : MonoBehaviour
 
     public int currentWave;
     public int countDown;
+    public bool waitingForNext;
 
     // Start is called before the first frame update
     void Start()
@@ -53,6 +54,7 @@ public class SpawnEnemy : MonoBehaviour
             yield return null;
         }
 
+        waitingForNext = true;
         countDown = 30;
         for (int i = 0; i < 30; i++)
         {
@@ -60,6 +62,7 @@ public class SpawnEnemy : MonoBehaviour
             countDown--;
         }
 
+        waitingForNext = false;
         StartCoroutine(WaveTwo());
     }
 
@@ -84,13 +87,15 @@ public class SpawnEnemy : MonoBehaviour
             yield return null;
         }
 
+        waitingForNext = true;
         countDown = 30;
         for (int i = 0; i < 30; i++)
         {
             yield return new WaitForSeconds(1);
             countDown--;
         }
-        
+
+        waitingForNext = false;
         StartCoroutine(WaveThree());
     }
 
@@ -121,6 +126,7 @@ public class SpawnEnemy : MonoBehaviour
             yield return null;
         }
 
+        waitingForNext = true;
         countDown = 30;
         for (int i = 0; i < 30; i++)
         {
@@ -128,6 +134,7 @@ public class SpawnEnemy : MonoBehaviour
             countDown--;
         }
 
+        waitingForNext = false;
         StartCoroutine(Boss());
     }
 

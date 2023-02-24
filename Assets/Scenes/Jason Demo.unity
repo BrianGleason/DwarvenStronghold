@@ -8012,6 +8012,7 @@ MonoBehaviour:
   - {fileID: 7249741737546345011, guid: 176ca6077d0ec40c4bc9b89805343788, type: 3}
   currentWave: 0
   countDown: 0
+  waitingForNext: 0
 --- !u!1001 &1933184430
 PrefabInstance:
   m_ObjectHideFlags: 0

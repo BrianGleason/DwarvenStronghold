@@ -19,7 +19,7 @@ public class WaveInfo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (waveStats.countDown == 0)
+        if (!waveStats.waitingForNext)
         {
             cdtext = "...";
         }
