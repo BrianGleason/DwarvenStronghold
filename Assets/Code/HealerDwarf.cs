@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 
 public class HealerDwarf : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class HealerDwarf : MonoBehaviour
     public int healAmount = 5;
     public GameObject healTextPrefab;
 
+    public Vector2 moveBackSpot;
+
     Transform closestDamagedAlly;
     Health closestDamagedAllyHealthScript;
     float distanceFromClosestDamagedAlly = float.MinValue;
@@ -19,15 +22,18 @@ public class HealerDwarf : MonoBehaviour
     private bool healOnCooldown = true;
 
     public EnemyMovement[] enemies;
-
     public Animator animator;
+    public SpawnEnemy waveStats;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         StartCoroutine(healCooldown());
+        waveStats = FindObjectOfType<SpawnEnemy>();
 
+        System.Random rand = new System.Random();
+        moveBackSpot = new Vector2((float)(rand.NextDouble() * 2 - 5), (float)(rand.NextDouble() * 5 - 2.5f));
     }
 
     // Update is called once per frame
@@ -58,6 +64,19 @@ public class HealerDwarf : MonoBehaviour
             else
             {
                 animator.SetBool("moving", false);
+            }
+        }
+
+        if (waveStats.waitingForNext)
+        {
+            if (this.transform.position.x > moveBackSpot[0])
+            {
+                this.transform.position = Vector2.MoveTowards(this.transform.position, moveBackSpot, Time.deltaTime);
+                this.transform.localScale = new Vector3(-1, 1, 1);
+            }
+            else
+            {
+                this.transform.localScale = new Vector3(1, 1, 1);
             }
         }
     }

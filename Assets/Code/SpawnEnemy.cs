@@ -41,12 +41,12 @@ public class SpawnEnemy : MonoBehaviour
     IEnumerator WaveOne()
     {
         SpawnEnemyOfType(0, 2);
-        yield return new WaitForSeconds(10);
-        SpawnEnemyOfType(0, 4);
-        yield return new WaitForSeconds(10);
-        SpawnEnemyOfType(0, 4);
-        SpawnEnemyOfType(2, 1);
-        yield return new WaitForSeconds(10);
+        //yield return new WaitForSeconds(10);
+        //SpawnEnemyOfType(0, 4);
+        //yield return new WaitForSeconds(10);
+        //SpawnEnemyOfType(0, 4);
+        //SpawnEnemyOfType(2, 1);
+        //yield return new WaitForSeconds(10);
 
 
         while (FindObjectsOfType<EnemyMovement>().Length > 0)

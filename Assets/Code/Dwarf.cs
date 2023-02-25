@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Dwarf : MonoBehaviour
 {
-    bool enemyClose;
-    int speed = 1;
-    private float pos;
+    public float range;
+    public Vector2 moveBackSpot;
+    public bool enemyClose;
     public float attackOffset = 0.01f;
     public float attackCooldownDuration = 2f;
     RangedProjectile rangedProjectileScript;
@@ -17,7 +17,6 @@ public class Dwarf : MonoBehaviour
     public EnemyMovement[] enemies;
     public SpawnEnemy waveStats;
     
-
     public Animator animator;
 
     // Start is called before the first frame update
@@ -30,13 +29,17 @@ public class Dwarf : MonoBehaviour
 
         waveStats = FindObjectOfType<SpawnEnemy>();
         animator = GetComponent<Animator>();
+
+        System.Random rand = new System.Random();
+        range = (float)(rand.NextDouble() * 4 + 6);
+        moveBackSpot = new Vector2((float)(rand.NextDouble() * 3 - 4), (float)(rand.NextDouble() * 5 - 2.5f));
     }
 
     // Update is called once per frame
     void Update()
     {
         closestEnemy = FindClosestEnemy().Item1;
-        if (FindClosestEnemy().Item2 < 3)
+        if (FindClosestEnemy().Item2 < range)
         {
             enemyClose = true;
         }
@@ -63,7 +66,7 @@ public class Dwarf : MonoBehaviour
     {
         if (closestEnemy != null)
         {
-            transform.position = Vector2.MoveTowards(this.transform.position, closestEnemy.position, speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(this.transform.position, closestEnemy.position, Time.deltaTime);
             if (this.transform.position.x > closestEnemy.position.x)
             {
                 transform.localScale = new Vector3(-1, 1, 1);
@@ -74,25 +77,18 @@ public class Dwarf : MonoBehaviour
             }
         }
 
-        // MOVING BACK
-        //else
-        //{
-        //    System.Random rand = new System.Random();
-        //    pos = (float)(rand.NextDouble() * 2 - 3);
-
-        //    if (this.transform.position.x > pos)
-        //    {
-        //        this.transform.position = Vector2.MoveTowards(this.transform.position,
-        //                                                    new Vector2(pos, this.transform.position.y + rand.Next(-1, 1)),
-        //                                                    Time.deltaTime);
-        //        this.transform.localScale = new Vector3(-1, 1, 1);
-        //    }
-        //    else
-        //    {
-        //        this.transform.localScale = new Vector3(1, 1, 1);
-        //    }
-        //    Debug.Log(pos);
-        //}
+        else
+        {
+            if (this.transform.position.x > moveBackSpot[0])
+            {
+                this.transform.position = Vector2.MoveTowards(this.transform.position, moveBackSpot, Time.deltaTime);
+                this.transform.localScale = new Vector3(-1, 1, 1);
+            }
+            else
+            {
+                this.transform.localScale = new Vector3(1, 1, 1);
+            }
+        }
     }
 
     private void Attack()

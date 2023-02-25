@@ -41,15 +41,12 @@ public class EnemyMovement : MonoBehaviour
         rangedProjectileScript = GetComponent<RangedProjectile>();
         SecondaryProjectile = GetComponent<SecondaryRanged>();
         animator = GetComponent<Animator>();
-
-
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        
     }
 
     private void FixedUpdate()
@@ -106,7 +103,6 @@ public class EnemyMovement : MonoBehaviour
                     {
                         Debug.Log("Primary");
                         StartCoroutine(fire());
-                        
                     }
                     else
                     {
@@ -145,8 +141,6 @@ public class EnemyMovement : MonoBehaviour
 
     void OnAttack()
     {
-        
-        
         Vector2 targ = new Vector2(target.transform.position.x, target.transform.position.y);
         Vector2 selfToMouseVector = targ - rb.position;
         float selfToMouseAngle = Mathf.Atan2(selfToMouseVector.y, selfToMouseVector.x) * Mathf.Rad2Deg;
@@ -155,7 +149,6 @@ public class EnemyMovement : MonoBehaviour
         Vector2 attackOffset = selfToMouseVector.normalized * attackOffsetScalar;
         Vector3 attackOffsetV3 = attackOffset;
 
-        
         //StartCoroutine(attackdelay());
         instantiateAttack(meleeAttackPrefab, rb.transform.position + attackOffsetV3, selfToMouseRotation);
         
@@ -224,6 +217,4 @@ public class EnemyMovement : MonoBehaviour
         }
         return (closest, closestDistance);
     }
-
-
 }
