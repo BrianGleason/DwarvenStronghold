@@ -26,7 +26,7 @@ public class RangedAttackDecay : MonoBehaviour
         Health target = col.GetComponent<Health>();
         if (target != null)
         {
-            target.TakeDamage(5, attackOrigin);
+            target.TakeDamage(damage, attackOrigin);
         }
         Destroy(gameObject);
     }

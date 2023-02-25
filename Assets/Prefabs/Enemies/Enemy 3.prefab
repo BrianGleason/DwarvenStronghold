@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 6972662027549290532}
   - component: {fileID: 1701503814569461865}
   - component: {fileID: -6816181609642625578}
+  - component: {fileID: -2101240965254300426}
   m_Layer: 7
   m_Name: Enemy 3
   m_TagString: Untagged
@@ -169,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movespeed: 0.5
-  range: 3
+  range: 7
   attackOffset: 1
   meleeAttackPrefab: {fileID: 7645936307827756496, guid: 466b6e0e508fe2f469c32b7df3d0f5a7, type: 3}
   attackOffsetScalar: 1.5
@@ -233,6 +234,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &-2101240965254300426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7249741737546345011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c9dfce0b74e4f5b88856581a12e65c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackPrefab: {fileID: 7182145945710653785, guid: 879358c370aaa4ca782571d79f45dbb6, type: 3}
 --- !u!1001 &4101655195714525342
 PrefabInstance:
   m_ObjectHideFlags: 0

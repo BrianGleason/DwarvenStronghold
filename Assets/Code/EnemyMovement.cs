@@ -12,6 +12,7 @@ public class EnemyMovement : MonoBehaviour
     Transform target;
     Vector2 direction;
     RangedProjectile rangedProjectileScript;
+    SecondaryRanged SecondaryProjectile;
     public float attackOffset = 1f;
     public GameObject meleeAttackPrefab;
     private bool isAttacking = false;
@@ -38,6 +39,7 @@ public class EnemyMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sprit = GetComponent<SpriteRenderer>();
         rangedProjectileScript = GetComponent<RangedProjectile>();
+        SecondaryProjectile = GetComponent<SecondaryRanged>();
         animator = GetComponent<Animator>();
 
 
@@ -97,8 +99,21 @@ public class EnemyMovement : MonoBehaviour
                     StartCoroutine(BlowUp());
                 }
                 else if(ranged == true){
+
+                    Debug.Log(distance);
+
+                    if (distance > 1.5f)
+                    {
+                        Debug.Log("Primary");
+                        StartCoroutine(fire());
+                        
+                    }
+                    else
+                    {
+                        Debug.Log("Secondary");
+                        StartCoroutine(fire2());
+                    }
                     
-                    StartCoroutine(fire());
                     animator.SetTrigger("Attack");
                     isAttacking = true;
                     StartCoroutine(attackCooldown());
@@ -115,7 +130,17 @@ public class EnemyMovement : MonoBehaviour
     IEnumerator fire()
     {
         yield return new WaitForSeconds(0.3f);
+
         rangedProjectileScript.Fire(this.transform.position, target.position, attackOffset);
+               
+    }
+
+    IEnumerator fire2()
+    {
+        yield return new WaitForSeconds(0.3f);
+
+        SecondaryProjectile.Fire(this.transform.position, target.position, attackOffset);
+
     }
 
     void OnAttack()
