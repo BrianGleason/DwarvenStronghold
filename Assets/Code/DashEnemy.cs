@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BerserkerDwarf : MonoBehaviour
+public class DashEnemy : MonoBehaviour
 {
     bool enemyWithinAttackRange = false;
     int speed = 1;
     public float attackOffset = 0.01f;
     public float dashCooldownDuration = 2f;
-    public float dashDuration = 3.0f;
+    public float dashDuration = 0.02f;
     public float dashChannelDuration = 0.75f;
     public bool isDashing = false;
-    public float dashSpeed = 3f;
+    public float dashSpeed = 100f;
     public int dashDamage = 10;
 
     Transform closestEnemyTransform;
@@ -53,9 +53,9 @@ public class BerserkerDwarf : MonoBehaviour
                 return;
             }
         }
-        
+
         float distanceFromClosestEnemy = Vector2.Distance(transform.position, closestEnemyTransform.position);
-        enemyWithinAttackRange = distanceFromClosestEnemy < 2;
+        enemyWithinAttackRange = distanceFromClosestEnemy < 5;
         if (!enemyWithinAttackRange)
         {
             Move();
@@ -73,7 +73,7 @@ public class BerserkerDwarf : MonoBehaviour
         {
             animator.SetBool("isMoving", false);
         }
-        
+
     }
 
     private void Move()
@@ -87,7 +87,7 @@ public class BerserkerDwarf : MonoBehaviour
     private void FindClosestEnemy()
     {
         var gameObjectArray = FindObjectsOfType<GameObject>();
-        int enemyLayer = LayerMask.NameToLayer("Enemy");
+        int enemyLayer = LayerMask.NameToLayer("Ally");
         float minDistance = float.MaxValue;
         Transform maxClosestEnemyTransform = null;
         Health healthScript = null;
