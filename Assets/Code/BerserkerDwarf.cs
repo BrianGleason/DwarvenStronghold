@@ -14,6 +14,8 @@ public class BerserkerDwarf : MonoBehaviour
     public float dashSpeed = 3f;
     public int dashDamage = 10;
 
+    public Vector2 moveBackSpot;
+
     Transform closestEnemyTransform;
     Vector3 dashEndLocation;
     Health closestEnemyHealthScript;
@@ -22,6 +24,7 @@ public class BerserkerDwarf : MonoBehaviour
 
     public EnemyMovement[] enemies;
     public GameObject meleeAttack;
+    public SpawnEnemy waveStats;
 
     public Animator animator;
 
@@ -30,11 +33,28 @@ public class BerserkerDwarf : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         StartCoroutine(dashCooldown());
+
+        waveStats = FindObjectOfType<SpawnEnemy>();
+        System.Random rand = new System.Random();
+        moveBackSpot = new Vector2((float)(rand.NextDouble() * 2 - 1.5f), (float)(rand.NextDouble() * 5 - 2.5f));
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (waveStats.waitingForNext)
+        {
+            if (this.transform.position.x > moveBackSpot[0])
+            {
+                this.transform.position = Vector2.MoveTowards(this.transform.position, moveBackSpot, Time.deltaTime);
+                this.transform.localScale = new Vector3(-1, 1, 1);
+            }
+            else
+            {
+                this.transform.localScale = new Vector3(1, 1, 1);
+            }
+        }
+
         if (isDashing)
         {
             transform.position = Vector2.MoveTowards(this.transform.position, dashEndLocation, dashSpeed * Time.deltaTime);
@@ -73,7 +93,6 @@ public class BerserkerDwarf : MonoBehaviour
         {
             animator.SetBool("isMoving", false);
         }
-        
     }
 
     private void Move()
@@ -110,7 +129,6 @@ public class BerserkerDwarf : MonoBehaviour
         }
         closestEnemyTransform = maxClosestEnemyTransform;
         closestEnemyHealthScript = healthScript;
-        Debug.Log("found new enemy transform");
     }
 
     private void OnTriggerEnter2D(Collider2D col)
