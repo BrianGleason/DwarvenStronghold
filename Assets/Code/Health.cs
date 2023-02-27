@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
@@ -12,18 +13,26 @@ public class Health : MonoBehaviour
 
     public GameObject deathTextPrefab;
     public GameObject deathText;
+    public Slider healthBarSlider = null;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         enemyScript = GetComponent<EnemyMovement>();
+        if (healthBarSlider)
+        {
+            healthBarSlider.maxValue = maxHP;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (healthBarSlider)
+        {
+            healthBarSlider.value = health;
+        }
     }
 
     public void TakeDamage(int damage, Vector2 atkOrigin)
