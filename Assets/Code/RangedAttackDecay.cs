@@ -8,6 +8,7 @@ public class RangedAttackDecay : MonoBehaviour
     public float sizeScalar = 1f;
     public int damage = 5;
     public Vector2 attackOrigin;
+    public bool piercing = false;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,10 @@ public class RangedAttackDecay : MonoBehaviour
         {
             target.TakeDamage(damage, attackOrigin);
         }
-        Destroy(gameObject);
+        if (!piercing)
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void InitializeConstants(float newDuration, int newDamage, float newSizeScalar, Vector2 playerPos)

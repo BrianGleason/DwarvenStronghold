@@ -187,3 +187,4 @@ MonoBehaviour:
   sizeScalar: 1
   damage: 5
   attackOrigin: {x: 0, y: 0}
+  piercing: 1
