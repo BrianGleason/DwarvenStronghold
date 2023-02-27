@@ -77,6 +77,10 @@ public class AllyPlacement : MonoBehaviour
                 Instantiate(prefabs[selectedPrefabIndex], previewObject.transform.position, previewObject.transform.rotation);
                 Destroy(previewObject);
                 SystemControl.instance.UseGold(10 * selectedPrefabIndex + allies * 5 + 5);
+                if (selectedPrefabIndex == 2)
+                {
+                    SystemControl.instance.UseGold(50);
+                }
                 cooldowns[selectedPrefabIndex] = 0.5f;
                 selectedPrefabIndex = -1;
             }

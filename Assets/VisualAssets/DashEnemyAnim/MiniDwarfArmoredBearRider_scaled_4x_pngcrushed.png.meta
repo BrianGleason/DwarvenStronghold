@@ -1,0 +1,817 @@
+fileFormatVersion: 2
+guid: 5a1778f2c56b6408797f664a0bf896f5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 772
+        width: 88
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2502d8f9cf4c5409e87b85917f06552b
+      internalID: -738208281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_1
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 772
+        width: 88
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e394c128e3ff142e0badd1c5463fec98
+      internalID: 1375008908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_2
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 772
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d16cd6a74b8244358231cbeec299a6c
+      internalID: 46327595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_3
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 772
+        width: 88
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb25d88470ff84532b98486f83441e50
+      internalID: -896485850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_4
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 644
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8308f739fb3fe47579d6ed1c36423203
+      internalID: -466917025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_5
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 644
+        width: 100
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b4f2219bec243ae91936cac5d5692b
+      internalID: -1861695481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_6
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 652
+        width: 112
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82685ff5682b64d9ea097fe978d66988
+      internalID: 656128063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_7
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 644
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d799b5396a32b43bc8e34338d6e9f02a
+      internalID: 972635550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_8
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 644
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2cf95060d65d47428ebd18a00171e15
+      internalID: 1468511590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_9
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 644
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf2a609c42d1849a9b874e5e941af76d
+      internalID: 1381533300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_10
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 516
+        width: 88
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8dc50868234041b3b0d06358df85f70
+      internalID: 2026652531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_11
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 516
+        width: 96
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 157c5e7668e17401f8eb9d6c26327910
+      internalID: -1979968910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_12
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 516
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00815d31a45b47dab716163e246dc5f
+      internalID: 482260974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_13
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 388
+        width: 88
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c46dc6926944d6a9b6a1586d793905
+      internalID: -1289451194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_14
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 388
+        width: 112
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5cc111993af44f91b577f601fac251d
+      internalID: 1001183531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_15
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 388
+        width: 112
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d678ddb2fecd4c3d82c6b23ff72d36f
+      internalID: -1424188239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_16
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 388
+        width: 88
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b9dd59fc14b740679926540a2383c34
+      internalID: -1882382874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_17
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 388
+        width: 88
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997a7db123f5e48768eece5c54787982
+      internalID: -1574004116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_18
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 260
+        width: 76
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a98da5d9108a4e008042bfed7603a19
+      internalID: -874970509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_19
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 260
+        width: 76
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25cecf904093a48c881b5d8aea8dee31
+      internalID: 711979240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_20
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 260
+        width: 88
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16a44743df814aa4ab99fa3c53c5739
+      internalID: -742281084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_21
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 260
+        width: 80
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3197f98a08a64192a462f16f6f59935
+      internalID: -2048988328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_22
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 268
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dda43084eb044d2ebc24ae11d629db1
+      internalID: -792858460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_23
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 260
+        width: 80
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d00214170de5b4884a5663efeb532805
+      internalID: -1892458317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_24
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 260
+        width: 88
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62cfacbb839cd413296afc2d154a2a84
+      internalID: -596665971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_25
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 132
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d50dbf7dcb6e43499c9294bd7da0976
+      internalID: 1076865793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_26
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 132
+        width: 88
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81090a68ad8bc472e9a2433e741c0f70
+      internalID: -1194021933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_27
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 4
+        width: 88
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c2c3ee177c9474b86d3a173faaf098
+      internalID: 1390641750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_28
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 4
+        width: 92
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1638d78c10e9946ad844113d77fdf829
+      internalID: 1414580426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_29
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 4
+        width: 108
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647ac2d23a18f47dd961ac1ec71b1b4a
+      internalID: 236458552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_30
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 4
+        width: 100
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d3ab681b12f48f985a09e015831ac3
+      internalID: 1566835328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_7: 972635550
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_30: 1566835328
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_1: 1375008908
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_22: -792858460
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_6: 656128063
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_0: -738208281
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_12: 482260974
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_2: 46327595
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_13: -1289451194
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_24: -596665971
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_26: -1194021933
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_20: -742281084
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_29: 236458552
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_4: -466917025
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_18: -874970509
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_15: -1424188239
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_17: -1574004116
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_8: 1468511590
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_25: 1076865793
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_27: 1390641750
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_28: 1414580426
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_5: -1861695481
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_21: -2048988328
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_14: 1001183531
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_9: 1381533300
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_16: -1882382874
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_19: 711979240
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_3: -896485850
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_11: -1979968910
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_23: -1892458317
+      MiniDwarfArmoredBearRider_scaled_4x_pngcrushed_10: 2026652531
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

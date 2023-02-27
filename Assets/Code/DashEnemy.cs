@@ -2,19 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BerserkerDwarf : MonoBehaviour
+public class DashEnemy : MonoBehaviour
 {
     bool enemyWithinAttackRange = false;
     int speed = 1;
     public float attackOffset = 0.01f;
     public float dashCooldownDuration = 2f;
-    public float dashDuration = 3.0f;
+    public float dashDuration = 0.02f;
     public float dashChannelDuration = 0.75f;
     public bool isDashing = false;
-    public float dashSpeed = 3f;
+    public float dashSpeed = 100f;
     public int dashDamage = 10;
-
-    public Vector2 moveBackSpot;
 
     Transform closestEnemyTransform;
     Vector3 dashEndLocation;
@@ -24,7 +22,6 @@ public class BerserkerDwarf : MonoBehaviour
 
     public EnemyMovement[] enemies;
     public GameObject meleeAttack;
-    public SpawnEnemy waveStats;
 
     public Animator animator;
 
@@ -33,28 +30,11 @@ public class BerserkerDwarf : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         StartCoroutine(dashCooldown());
-
-        waveStats = FindObjectOfType<SpawnEnemy>();
-        System.Random rand = new System.Random();
-        moveBackSpot = new Vector2((float)(rand.NextDouble() * 2 - 1.5f), (float)(rand.NextDouble() * 5 - 2.5f));
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (waveStats.waitingForNext)
-        {
-            if (this.transform.position.x > moveBackSpot[0])
-            {
-                this.transform.position = Vector2.MoveTowards(this.transform.position, moveBackSpot, Time.deltaTime);
-                this.transform.localScale = new Vector3(-1, 1, 1);
-            }
-            else
-            {
-                this.transform.localScale = new Vector3(1, 1, 1);
-            }
-        }
-
         if (isDashing)
         {
             transform.position = Vector2.MoveTowards(this.transform.position, dashEndLocation, dashSpeed * Time.deltaTime);
@@ -73,9 +53,9 @@ public class BerserkerDwarf : MonoBehaviour
                 return;
             }
         }
-        
+
         float distanceFromClosestEnemy = Vector2.Distance(transform.position, closestEnemyTransform.position);
-        enemyWithinAttackRange = distanceFromClosestEnemy < 2;
+        enemyWithinAttackRange = distanceFromClosestEnemy < 5;
         if (!enemyWithinAttackRange)
         {
             Move();
@@ -93,6 +73,7 @@ public class BerserkerDwarf : MonoBehaviour
         {
             animator.SetBool("isMoving", false);
         }
+
     }
 
     private void Move()
@@ -106,7 +87,7 @@ public class BerserkerDwarf : MonoBehaviour
     private void FindClosestEnemy()
     {
         var gameObjectArray = FindObjectsOfType<GameObject>();
-        int enemyLayer = LayerMask.NameToLayer("Enemy");
+        int enemyLayer = LayerMask.NameToLayer("Ally");
         float minDistance = float.MaxValue;
         Transform maxClosestEnemyTransform = null;
         Health healthScript = null;
@@ -129,6 +110,7 @@ public class BerserkerDwarf : MonoBehaviour
         }
         closestEnemyTransform = maxClosestEnemyTransform;
         closestEnemyHealthScript = healthScript;
+        Debug.Log("found new enemy transform");
     }
 
     private void OnTriggerEnter2D(Collider2D col)

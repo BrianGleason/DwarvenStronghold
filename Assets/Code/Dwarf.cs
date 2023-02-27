@@ -31,7 +31,7 @@ public class Dwarf : MonoBehaviour
         animator = GetComponent<Animator>();
 
         System.Random rand = new System.Random();
-        range = (float)(rand.NextDouble() * 4 + 6);
+        range = (float)(rand.NextDouble() * 5 + 5);
         moveBackSpot = new Vector2((float)(rand.NextDouble() * 3 - 4), (float)(rand.NextDouble() * 5 - 2.5f));
     }
 
