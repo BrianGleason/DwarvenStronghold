@@ -27,7 +27,7 @@ public class SpawnEnemy : MonoBehaviour
 
     private Vector2 spawnPos()
     {
-        return new Vector2(9.3f, Random.Range(-4f, 4f));
+        return new Vector2(9.3f, Random.Range(-4f, 2f));
     }
 
     private void SpawnEnemyOfType(int enemyType, int amount)
