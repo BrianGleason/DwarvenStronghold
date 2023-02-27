@@ -2,22 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
     public int maxHP = 50;
     public int health = 50;
+    public bool isBase;
     public Rigidbody2D rb;
     private EnemyMovement enemyScript;
 
     public GameObject deathTextPrefab;
     public GameObject deathText;
+    public Fade fade;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         enemyScript = GetComponent<EnemyMovement>();
+        fade = FindObjectOfType<Fade>();
     }
 
     // Update is called once per frame
@@ -49,6 +53,11 @@ public class Health : MonoBehaviour
 
     private void Die ()
     {
+        if (isBase)
+        {
+            fade.gameOver = true;
+        }
+
         Destroy(gameObject);
 
         if (enemyScript != null)

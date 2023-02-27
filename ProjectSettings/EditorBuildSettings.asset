@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Jason Demo.unity
     guid: 9a507ab336f3b6349b62765c1b389038
+  - enabled: 1
+    path: Assets/Scenes/Game Over.unity
+    guid: 85efb1de0295e4fb186ef77c1874346c
   m_configObjects: {}
