@@ -6840,13 +6840,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adf7cfe5cfcd34d4fb1ac8ba339be3ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 50
-  health: 50
+  maxHP: 500
+  health: 500
   isBase: 1
   rb: {fileID: 0}
   deathTextPrefab: {fileID: 0}
   deathText: {fileID: 0}
   fade: {fileID: 0}
+  healthBarSlider: {fileID: 0}
 --- !u!114 &1262850221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6969,7 +6970,7 @@ Transform:
   - {fileID: 1981805930}
   - {fileID: 1478578395}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1469829420
 PrefabInstance:
@@ -6992,7 +6993,7 @@ PrefabInstance:
       objectReference: {fileID: 15577950}
     - target: {fileID: 8839783060475464062, guid: 7e216d566303e46e5880e79d0b4711ac, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8839783060475464062, guid: 7e216d566303e46e5880e79d0b4711ac, type: 3}
       propertyPath: m_LocalPosition.x
