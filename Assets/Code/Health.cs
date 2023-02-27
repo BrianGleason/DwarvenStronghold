@@ -14,6 +14,7 @@ public class Health : MonoBehaviour
 
     public GameObject deathTextPrefab;
     public GameObject deathText;
+    public Fade fade;
     public Slider healthBarSlider = null;
 
     // Start is called before the first frame update
@@ -21,6 +22,7 @@ public class Health : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         enemyScript = GetComponent<EnemyMovement>();
+        fade = FindObjectOfType<Fade>();
         if (healthBarSlider)
         {
             healthBarSlider.maxValue = maxHP;
