@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class MainCharacterController : MonoBehaviour
@@ -15,6 +17,8 @@ public class MainCharacterController : MonoBehaviour
     public int hitPoints = 50;
     public int attackDamage = 10;
     private bool isAttacking = false;
+    private bool showing = false;
+
 
     private Vector2 movement;
     private Vector2 mousePos;
@@ -23,6 +27,7 @@ public class MainCharacterController : MonoBehaviour
     public Camera cam;  // ?
     public GameObject meleeAttackPrefab;
     public Animator animator;
+    public TextMesh text;
 
     public SpriteRenderer healthbar;
 
@@ -31,6 +36,11 @@ public class MainCharacterController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         healthbar.transform.parent = transform;
+        DontDestroyOnLoad(gameObject);
+
+        text = Instantiate(text, new Vector2(-6f, -4.5f), Quaternion.identity);
+        text.text = "";
+        text.fontSize = 12;
     }
 
     void Update()
@@ -50,7 +60,28 @@ public class MainCharacterController : MonoBehaviour
         }
 
         healthbar.transform.position = transform.position + Vector3.up / 2;
-        healthbar.transform.localScale = new Vector3(0.06f*this.GetComponent<Health>().hpPercent(), 0.1f, 1);
+        healthbar.transform.localScale = new Vector3(0.06f * this.GetComponent<Health>().hpPercent(), 0.1f, 1);
+
+        if (transform.position.y <= -4.4 && !showing)
+        {
+            showing = true;
+            text.text = "What is this cave..? Press L to enter... If you dare.";
+        }
+        if (transform.position.y > 4.4 && showing)
+        {
+            text.text = "";
+            showing = false;
+        }
+
+        if (transform.position.y <= -4.4 && Input.GetKeyDown(KeyCode.L))
+        {
+            cam.transform.position = new Vector3(0, -11, 0);
+
+            // Pause enemy spawning and all allies and enemies currently active??
+            // Instantiate the statue and the lobster.
+            // Text description that shows up when close to statue, lobster drops 500g upon death.
+            // Only available to enter once?
+        }
     }
 
     void FixedUpdate()

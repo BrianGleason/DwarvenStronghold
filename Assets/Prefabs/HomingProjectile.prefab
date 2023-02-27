@@ -138,8 +138,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTransform: {fileID: 0}
-  speed: 5
-  rotateSpeed: 150
+  speed: 3
+  rotateSpeed: 100
 --- !u!50 &4301459212831103860
 Rigidbody2D:
   serializedVersion: 4
@@ -177,3 +177,4 @@ MonoBehaviour:
   sizeScalar: 1
   damage: 5
   attackOrigin: {x: 0, y: 0}
+  piercing: 0

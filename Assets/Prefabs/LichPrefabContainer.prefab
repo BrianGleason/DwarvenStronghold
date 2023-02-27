@@ -37,7 +37,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.3097029, y: -4.8669095}
+  m_AnchoredPosition: {x: -0.5, y: -4.8669095}
   m_SizeDelta: {x: 54.2507, y: 7.7837}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1663748181853204161
@@ -531,7 +531,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 500
   health: 500
+  isBase: 0
   rb: {fileID: 0}
   deathTextPrefab: {fileID: 0}
   deathText: {fileID: 0}
+  fade: {fileID: 0}
   healthBarSlider: {fileID: 1663748181853204161}

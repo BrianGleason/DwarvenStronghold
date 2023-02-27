@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game Over.unity
     guid: 85efb1de0295e4fb186ef77c1874346c
+  - enabled: 1
+    path: Assets/Scenes/Lobstah Cave.unity
+    guid: 4ce604e55f389400d93c6f465c917cae
   m_configObjects: {}

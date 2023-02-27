@@ -142,6 +142,8 @@ public class SpawnEnemy : MonoBehaviour
     {
         currentWave = 4;
         // Spawn boss
+        Instantiate(enemyPrefabs[3], new Vector2(0.4f, 1), Quaternion.identity);
+
         yield return null;
     }
 }
