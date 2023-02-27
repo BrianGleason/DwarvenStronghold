@@ -36,7 +36,6 @@ public class MainCharacterController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         healthbar.transform.parent = transform;
-        DontDestroyOnLoad(gameObject);
 
         text = Instantiate(text, new Vector2(-6f, -4.5f), Quaternion.identity);
         text.text = "";
@@ -76,11 +75,7 @@ public class MainCharacterController : MonoBehaviour
         if (transform.position.y <= -4.4 && Input.GetKeyDown(KeyCode.L))
         {
             cam.transform.position = new Vector3(0, -11, 0);
-
-            // Pause enemy spawning and all allies and enemies currently active??
-            // Instantiate the statue and the lobster.
-            // Text description that shows up when close to statue, lobster drops 500g upon death.
-            // Only available to enter once?
+            this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y - 5, 0);
         }
     }
 
