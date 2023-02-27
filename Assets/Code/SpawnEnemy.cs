@@ -40,6 +40,7 @@ public class SpawnEnemy : MonoBehaviour
 
     IEnumerator WaveOne()
     {
+        SpawnEnemyOfType(3, 1);
         SpawnEnemyOfType(0, 2);
         yield return new WaitForSeconds(10);
         SpawnEnemyOfType(0, 4);
@@ -142,7 +143,7 @@ public class SpawnEnemy : MonoBehaviour
     {
         currentWave = 4;
         // Spawn boss
-        Instantiate(enemyPrefabs[3], new Vector2(0.4f, 1), Quaternion.identity);
+        Instantiate(enemyPrefabs[4], new Vector2(0.4f, 1), Quaternion.identity);
 
         yield return null;
     }
