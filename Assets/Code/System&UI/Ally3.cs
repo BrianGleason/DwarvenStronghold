@@ -17,7 +17,7 @@ public class Ally3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int cost = 80 + 5 * (FindObjectsOfType<Dwarf>().Length + FindObjectsOfType<HealerDwarf>().Length + FindObjectsOfType<BerserkerDwarf>().Length);
+        int cost = 30 + 5 * (FindObjectsOfType<Dwarf>().Length + FindObjectsOfType<HealerDwarf>().Length + FindObjectsOfType<BerserkerDwarf>().Length);
         if (FindObjectOfType<AllyPlacement>().previewing)
         {
             cost -= 10;
