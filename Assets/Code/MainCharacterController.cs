@@ -74,8 +74,10 @@ public class MainCharacterController : MonoBehaviour
 
         if (transform.position.y <= -4.4 && Input.GetKeyDown(KeyCode.L))
         {
-            cam.transform.position = new Vector3(0, -11, 0);
+            cam.transform.position = new Vector3(0, -11, -10);
             this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y - 5, 0);
+
+
         }
     }
 
