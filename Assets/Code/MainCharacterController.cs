@@ -19,7 +19,7 @@ public class MainCharacterController : MonoBehaviour
     private bool isAttacking = false;
     private bool showing = false;
 
-
+    public SpawnEnemy wave;
     private Vector2 movement;
     private Vector2 mousePos;
     private SpriteRenderer spriteRenderer;
@@ -36,6 +36,7 @@ public class MainCharacterController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         healthbar.transform.parent = transform;
+        wave = FindObjectOfType<SpawnEnemy>();
 
         text = Instantiate(text, new Vector2(-6f, -4.5f), Quaternion.identity);
         text.text = "";
@@ -64,20 +65,27 @@ public class MainCharacterController : MonoBehaviour
         if (transform.position.y <= -4.4 && !showing)
         {
             showing = true;
-            text.text = "What is this cave..? Press L to enter... If you dare.";
+            text.text = "What is this cave..? Press L to enter... If you dare. (only open between waves)";
         }
-        if (transform.position.y > 4.4 && showing)
+
+        if (transform.position.y > -4.4 && showing)
         {
             text.text = "";
             showing = false;
         }
 
-        if (transform.position.y <= -4.4 && Input.GetKeyDown(KeyCode.L))
+        if (transform.position.y <= -4.4 && Input.GetKeyDown(KeyCode.L) && wave.waitingForNext)
         {
             cam.transform.position = new Vector3(0, -11, -10);
             this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y - 5, 0);
 
 
+        }
+
+        if (!wave.waitingForNext && cam.transform.position == new Vector3(0, -11, -10))
+        {
+            cam.transform.position = new Vector3(0, 0, -10);
+            this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 11, 0);
         }
     }
 

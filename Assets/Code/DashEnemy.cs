@@ -110,7 +110,6 @@ public class DashEnemy : MonoBehaviour
         }
         closestEnemyTransform = maxClosestEnemyTransform;
         closestEnemyHealthScript = healthScript;
-        Debug.Log("found new enemy transform");
     }
 
     private void OnTriggerEnter2D(Collider2D col)

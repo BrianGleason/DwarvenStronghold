@@ -11,6 +11,7 @@ public class Health : MonoBehaviour
     public bool isBase;
     public Rigidbody2D rb;
     private EnemyMovement enemyScript;
+    private DashEnemy dashScript;
 
     public GameObject deathTextPrefab;
     public GameObject deathText;
@@ -22,6 +23,7 @@ public class Health : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         enemyScript = GetComponent<EnemyMovement>();
+        dashScript = GetComponent<DashEnemy>();
         fade = FindObjectOfType<Fade>();
         if (healthBarSlider)
         {
@@ -49,6 +51,10 @@ public class Health : MonoBehaviour
         {
             enemyScript.ApplyStun();
         }
+        //if (dashScript != null)       Stun dash enemy?
+        //{
+        //    dashScript.ApplyStun();
+        //}
         rb.AddForce((rb.position - atkOrigin).normalized * 100);
     }
 
@@ -79,6 +85,18 @@ public class Health : MonoBehaviour
             {
                 goldDrop += goldDrop;
             }
+            txt.text = "+$" + goldDrop.ToString();
+            Destroy(deathText, 1f);
+            SystemControl.instance.AddGold(goldDrop);
+        }
+
+        if (dashScript != null)
+        {
+            deathText = Instantiate(deathTextPrefab, dashScript.transform.position, Quaternion.identity);
+            TextMesh txt = deathText.transform.GetComponent<TextMesh>();
+            txt.fontSize = 18;
+            System.Random rand = new System.Random();
+            int goldDrop = rand.Next(10, 20);
             txt.text = "+$" + goldDrop.ToString();
             Destroy(deathText, 1f);
             SystemControl.instance.AddGold(goldDrop);

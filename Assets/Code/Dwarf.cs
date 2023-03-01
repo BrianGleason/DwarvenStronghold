@@ -15,6 +15,7 @@ public class Dwarf : MonoBehaviour
     private bool attackOnCooldown = true;
 
     public EnemyMovement[] enemies;
+    public DashEnemy[] enemiesDash;
     public SpawnEnemy waveStats;
     
     public Animator animator;
@@ -107,9 +108,19 @@ public class Dwarf : MonoBehaviour
     (Transform, float) FindClosestEnemy()
     {
         enemies = FindObjectsOfType<EnemyMovement>();
+        enemiesDash = FindObjectsOfType<DashEnemy>();
         Transform closest = null;
         float closestDistance = Mathf.Infinity;
         foreach (EnemyMovement enemy in enemies)
+        {
+            float distance = Vector2.Distance(transform.position, enemy.transform.position);
+            if (distance < closestDistance)
+            {
+                closest = enemy.transform;
+                closestDistance = distance;
+            }
+        }
+        foreach (DashEnemy enemy in enemiesDash)
         {
             float distance = Vector2.Distance(transform.position, enemy.transform.position);
             if (distance < closestDistance)
