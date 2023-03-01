@@ -154,7 +154,7 @@ MonoBehaviour:
   health: 50
   isBase: 0
   rb: {fileID: 0}
-  deathTextPrefab: {fileID: 0}
+  deathTextPrefab: {fileID: 800238655446659967, guid: 822aa4cb08db56946a897698f817a994, type: 3}
   deathText: {fileID: 0}
   fade: {fileID: 0}
   healthBarSlider: {fileID: 0}
