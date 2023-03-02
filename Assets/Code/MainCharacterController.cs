@@ -85,7 +85,7 @@ public class MainCharacterController : MonoBehaviour
         if (!wave.waitingForNext && cam.transform.position == new Vector3(0, -11, -10))
         {
             cam.transform.position = new Vector3(0, 0, -10);
-            this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 11, 0);
+            this.transform.position = new Vector3(-6.5f, -4f, 0);
         }
     }
 

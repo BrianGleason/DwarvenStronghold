@@ -17,6 +17,7 @@ public class Dwarf : MonoBehaviour
     public EnemyMovement[] enemies;
     public DashEnemy[] enemiesDash;
     public SpawnEnemy waveStats;
+    public Lich boss;
     
     public Animator animator;
 
@@ -129,6 +130,17 @@ public class Dwarf : MonoBehaviour
                 closestDistance = distance;
             }
         }
+        if (waveStats.currentWave == 4)
+        {
+            boss = FindObjectOfType<Lich>();
+            float distanceB = Vector2.Distance(transform.position, boss.transform.position);
+            if (distanceB < closestDistance)
+            {
+                closest = boss.transform;
+                closestDistance = distanceB;
+            }
+        }
+
         return (closest, closestDistance);
     }
 

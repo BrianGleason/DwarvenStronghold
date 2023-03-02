@@ -14460,7 +14460,7 @@ GameObject:
   - component: {fileID: 1578898236}
   - component: {fileID: 1578898235}
   - component: {fileID: 1578898234}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Lobster
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ public class SystemControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gold = 100;
+        gold = 30;
     }
 
     private void Awake()

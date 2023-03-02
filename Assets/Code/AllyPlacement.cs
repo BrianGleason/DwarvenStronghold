@@ -72,7 +72,7 @@ public class AllyPlacement : MonoBehaviour
         if (Input.GetMouseButtonDown(1) && selectedPrefabIndex != -1)
         {
             int allies = FindObjectsOfType<Dwarf>().Length + FindObjectsOfType<HealerDwarf>().Length + FindObjectsOfType<BerserkerDwarf>().Length;
-            if (SystemControl.instance.gold >= (10 * selectedPrefabIndex + allies * 5) && cooldowns[selectedPrefabIndex] <= 0)
+            if (SystemControl.instance.gold >= (10 * selectedPrefabIndex + allies * 5 + 5) && cooldowns[selectedPrefabIndex] <= 0)
             {
                 Instantiate(prefabs[selectedPrefabIndex], previewObject.transform.position, previewObject.transform.rotation);
                 Destroy(previewObject);
