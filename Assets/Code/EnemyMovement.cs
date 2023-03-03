@@ -41,6 +41,10 @@ public class EnemyMovement : MonoBehaviour
         rangedProjectileScript = GetComponent<RangedProjectile>();
         SecondaryProjectile = GetComponent<SecondaryRanged>();
         animator = GetComponent<Animator>();
+        if (ranged)
+        {
+            range = range + Random.Range(-2.0f, 2.0f);
+        }
     }
 
     // Update is called once per frame
