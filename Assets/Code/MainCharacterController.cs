@@ -77,9 +77,8 @@ public class MainCharacterController : MonoBehaviour
         if (transform.position.y <= -4.4 && Input.GetKeyDown(KeyCode.L) && wave.waitingForNext)
         {
             cam.transform.position = new Vector3(0, -11, -10);
-            this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y - 5, 0);
-
-
+            this.transform.position = new Vector3(this.transform.position.x, -6.5f, 0);
+            
         }
 
         if (!wave.waitingForNext && cam.transform.position == new Vector3(0, -11, -10))
