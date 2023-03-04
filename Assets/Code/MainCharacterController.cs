@@ -78,13 +78,14 @@ public class MainCharacterController : MonoBehaviour
         {
             cam.transform.position = new Vector3(0, -11, -10);
             this.transform.position = new Vector3(this.transform.position.x, -6.5f, 0);
-            
+            maxSpeed /= 2.5f;
         }
 
         if (!wave.waitingForNext && cam.transform.position == new Vector3(0, -11, -10))
         {
             cam.transform.position = new Vector3(0, 0, -10);
             this.transform.position = new Vector3(-6.5f, -4f, 0);
+            maxSpeed *= 2.5f;
         }
     }
 
