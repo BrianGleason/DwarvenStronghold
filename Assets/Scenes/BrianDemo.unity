@@ -7043,7 +7043,7 @@ MonoBehaviour:
   prefabs:
   - {fileID: 4157711041546228244, guid: adec8222d84e3b44c8607621440b3f18, type: 3}
   - {fileID: 7193202349218039, guid: 5f626e59737e5224c95bf1915b8070a1, type: 3}
-  - {fileID: 6557424132170831711, guid: 305328d47939347c88bdce8e64d78f81, type: 3}
+  - {fileID: 1979375141118713874, guid: 4438c022597e39140823e683ddf31b75, type: 3}
   placementRange: {fileID: 2107930624}
   range: {fileID: 0}
   previewing: 0
@@ -9124,6 +9124,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LichPrefabContainer
       objectReference: {fileID: 0}
+    - target: {fileID: 1663748183721155217, guid: 31bcbfd73f79f95409c4424cc55b5c0c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31bcbfd73f79f95409c4424cc55b5c0c, type: 3}
 --- !u!1001 &8839783060126869138
@@ -9147,11 +9151,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839783060475464062, guid: 7e216d566303e46e5880e79d0b4711ac, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.1220217
+      value: 4.59
       objectReference: {fileID: 0}
     - target: {fileID: 8839783060475464062, guid: 7e216d566303e46e5880e79d0b4711ac, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.780319
+      value: 1.06
       objectReference: {fileID: 0}
     - target: {fileID: 8839783060475464062, guid: 7e216d566303e46e5880e79d0b4711ac, type: 3}
       propertyPath: m_LocalPosition.z

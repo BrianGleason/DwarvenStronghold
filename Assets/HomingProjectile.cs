@@ -9,11 +9,15 @@ public class HomingProjectile : MonoBehaviour
     private Rigidbody2D rb;
     public float speed = 5f;
     public float rotateSpeed = 200f;
+    private bool inStartup = true;
+    private float startupDuration = 1f;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         findTargetTransform();
+        StartCoroutine(startup());
+
     }
 
     // Update is called once per frame
@@ -27,6 +31,10 @@ public class HomingProjectile : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (inStartup)
+        {
+            return;
+        }
         Vector2 direction = (Vector2)targetTransform.position - rb.position;
         direction.Normalize();
         float rotateAmount = Vector3.Cross(direction, transform.right).z;
@@ -39,11 +47,25 @@ public class HomingProjectile : MonoBehaviour
         var target = GameObject.FindGameObjectWithTag("Player");
         if (!target)
         {
-            targetTransform = GameObject.FindGameObjectWithTag("Base").transform;
+            var baseObj = GameObject.FindGameObjectWithTag("Base");
+            if (!baseObj)
+            {
+                Destroy(this);
+            }
+            else
+            {
+                targetTransform = baseObj.transform;
+            }
         }
         else
         {
             targetTransform = target.transform;
         }
+    }
+
+    IEnumerator startup()
+    {
+        yield return new WaitForSeconds(startupDuration);
+        inStartup = false;
     }
 }

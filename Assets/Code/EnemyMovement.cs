@@ -56,13 +56,22 @@ public class EnemyMovement : MonoBehaviour
     private void FixedUpdate()
     {
         if (selfDestruct == true) {
-            target = GameObject.FindWithTag(targ).transform;
-            distance = Vector3.Distance(target.transform.position, transform.position);
+            var targetObj = GameObject.FindWithTag(targ);
+            if (targetObj)
+            {
+                target = targetObj.transform;
+                distance = Vector3.Distance(target.transform.position, transform.position);
+            }
         }
         else
         {
             target = FindClosestEnemy().Item1;
             distance = FindClosestEnemy().Item2;
+        }
+        if (!target)
+        {
+            animator.SetBool("Moving", false);
+            return;
         }
 
         Vector3 dir = (target.position - transform.position).normalized;
@@ -130,21 +139,29 @@ public class EnemyMovement : MonoBehaviour
     IEnumerator fire()
     {
         yield return new WaitForSeconds(0.3f);
+        if (target)
+        {
+            rangedProjectileScript.Fire(this.transform.position, target.position, attackOffset);
+        }
 
-        rangedProjectileScript.Fire(this.transform.position, target.position, attackOffset);
-               
     }
 
     IEnumerator fire2()
     {
         yield return new WaitForSeconds(0.3f);
-
-        SecondaryProjectile.Fire(this.transform.position, target.position, attackOffset);
+        if (target)
+        {
+            SecondaryProjectile.Fire(this.transform.position, target.position, attackOffset);
+        }
 
     }
 
     void OnAttack()
     {
+        if (!target)
+        {
+            return;
+        }
         Vector2 targ = new Vector2(target.transform.position.x, target.transform.position.y);
         Vector2 selfToMouseVector = targ - rb.position;
         float selfToMouseAngle = Mathf.Atan2(selfToMouseVector.y, selfToMouseVector.x) * Mathf.Rad2Deg;
@@ -195,17 +212,21 @@ public class EnemyMovement : MonoBehaviour
         stunned = false;
     }
 
-    IEnumerator BlowUp() {
+    IEnumerator BlowUp()
+    {
         animator.SetTrigger("Attack");
         yield return new WaitForSeconds(1.5f);
-        Health x = GameObject.FindWithTag(targ).GetComponent<Health>();
-        x.TakeDamage(25, Vector2.zero);
+        var targObj = GameObject.FindWithTag(targ);
+        if (targObj)
+        {
+            Health x = targObj.GetComponent<Health>();
+            x.TakeDamage(25, Vector2.zero);
+        }
         Instantiate(ExplosionPrefab, transform.position, Quaternion.identity);
         Destroy(gameObject);
-
     }
 
-    (Transform, float) FindClosestEnemy()
+        (Transform, float) FindClosestEnemy()
     {
         enemies = FindObjectsOfType<Placeholder>();
         Transform closest = null;
