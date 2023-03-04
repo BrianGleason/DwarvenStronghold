@@ -26,15 +26,17 @@ public class Lich : MonoBehaviour
     public Animator animator;
     public bool stopped = false;
 
-    public Camera camera;
+    public Camera lichCamera;
     public float shakeDuration = 0.5f;
+
+    public GameObject explosionPrefab;
 
     // Start is called before the first frame update
     void Start()
     {
         setBaseTransform();
         animator = GetComponent<Animator>();
-        camera = Camera.main;
+        lichCamera = Camera.main;
 
 
     }
@@ -42,6 +44,13 @@ public class Lich : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // if reached base
+        if (transform.position.x < -5f && !stopped)
+        {
+            StartCoroutine(shaking());
+            StartCoroutine(ExplodeBase());
+            return;
+        }
         if (!tombstoneCooldown && !stopped)
         {
             tombstoneCooldown = true;
@@ -62,6 +71,27 @@ public class Lich : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(this.transform.position, baseTransform.position, Time.deltaTime * lichSpeed);
         }
+
+    }
+
+    IEnumerator ExplodeBase()
+    {
+        stopped = true;
+        Vector3 oldBaseTransformPosition;
+        if (baseTransform)
+        {
+            oldBaseTransformPosition = new Vector3(baseTransform.position.x, baseTransform.position.y, baseTransform.position.z);
+        }
+        else
+        {
+            oldBaseTransformPosition = new Vector3(-20f, 0f, 0f);
+        }
+        animator.SetBool("CastingSummon", true);
+        yield return new WaitForSeconds(0.75f);
+        animator.SetBool("CastingSummon", false);
+        DealBaseDamage();
+        ExplodePlayer();
+        Instantiate(explosionPrefab, oldBaseTransformPosition, Quaternion.identity);
 
     }
 
@@ -130,6 +160,21 @@ public class Lich : MonoBehaviour
         tombstoneCooldown = false;
     }
 
+    IEnumerator shaking()
+    {
+        yield return new WaitForSeconds(0.75f);
+        Vector3 startPosition = lichCamera.transform.position;
+        float elapsedTime = 0f;
+        while (elapsedTime < shakeDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            Vector3 randomOffset = Random.insideUnitSphere;
+            lichCamera.transform.position = startPosition + new Vector3(Random.Range(-0.1f, 0.1f), Random.Range(-0.1f, 0.1f), 0f);
+            yield return null;
+        }
+        lichCamera.transform.position = startPosition;
+    }
+
     void setBaseTransform()
     {
         var gameObjectArray = FindObjectsOfType<GameObject>();
@@ -144,18 +189,25 @@ public class Lich : MonoBehaviour
         }
     }
 
-    IEnumerator shaking()
+    void DealBaseDamage()
     {
-        yield return new WaitForSeconds(0.75f);
-        Vector3 startPosition = camera.transform.position;
-        float elapsedTime = 0f;
-        while (elapsedTime < shakeDuration)
+        var baseObj = GameObject.FindWithTag("Base");
+        if (baseObj)
         {
-            elapsedTime += Time.deltaTime;
-            Vector3 randomOffset = Random.insideUnitSphere;
-            camera.transform.position = startPosition + new Vector3(Random.Range(-0.1f, 0.1f), Random.Range(-0.1f, 0.1f), 0f);
-            yield return null;
+            var healthScript = baseObj.GetComponent<Health>();
+            healthScript.TakeDamage(healthScript.maxHP, new Vector2(0f, 0f));
         }
-        camera.transform.position = startPosition;
+    }
+
+    void ExplodePlayer()
+    {
+        var playerObj = GameObject.FindWithTag("Player");
+        if (playerObj)
+        {
+            Instantiate(explosionPrefab, playerObj.transform.position, Quaternion.identity);
+            var healthScript = playerObj.GetComponent<Health>();
+            healthScript.TakeDamage(healthScript.maxHP, new Vector2(0f, 0f));
+        }
+
     }
 }
