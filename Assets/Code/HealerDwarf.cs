@@ -49,7 +49,7 @@ public class HealerDwarf : MonoBehaviour
         if (closestDamagedAlly)
         {
             distanceFromClosestDamagedAlly = Vector2.Distance(transform.position, closestDamagedAlly.position);
-            allyWithinHealRange = distanceFromClosestDamagedAlly < 3;
+            allyWithinHealRange = (distanceFromClosestDamagedAlly < 3) && (transform.position.x + 1 < closestDamagedAlly.position.x);
             if (!allyWithinHealRange)
             {
                 Move();
@@ -85,7 +85,7 @@ public class HealerDwarf : MonoBehaviour
     {
         if (closestDamagedAlly != null)
         {
-            transform.position = Vector2.MoveTowards(this.transform.position, closestDamagedAlly.position, speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(this.transform.position, closestDamagedAlly.position + new Vector3(-2f, 0f, 0f), speed * Time.deltaTime);
         }
     }
 

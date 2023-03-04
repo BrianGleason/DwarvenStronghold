@@ -23,11 +23,13 @@ public class Lich : MonoBehaviour
     public Slider healthBar;
 
     public float lichSpeed = 0.25f;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         setBaseTransform();
+        animator = GetComponent<Animator>();
 
     }
 
@@ -66,6 +68,9 @@ public class Lich : MonoBehaviour
 
     IEnumerator FireHoming()
     {
+        animator.SetBool("CastingHoming", true);
+        yield return new WaitForSeconds(0.5f);
+        animator.SetBool("CastingHoming", false);
         Instantiate(homingProjectilePrefab, transform.position + new Vector3(
             -1f,
             0f,

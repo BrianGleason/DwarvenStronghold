@@ -21,6 +21,7 @@ public class BerserkerDwarf : MonoBehaviour
     Health closestEnemyHealthScript;
 
     private bool dashOnCooldown = true;
+    Health berserkerHealthScript;
 
     public EnemyMovement[] enemies;
     public GameObject meleeAttack;
@@ -33,6 +34,8 @@ public class BerserkerDwarf : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         StartCoroutine(dashCooldown());
+        berserkerHealthScript = GetComponent<Health>();
+
 
         waveStats = FindObjectOfType<SpawnEnemy>();
         System.Random rand = new System.Random();
@@ -83,8 +86,8 @@ public class BerserkerDwarf : MonoBehaviour
         }
         else if (!dashOnCooldown)
         {
-            Dash();
             dashEndLocation = this.transform.position + ((closestEnemyTransform.position - this.transform.position).normalized * 3);
+            Dash();
             StartCoroutine(dashCooldown());
             animator.SetBool("isMoving", false);
 
@@ -119,7 +122,7 @@ public class BerserkerDwarf : MonoBehaviour
             if (candidateHealthScript && candidateHealthScript.health > 0)
             {
                 float distance = Vector2.Distance(transform.position, enemyCandidate.transform.position);
-                if (distance < minDistance)
+                if (distance < minDistance && enemyCandidate.transform.position.x < 4.5f)
                 {
                     maxClosestEnemyTransform = enemyCandidate.transform;
                     minDistance = distance;
@@ -139,6 +142,10 @@ public class BerserkerDwarf : MonoBehaviour
             if (target != null)
             {
                 target.TakeDamage(dashDamage, transform.position);
+                if (berserkerHealthScript.health < berserkerHealthScript.maxHP)
+                {
+                    berserkerHealthScript.health += 2;
+                }
             }
         }
     }

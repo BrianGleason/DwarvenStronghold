@@ -7585,9 +7585,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 50
   health: 50
+  isBase: 0
   rb: {fileID: 0}
   deathTextPrefab: {fileID: 0}
   deathText: {fileID: 0}
+  fade: {fileID: 0}
   healthBarSlider: {fileID: 0}
 --- !u!114 &1262850221
 MonoBehaviour:
@@ -8468,6 +8470,7 @@ MonoBehaviour:
   - {fileID: 7249741737546345011, guid: 43a8c87ae406a4163ac46357a5a78717, type: 3}
   - {fileID: 5599322260865315968, guid: bc9782a98b6444f54a0f5aa7b3bd8e23, type: 3}
   - {fileID: 7249741737546345011, guid: 176ca6077d0ec40c4bc9b89805343788, type: 3}
+  - {fileID: 2872181537340697035, guid: 93c01a1b2bbb24a9f9a9b2c180ff87fa, type: 3}
   currentWave: 0
   countDown: 0
   waitingForNext: 0
