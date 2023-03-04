@@ -54,7 +54,6 @@ public class SpawnEnemy : MonoBehaviour
         SpawnEnemyOfType(2, 1);
         yield return new WaitForSeconds(10);
 
-
         while (FindObjectsOfType<EnemyMovement>().Length + FindObjectsOfType<DashEnemy>().Length > 0)
         {
             yield return null;
