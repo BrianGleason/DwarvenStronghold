@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal.Profiling.Memory.Experimental.FileFormat;
 using UnityEngine;
 
 public class DashEnemy : MonoBehaviour
@@ -13,12 +14,15 @@ public class DashEnemy : MonoBehaviour
     public bool isDashing = false;
     public float dashSpeed = 100f;
     public int dashDamage = 10;
+    public SpriteRenderer sprit;
 
     Transform closestEnemyTransform;
     Vector3 dashEndLocation;
     Health closestEnemyHealthScript;
 
     private bool dashOnCooldown = true;
+
+    public GameObject dashpreview;
 
     public EnemyMovement[] enemies;
     public GameObject meleeAttack;
@@ -29,6 +33,7 @@ public class DashEnemy : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        sprit = GetComponent<SpriteRenderer>();
         StartCoroutine(dashCooldown());
     }
 
@@ -132,7 +137,24 @@ public class DashEnemy : MonoBehaviour
 
     IEnumerator dash()
     {
+        Vector3 spawnPos = this.transform.position + ((closestEnemyTransform.position - this.transform.position).normalized * 1);
+        Vector3 test = (closestEnemyTransform.position - this.transform.position).normalized;
+        Quaternion rot = Quaternion.LookRotation(Vector3.forward, spawnPos.normalized);
+        GameObject prev;
+        if (transform.position.x > closestEnemyTransform.position.x)
+        {
+            sprit.flipX = true;
+            prev = Instantiate(dashpreview, spawnPos, Quaternion.Euler(0, 0, 90 - 90 * test.y));
+        }
+        else
+        {
+            sprit.flipX = false;
+            prev = Instantiate(dashpreview, spawnPos, Quaternion.Euler(0, 0, -90 + 90 * test.y));
+        }
+
+
         yield return new WaitForSeconds(dashChannelDuration);
+        Destroy(prev);
         isDashing = true;
         animator.SetBool("dashTrigger", true);
         yield return new WaitForSeconds(dashDuration);

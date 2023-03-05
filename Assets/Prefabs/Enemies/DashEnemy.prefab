@@ -177,6 +177,8 @@ MonoBehaviour:
   isDashing: 0
   dashSpeed: 3
   dashDamage: 10
+  sprit: {fileID: 0}
+  dashpreview: {fileID: 202579165519448524, guid: c7e6a4b3e5a164c209926dddf5c3fe3d, type: 3}
   enemies: []
   meleeAttack: {fileID: 0}
   animator: {fileID: 0}
