@@ -122,7 +122,7 @@ public class BerserkerDwarf : MonoBehaviour
             if (candidateHealthScript && candidateHealthScript.health > 0)
             {
                 float distance = Vector2.Distance(transform.position, enemyCandidate.transform.position);
-                if (distance < minDistance && enemyCandidate.transform.position.x < 4.5f)
+                if (distance < minDistance && enemyCandidate.transform.position.x < 4.5f && enemyCandidate.tag != "Lobster")
                 {
                     maxClosestEnemyTransform = enemyCandidate.transform;
                     minDistance = distance;
