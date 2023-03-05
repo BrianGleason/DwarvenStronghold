@@ -31,6 +31,8 @@ public class ShadowFade : MonoBehaviour
     {
         this.GetComponent<BoxCollider2D>().enabled = false;
 
+        revealed = true;
+
         Color originalColor = sprite.color;
         Color targetColor = new Color(0, 0, 0, 0);
         float elapsedTime = 0f;
@@ -42,7 +44,7 @@ public class ShadowFade : MonoBehaviour
             sprite.color = Color.Lerp(originalColor, targetColor, t);
             yield return new WaitForSeconds(0.01f);
         }
-        revealed = true;
+        
         yield return null;
     }
 }

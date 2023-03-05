@@ -42,17 +42,17 @@ public class SpawnEnemy : MonoBehaviour
     IEnumerator WaveOne()
     {
         SpawnEnemyOfType(3, 1);
-        //SpawnEnemyOfType(0, 2);
-        //yield return new WaitForSeconds(10);
-        //SpawnEnemyOfType(0, 2);
-        //yield return new WaitForSeconds(2);
-        //SpawnEnemyOfType(0, 2);
-        //yield return new WaitForSeconds(10);
-        //SpawnEnemyOfType(0, 2);
-        //yield return new WaitForSeconds(2);
-        //SpawnEnemyOfType(0, 2);
-        //SpawnEnemyOfType(2, 1);
-        //yield return new WaitForSeconds(10);
+        SpawnEnemyOfType(0, 2);
+        yield return new WaitForSeconds(10);
+        SpawnEnemyOfType(0, 2);
+        yield return new WaitForSeconds(2);
+        SpawnEnemyOfType(0, 2);
+        yield return new WaitForSeconds(10);
+        SpawnEnemyOfType(0, 2);
+        yield return new WaitForSeconds(2);
+        SpawnEnemyOfType(0, 2);
+        SpawnEnemyOfType(2, 1);
+        yield return new WaitForSeconds(10);
 
         while (FindObjectsOfType<EnemyMovement>().Length + FindObjectsOfType<DashEnemy>().Length > 0)
         {

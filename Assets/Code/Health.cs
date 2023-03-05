@@ -9,7 +9,6 @@ public class Health : MonoBehaviour
     public int maxHP = 50;
     public int health = 50;
     public bool isBase;
-    public bool isLobstah;
     public Rigidbody2D rb;
     private EnemyMovement enemyScript;
     private DashEnemy dashScript;
@@ -52,10 +51,6 @@ public class Health : MonoBehaviour
         {
             enemyScript.ApplyStun();
         }
-        //if (dashScript != null)       Stun dash enemy?
-        //{
-        //    dashScript.ApplyStun();
-        //}
         rb.AddForce((rb.position - atkOrigin).normalized * 100);
     }
 
@@ -101,16 +96,6 @@ public class Health : MonoBehaviour
             txt.text = "+$" + goldDrop.ToString();
             Destroy(deathText, 1f);
             SystemControl.instance.AddGold(goldDrop);
-        }
-
-        if (isLobstah)
-        {
-            deathText = Instantiate(deathTextPrefab, enemyScript.transform.position, Quaternion.identity);
-            TextMesh txt = deathText.transform.GetComponent<TextMesh>();
-            txt.fontSize = 24;
-            txt.text = "+$200";
-            Destroy(deathText, 1f);
-            SystemControl.instance.AddGold(200);
         }
     }
 
