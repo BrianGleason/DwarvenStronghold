@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RangedAttackDecay : MonoBehaviour
 {
-    public float duration = 1f;
+    public float duration = 5f;
     public float sizeScalar = 1f;
     public int damage = 5;
     public Vector2 attackOrigin;
@@ -24,15 +24,16 @@ public class RangedAttackDecay : MonoBehaviour
 
     void OnTriggerEnter2D (Collider2D col)
     {
-        Health target = col.GetComponent<Health>();
-        if (target != null)
+        Health targetHealth = col.GetComponent<Health>();
+        if (targetHealth != null)
         {
-            target.TakeDamage(damage, attackOrigin);
+            targetHealth.TakeDamage(damage, attackOrigin);
         }
-        if (!piercing)
+        if (piercing && targetHealth != null)
         {
-            Destroy(gameObject);
+            return;
         }
+        Destroy(gameObject);
     }
 
     public void InitializeConstants(float newDuration, int newDamage, float newSizeScalar, Vector2 playerPos)

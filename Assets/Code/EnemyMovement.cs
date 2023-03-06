@@ -55,6 +55,22 @@ public class EnemyMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (this.transform.position.x > 8.5f)
+        {
+            animator.SetBool("Moving", true);
+            Vector3 leftDir = (new Vector3(transform.position.x - 5f, transform.position.y, transform.position.z) - transform.position).normalized;
+            rb.velocity = new Vector2(leftDir.x, leftDir.y) * movespeed;
+            if (leftDir.x < 0)
+            {
+                sprit.flipX = true;
+            }
+            else
+            {
+                sprit.flipX = false;
+            }
+            return;
+        }
+
         if (selfDestruct == true) {
             var targetObj = GameObject.FindWithTag(targ);
             if (targetObj)

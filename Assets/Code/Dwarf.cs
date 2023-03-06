@@ -79,7 +79,7 @@ public class Dwarf : MonoBehaviour
             }
         }
 
-        else
+        else if (AllEnemiesDead())
         {
             if (this.transform.position.x > moveBackSpot[0])
             {
@@ -118,7 +118,7 @@ public class Dwarf : MonoBehaviour
         foreach (EnemyMovement enemy in enemies)
         {
             float distance = Vector2.Distance(transform.position, enemy.transform.position);
-            if (distance < closestDistance)
+            if (distance < closestDistance && enemy.transform.position.x < 8.5f)
             {
                 closest = enemy.transform;
                 closestDistance = distance;
@@ -127,7 +127,7 @@ public class Dwarf : MonoBehaviour
         foreach (DashEnemy enemy in enemiesDash)
         {
             float distance = Vector2.Distance(transform.position, enemy.transform.position);
-            if (distance < closestDistance)
+            if (distance < closestDistance && enemy.transform.position.x < 8.5f)
             {
                 closest = enemy.transform;
                 closestDistance = distance;
@@ -145,6 +145,11 @@ public class Dwarf : MonoBehaviour
         }
 
         return (closest, closestDistance);
+    }
+
+    public bool AllEnemiesDead()
+    {
+        return (enemies.Length == 0 && enemiesDash.Length == 0);
     }
 
     IEnumerator attackCooldown()
