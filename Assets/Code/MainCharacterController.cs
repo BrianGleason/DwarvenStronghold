@@ -65,7 +65,14 @@ public class MainCharacterController : MonoBehaviour
         if (transform.position.y <= -4.4 && !showing)
         {
             showing = true;
-            text.text = "What is this cave..? Press L to enter... If you dare. (only open between waves)";
+            if (FindObjectOfType<Lobstah>() != null)
+            {
+                text.text = "What is this cave..? Press L to enter... If you dare. (only open between waves)";
+            }
+            else
+            {
+                text.text = "Looks like an empty cave...";
+            }
         }
 
         if (transform.position.y > -4.4 && showing)
@@ -74,7 +81,7 @@ public class MainCharacterController : MonoBehaviour
             showing = false;
         }
 
-        if (transform.position.y <= -4.4 && Input.GetKeyDown(KeyCode.L) && wave.waitingForNext)
+        if (transform.position.y <= -4.4 && Input.GetKeyDown(KeyCode.L) && wave.waitingForNext && FindObjectOfType<Lobstah>() != null)
         {
             cam.transform.position = new Vector3(0, -11, -10);
             this.transform.position = new Vector3(this.transform.position.x, -6.5f, 0);
