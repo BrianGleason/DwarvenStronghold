@@ -49,7 +49,7 @@ public class HealerDwarf : MonoBehaviour
         if (closestDamagedAlly)
         {
             distanceFromClosestDamagedAlly = Vector2.Distance(transform.position, closestDamagedAlly.position);
-            allyWithinHealRange = (distanceFromClosestDamagedAlly < 3) && (transform.position.x + 1 < closestDamagedAlly.position.x);
+            allyWithinHealRange = (distanceFromClosestDamagedAlly < 3) && (transform.position == closestDamagedAlly.position || transform.position.x + 1 < closestDamagedAlly.position.x);
             if (!allyWithinHealRange)
             {
                 Move();
@@ -73,19 +73,34 @@ public class HealerDwarf : MonoBehaviour
             {
                 this.transform.position = Vector2.MoveTowards(this.transform.position, moveBackSpot, Time.deltaTime);
                 this.transform.localScale = new Vector3(-1, 1, 1);
+                animator.SetBool("moving", true);
             }
             else
             {
                 this.transform.localScale = new Vector3(1, 1, 1);
+                animator.SetBool("moving", false);
             }
         }
     }
 
     private void Move()
     {
-        if (closestDamagedAlly != null)
+        if (closestDamagedAlly != null && closestDamagedAllyHealthScript.health < closestDamagedAllyHealthScript.maxHP)
         {
-            transform.position = Vector2.MoveTowards(this.transform.position, closestDamagedAlly.position + new Vector3(-2f, 0f, 0f), speed * Time.deltaTime);
+            Vector3 targetPosition;
+            if (closestDamagedAlly.position != this.transform.position)
+            {
+                targetPosition = new Vector3(closestDamagedAlly.position.x - 2f,
+                                                closestDamagedAlly.position.y,
+                                                closestDamagedAlly.position.z);
+            }
+            else
+            {
+                targetPosition = new Vector3(closestDamagedAlly.position.x,
+                                                closestDamagedAlly.position.y,
+                                                closestDamagedAlly.position.z);
+            }
+            transform.position = Vector2.MoveTowards(this.transform.position, targetPosition, speed * Time.deltaTime);
         }
     }
 
