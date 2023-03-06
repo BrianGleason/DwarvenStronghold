@@ -60,7 +60,8 @@ public class BerserkerDwarf : MonoBehaviour
 
         if (isDashing)
         {
-            transform.position = Vector2.MoveTowards(this.transform.position, dashEndLocation, dashSpeed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(this.transform.position,
+                new Vector3(Mathf.Min(dashEndLocation.x, 8.5f), dashEndLocation.y, dashEndLocation.z), dashSpeed * Time.deltaTime);
             return;
         }
         if (!closestEnemyTransform)
@@ -102,7 +103,9 @@ public class BerserkerDwarf : MonoBehaviour
     {
         if (closestEnemyTransform != null)
         {
-            transform.position = Vector2.MoveTowards(this.transform.position, closestEnemyTransform.position, speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(this.transform.position, 
+                new Vector3(Mathf.Min(closestEnemyTransform.position.x, 8f), closestEnemyTransform.position.y, closestEnemyTransform.position.z), 
+                speed * Time.deltaTime);
         }
     }
 
@@ -122,7 +125,7 @@ public class BerserkerDwarf : MonoBehaviour
             if (candidateHealthScript && candidateHealthScript.health > 0)
             {
                 float distance = Vector2.Distance(transform.position, enemyCandidate.transform.position);
-                if (distance < minDistance && enemyCandidate.transform.position.x < 4.5f && enemyCandidate.tag != "Lobster")
+                if (distance < minDistance && enemyCandidate.tag != "Lobster")
                 {
                     maxClosestEnemyTransform = enemyCandidate.transform;
                     minDistance = distance;
