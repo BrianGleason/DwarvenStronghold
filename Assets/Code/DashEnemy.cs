@@ -154,7 +154,10 @@ public class DashEnemy : MonoBehaviour
 
 
         yield return new WaitForSeconds(dashChannelDuration);
-        Destroy(prev);
+        if (prev)
+        {
+            Destroy(prev);
+        }
         isDashing = true;
         animator.SetBool("dashTrigger", true);
         yield return new WaitForSeconds(dashDuration);

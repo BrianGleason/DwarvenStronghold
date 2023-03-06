@@ -103,7 +103,10 @@ public class Dwarf : MonoBehaviour
     IEnumerator fire()
     {
         yield return new WaitForSeconds(0.3f);
-        rangedProjectileScript.Fire(this.transform.position, closestEnemy.position, attackOffset);
+        if (closestEnemy)
+        {
+            rangedProjectileScript.Fire(this.transform.position, closestEnemy.position, attackOffset);
+        }
     }
 
     (Transform, float) FindClosestEnemy()

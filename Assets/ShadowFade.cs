@@ -21,6 +21,10 @@ public class ShadowFade : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!player)
+        {
+            return;
+        }
         if (player.transform.position.y <= -14.5)
         {
             StartCoroutine(FadeAway());

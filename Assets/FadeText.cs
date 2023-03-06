@@ -19,6 +19,10 @@ public class FadeText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!player || !text || !shadow)
+        {
+            return;
+        }
         float distance = Mathf.Abs(player.transform.position.y - transform.position.y);
         float alpha = Mathf.Lerp(0f, 1f, 1f - Mathf.Clamp01(distance / 1f));
         Color color = new Color(1f, 1f, 1f, alpha);
