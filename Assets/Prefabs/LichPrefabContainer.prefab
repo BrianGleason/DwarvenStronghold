@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1663748181853204160}
   m_Layer: 5
   m_Name: LichHealthBar
-  m_TagString: Untagged
+  m_TagString: LichHealthbar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -349,9 +349,9 @@ GameObject:
   - component: {fileID: 1663748183721155228}
   - component: {fileID: 1663748183721155219}
   - component: {fileID: 1663748183721155230}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LichBoss
-  m_TagString: Untagged
+  m_TagString: Lich
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -517,6 +517,11 @@ MonoBehaviour:
   - 3
   healthBar: {fileID: 0}
   lichSpeed: 0.25
+  animator: {fileID: 0}
+  stopped: 0
+  lichCamera: {fileID: 0}
+  shakeDuration: 0.5
+  explosionPrefab: {fileID: 0}
 --- !u!114 &1663748183721155230
 MonoBehaviour:
   m_ObjectHideFlags: 0

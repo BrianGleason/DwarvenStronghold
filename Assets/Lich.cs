@@ -37,8 +37,6 @@ public class Lich : MonoBehaviour
         setBaseTransform();
         animator = GetComponent<Animator>();
         lichCamera = Camera.main;
-
-
     }
 
     // Update is called once per frame
