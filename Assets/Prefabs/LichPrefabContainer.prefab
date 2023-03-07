@@ -503,7 +503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tombstoneCooldown: 0
-  tombstoneCooldownDuration: 30
+  tombstoneCooldownDuration: 15
   tombStonePrefab: {fileID: 6952044917331378046, guid: 55790ecb712946149b34204f5c89a085, type: 3}
   wavyCooldown: 0
   wavyCooldownDuration: 1

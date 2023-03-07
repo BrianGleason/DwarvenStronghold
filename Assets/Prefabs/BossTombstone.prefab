@@ -116,10 +116,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adf7cfe5cfcd34d4fb1ac8ba339be3ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 50
-  health: 50
+  maxHP: 100
+  health: 100
   isBase: 0
-  isLobstah: 0
   rb: {fileID: 0}
   deathTextPrefab: {fileID: 0}
   deathText: {fileID: 0}

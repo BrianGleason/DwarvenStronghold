@@ -175,6 +175,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   duration: 5
   sizeScalar: 1
-  damage: 5
+  damage: 10
   attackOrigin: {x: 0, y: 0}
   piercing: 0
+  exploding: 1
+  explodeDamage: 10
+  explodePrefab: {fileID: 3387555198827466381, guid: 0c1482ca619441642be69240cbf04297, type: 3}
