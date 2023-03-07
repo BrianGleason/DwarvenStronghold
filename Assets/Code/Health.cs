@@ -9,6 +9,7 @@ public class Health : MonoBehaviour
     public int maxHP = 50;
     public int health = 50;
     public bool isBase;
+    public bool isLich;
     public Rigidbody2D rb;
     private EnemyMovement enemyScript;
     private DashEnemy dashScript;
@@ -66,6 +67,11 @@ public class Health : MonoBehaviour
         if (isBase)
         {
             fade.gameOver = true;
+        }
+
+        if (isLich)
+        {
+            fade.win = true;
         }
 
         Destroy(gameObject);

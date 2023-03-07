@@ -550,6 +550,7 @@ MonoBehaviour:
   maxHP: 750
   health: 750
   isBase: 0
+  isLich: 1
   rb: {fileID: 0}
   deathTextPrefab: {fileID: 0}
   deathText: {fileID: 0}

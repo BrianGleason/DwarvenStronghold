@@ -7,6 +7,7 @@ public class Fade : MonoBehaviour
 {
     private float fadeTime = 0.5f;
     public bool gameOver;
+    public bool win;
     private SpriteRenderer spriteRenderer;
 
 
@@ -15,6 +16,7 @@ public class Fade : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         gameOver = false;
+        win = false;
     }
 
     // Update is called once per frame
@@ -22,11 +24,15 @@ public class Fade : MonoBehaviour
     {
         if (gameOver)
         {
+            StartCoroutine(FadeToRed());
+        }
+        if (win)
+        {
             StartCoroutine(FadeToWhite());
         }
     }
 
-    private IEnumerator FadeToWhite()
+    private IEnumerator FadeToRed()
     {
         Color originalColor = spriteRenderer.color;
         Color targetColor = Color.red;
@@ -40,6 +46,23 @@ public class Fade : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
         }
         SceneManager.LoadScene("Game Over");
+        yield return null;
+    }
+
+    private IEnumerator FadeToWhite()
+    {
+        Color originalColor = spriteRenderer.color;
+        Color targetColor = Color.white;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < fadeTime)
+        {
+            elapsedTime += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsedTime / fadeTime);
+            spriteRenderer.color = Color.Lerp(originalColor, targetColor, t);
+            yield return new WaitForSeconds(0.01f);
+        }
+        SceneManager.LoadScene("Victory");
         yield return null;
     }
 }
