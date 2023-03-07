@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Base
   - Lobster
+  - tomb
+  - LichHealthbar
+  - Lich
   layers:
   - Default
   - TransparentFX

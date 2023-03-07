@@ -51,10 +51,14 @@ public class BerserkerDwarf : MonoBehaviour
             {
                 this.transform.position = Vector2.MoveTowards(this.transform.position, moveBackSpot, Time.deltaTime);
                 this.transform.localScale = new Vector3(-1, 1, 1);
+                animator.SetBool("isMoving", true);
+
             }
             else
             {
                 this.transform.localScale = new Vector3(1, 1, 1);
+                animator.SetBool("isMoving", false);
+
             }
         }
 
