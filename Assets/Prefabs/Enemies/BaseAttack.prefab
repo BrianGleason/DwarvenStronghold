@@ -150,8 +150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adf7cfe5cfcd34d4fb1ac8ba339be3ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 50
-  health: 50
+  maxHP: 150
+  health: 150
   isBase: 0
   rb: {fileID: 0}
   deathTextPrefab: {fileID: 800238655446659967, guid: 822aa4cb08db56946a897698f817a994, type: 3}
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7332f8cc079478d9c830f6203a7795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 1
+  movespeed: 1.5
   range: 2.2
   attackOffset: 0.01
   meleeAttackPrefab: {fileID: 2792615685811339556, guid: 123e18ef672842242ad792df34e876b7, type: 3}
@@ -222,6 +222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 856212096474493636}
   isBase: 0
+  istomb: 0
 --- !u!1001 &2045473856213497553
 PrefabInstance:
   m_ObjectHideFlags: 0
