@@ -16,7 +16,24 @@ public class LichHealthbarScript : MonoBehaviour
     {
         if (!lich)
         {
+            DestroyAllEnemies();
             Destroy(gameObject);
+        }
+    }
+
+    private void DestroyAllEnemies()
+    {
+        var gameObjectArray = FindObjectsOfType<GameObject>();
+        int enemyLayer = LayerMask.NameToLayer("Enemy");
+        float minDistance = float.MaxValue;
+        Transform maxClosestEnemyTransform = null;
+        Health healthScript = null;
+
+        foreach (GameObject enemyCandidate in gameObjectArray)
+        {
+            if (enemyCandidate.layer != enemyLayer) continue;
+
+            Destroy(enemyCandidate);
         }
     }
 }

@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meleeSkelePrefab: {fileID: 7249741737546345011, guid: 43a8c87ae406a4163ac46357a5a78717, type: 3}
-  spawnerCooldown: 2
+  spawnerCooldown: 3
 --- !u!114 &6952044917331378049
 MonoBehaviour:
   m_ObjectHideFlags: 0
