@@ -22802,7 +22802,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 356049526148067185, guid: 822aa4cb08db56946a897698f817a994, type: 3}
       propertyPath: m_Text
-      value: Hit 'Enter' to advance to next wave.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 800238655446659960, guid: 822aa4cb08db56946a897698f817a994, type: 3}
       propertyPath: m_Pivot.x
@@ -22870,11 +22870,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 800238655446659960, guid: 822aa4cb08db56946a897698f817a994, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -19.45
+      value: -3.24
       objectReference: {fileID: 0}
     - target: {fileID: 800238655446659960, guid: 822aa4cb08db56946a897698f817a994, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2.05
+      value: -3.82
       objectReference: {fileID: 0}
     - target: {fileID: 800238655446659960, guid: 822aa4cb08db56946a897698f817a994, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -22908,12 +22908,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1304693125}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40884a5549239495388a98dff27236a9, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c4bb9224625b8a408f0d429e564ca23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 0}
-  player: {fileID: 0}
-  shadow: {fileID: 0}
+  spawnEnemyScript: {fileID: 0}
 --- !u!1 &1319310433 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 800238655446659967, guid: 822aa4cb08db56946a897698f817a994, type: 3}
@@ -24224,6 +24223,7 @@ MonoBehaviour:
   currentWave: 0
   countDown: 0
   waitingForNext: 0
+  skipTimer: 0
 --- !u!1001 &1933184430
 PrefabInstance:
   m_ObjectHideFlags: 0
