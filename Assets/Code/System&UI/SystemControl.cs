@@ -52,8 +52,10 @@ public class SystemControl : MonoBehaviour
 
         if (waveStats.currentWave == 4
             && FindObjectsOfType<EnemyMovement>().Length + FindObjectsOfType<DashEnemy>().Length == 0
-            && FindObjectOfType<Lich>() == null)
+            && FindObjectOfType<Lich>() == null
+            && SceneManager.GetActiveScene().name != "Victory")
         {
+            waveStats.currentWave = 1;
             SceneManager.LoadScene("Victory");
         }
     }

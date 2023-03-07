@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class SpawnEnemy : MonoBehaviour
@@ -11,6 +12,7 @@ public class SpawnEnemy : MonoBehaviour
     public int currentWave;
     public int countDown;
     public bool waitingForNext;
+    public bool skipTimer = false;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +24,10 @@ public class SpawnEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.Return) && countDown > 0)
+        {
+            skipTimer = true;
+        }
     }
 
     private Vector2 spawnPos()
@@ -36,6 +41,16 @@ public class SpawnEnemy : MonoBehaviour
         {
             Instantiate(enemyPrefabs[enemyType], spawnPos(), enemyPrefabs[enemyType].transform.rotation);
         }
+    }
+
+    public void resetWaves()
+    {
+        currentWave = 1;
+        while (SceneManager.GetActiveScene().name != "Jason Demo")
+        {
+            continue;
+        }
+        StartCoroutine(WaveOne());
     }
 
 
@@ -65,6 +80,12 @@ public class SpawnEnemy : MonoBehaviour
         {
             yield return new WaitForSeconds(1);
             countDown--;
+            if (skipTimer)
+            {
+                skipTimer = false;
+                countDown = 0;
+                break;
+            }
         }
 
         waitingForNext = false;
@@ -105,6 +126,12 @@ public class SpawnEnemy : MonoBehaviour
         {
             yield return new WaitForSeconds(1);
             countDown--;
+            if (skipTimer)
+            {
+                skipTimer = false;
+                countDown = 0;
+                break;
+            }
         }
 
         waitingForNext = false;
@@ -158,6 +185,12 @@ public class SpawnEnemy : MonoBehaviour
         {
             yield return new WaitForSeconds(1);
             countDown--;
+            if (skipTimer)
+            {
+                skipTimer = false;
+                countDown = 0;
+                break;
+            }
         }
 
         waitingForNext = false;

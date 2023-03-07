@@ -126,16 +126,13 @@ public class EnemyMovement : MonoBehaviour
                 }
                 else if(ranged == true){
 
-                    Debug.Log(distance);
 
                     if (distance > 1.5f)
                     {
-                        Debug.Log("Primary");
                         StartCoroutine(fire());
                     }
                     else
                     {
-                        Debug.Log("Secondary");
                         StartCoroutine(fire2());
                     }
                     

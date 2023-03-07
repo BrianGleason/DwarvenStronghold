@@ -164,7 +164,8 @@ MonoBehaviour:
   attackDuration: 0.25
   attackCooldownDuration: 0.25
   hitPoints: 50
-  attackDamage: 10
+  attackDamage: 15
+  wave: {fileID: 0}
   rb: {fileID: 6866614492092269211}
   cam: {fileID: 0}
   meleeAttackPrefab: {fileID: 2792615685811339556, guid: 123e18ef672842242ad792df34e876b7, type: 3}
@@ -232,6 +233,7 @@ MonoBehaviour:
   maxHP: 50
   health: 50
   isBase: 0
+  isLich: 0
   rb: {fileID: 0}
   deathTextPrefab: {fileID: 0}
   deathText: {fileID: 0}
