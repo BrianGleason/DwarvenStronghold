@@ -22642,8 +22642,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adf7cfe5cfcd34d4fb1ac8ba339be3ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 50
-  health: 50
+  maxHP: 500
+  health: 500
   isBase: 1
   rb: {fileID: 0}
   deathTextPrefab: {fileID: 0}
@@ -22774,11 +22774,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839783060475464062, guid: 7e216d566303e46e5880e79d0b4711ac, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.87
+      value: -3.96
       objectReference: {fileID: 0}
     - target: {fileID: 8839783060475464062, guid: 7e216d566303e46e5880e79d0b4711ac, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.23
+      value: -0.52
       objectReference: {fileID: 0}
     - target: {fileID: 8839783060475464062, guid: 7e216d566303e46e5880e79d0b4711ac, type: 3}
       propertyPath: m_LocalPosition.z

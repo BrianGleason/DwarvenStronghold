@@ -59,5 +59,4 @@ public class Lobstah : MonoBehaviour
 
         Invoke("Cycle", 3f);
     }
-
 }
