@@ -114,7 +114,7 @@ public class HealerDwarf : MonoBehaviour
 
         foreach (GameObject allyCandidate in gameObjectArray)
         {
-            if (allyCandidate.layer != allyLayer) continue;
+            if (allyCandidate.layer != allyLayer || allyCandidate.transform.position.y < -5) continue;
 
             Health candidateHealthScript = allyCandidate.GetComponent<Health>();
             if (candidateHealthScript && candidateHealthScript.health < candidateHealthScript.maxHP)

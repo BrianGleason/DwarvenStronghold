@@ -7,6 +7,8 @@ public class Lobstah : MonoBehaviour
     public GameObject talkPrefab;
     public GameObject talkText;
     private ShadowFade start;
+    private bool started;
+
     private string[] insults = {"Don't worry, I won't tell anyone you had to\nstand on a box to fight me.",
                                 "I could fit two of you in my claws...\nmaybe even three!",
                                 "I heard you can fit in a teacup.\nCan you confirm?",
@@ -23,16 +25,24 @@ public class Lobstah : MonoBehaviour
         start = FindObjectOfType<ShadowFade>();
         talkText = Instantiate(talkPrefab, this.transform.position + Vector3.up * 2 + Vector3.left * 2, Quaternion.identity, this.transform);
         talkText.transform.localScale = new Vector3(0.3f, 0.3f, 1);
-        Cycle();
+
+        started = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        TextMesh txt = talkText.transform.GetComponent<TextMesh>();
+
         if (!start.revealed)
         {
-            TextMesh txt = talkText.transform.GetComponent<TextMesh>();
             txt.text = "";
+        }
+
+        if (start.revealed &&)
+        {
+            started = true;
+            Cycle();
         }
     }
 
