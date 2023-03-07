@@ -136,11 +136,14 @@ public class Dwarf : MonoBehaviour
         if (waveStats.currentWave == 4)
         {
             boss = FindObjectOfType<Lich>();
-            float distanceB = Vector2.Distance(transform.position, boss.transform.position);
-            if (distanceB < closestDistance)
+            if (boss)
             {
-                closest = boss.transform;
-                closestDistance = distanceB;
+                float distanceB = Vector2.Distance(transform.position, boss.transform.position);
+                if (distanceB < closestDistance)
+                {
+                    closest = boss.transform;
+                    closestDistance = distanceB;
+                }
             }
         }
 

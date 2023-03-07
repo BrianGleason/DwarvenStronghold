@@ -151,11 +151,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adf7cfe5cfcd34d4fb1ac8ba339be3ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 50
-  health: 50
+  maxHP: 75
+  health: 75
+  isBase: 0
   rb: {fileID: 0}
   deathTextPrefab: {fileID: 0}
   deathText: {fileID: 0}
+  fade: {fileID: 0}
+  healthBarSlider: {fileID: 0}
 --- !u!114 &1979375141118713873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,12 +172,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackOffset: 0.01
-  dashCooldownDuration: 2
+  dashCooldownDuration: 3
   dashDuration: 0.5
   dashChannelDuration: 0.5
   isDashing: 0
   dashSpeed: 10
-  dashDamage: 20
+  dashDamage: 10
   moveBackSpot: {x: 0, y: 0}
   enemies: []
   meleeAttack: {fileID: 0}
@@ -214,6 +217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 990983148122003205}
   isBase: 0
+  istomb: 0
 --- !u!114 &2168957782070113711
 MonoBehaviour:
   m_ObjectHideFlags: 0

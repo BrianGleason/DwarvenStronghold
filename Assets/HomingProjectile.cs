@@ -35,6 +35,10 @@ public class HomingProjectile : MonoBehaviour
         {
             return;
         }
+        if (!targetTransform)
+        {
+            return;
+        }
         Vector2 direction = (Vector2)targetTransform.position - rb.position;
         direction.Normalize();
         float rotateAmount = Vector3.Cross(direction, transform.right).z;

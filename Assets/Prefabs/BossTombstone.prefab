@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meleeSkelePrefab: {fileID: 7249741737546345011, guid: 43a8c87ae406a4163ac46357a5a78717, type: 3}
-  spawnerCooldown: 5
+  spawnerCooldown: 2
 --- !u!114 &6952044917331378049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,8 +116,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adf7cfe5cfcd34d4fb1ac8ba339be3ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 100
-  health: 100
+  maxHP: 150
+  health: 150
   isBase: 0
   rb: {fileID: 0}
   deathTextPrefab: {fileID: 0}

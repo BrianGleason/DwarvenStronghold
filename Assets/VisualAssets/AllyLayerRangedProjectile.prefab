@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 408458461474125347}
   - component: {fileID: 5602676896565891586}
   - component: {fileID: -3476789465425439832}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: AllyLayerRangedProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,6 +103,10 @@ MonoBehaviour:
   sizeScalar: 1
   damage: 5
   attackOrigin: {x: 0, y: 0}
+  piercing: 0
+  exploding: 0
+  explodeDamage: 100
+  explodePrefab: {fileID: 0}
 --- !u!50 &5602676896565891586
 Rigidbody2D:
   serializedVersion: 4

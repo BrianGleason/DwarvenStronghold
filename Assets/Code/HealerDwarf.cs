@@ -67,19 +67,22 @@ public class HealerDwarf : MonoBehaviour
             }
         }
 
-        if (waveStats.waitingForNext)
+        if (waveStats.waitingForNext && !closestDamagedAlly)
         {
             if (this.transform.position.x > moveBackSpot[0])
             {
                 this.transform.position = Vector2.MoveTowards(this.transform.position, moveBackSpot, Time.deltaTime);
-                this.transform.localScale = new Vector3(-1, 1, 1);
                 animator.SetBool("moving", true);
             }
             else
             {
-                this.transform.localScale = new Vector3(1, 1, 1);
                 animator.SetBool("moving", false);
             }
+        }
+
+        if (!waveStats.waitingForNext && !closestDamagedAlly)
+        {
+            animator.SetBool("moving", false);
         }
     }
 
@@ -148,6 +151,7 @@ public class HealerDwarf : MonoBehaviour
         TextMesh txt = healText.transform.GetComponent<TextMesh>();
         txt.fontSize = 18;
         txt.text = $"+{healAmount}hp";
+        animator.ResetTrigger("Heal");
         Destroy(healText, 1f);
     }
 

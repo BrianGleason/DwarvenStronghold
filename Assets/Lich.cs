@@ -149,7 +149,7 @@ public class Lich : MonoBehaviour
         yield return new WaitForSeconds(0.75f);
         animator.SetBool("CastingSummon", false);
         Instantiate(tombStonePrefab, new Vector3(
-            Random.Range(-2.5f, 7f),
+            Random.Range(6f, 8f),
             Random.Range(-3f, 1.5f),
             0f),
             Quaternion.identity);

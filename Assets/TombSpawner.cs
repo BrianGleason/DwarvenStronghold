@@ -6,7 +6,7 @@ public class TombSpawner : MonoBehaviour
 {
 
     public GameObject meleeSkelePrefab;
-    public int spawnerCooldown = 5;
+    public int spawnerCooldown = 1;
     private bool onCooldown = false;
     // Start is called before the first frame update
     void Start()
