@@ -586,7 +586,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &315875668
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22978,6 +22977,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8839783060475464034, guid: 7e216d566303e46e5880e79d0b4711ac, type: 3}
+      propertyPath: health
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 8839783060475464057, guid: 7e216d566303e46e5880e79d0b4711ac, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -23000,7 +23003,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8839783060475464062, guid: 7e216d566303e46e5880e79d0b4711ac, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.68
+      value: -0.92
       objectReference: {fileID: 0}
     - target: {fileID: 8839783060475464062, guid: 7e216d566303e46e5880e79d0b4711ac, type: 3}
       propertyPath: m_LocalPosition.z
@@ -23649,7 +23652,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &1644356867
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25259,4 +25261,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0

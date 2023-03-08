@@ -103,6 +103,11 @@ public class HealerDwarf : MonoBehaviour
                                                 closestDamagedAlly.position.y,
                                                 closestDamagedAlly.position.z);
             }
+
+            if (targetPosition.y < -5.5f)
+            {
+                return;
+            }
             transform.position = Vector2.MoveTowards(this.transform.position, targetPosition, speed * Time.deltaTime);
         }
     }

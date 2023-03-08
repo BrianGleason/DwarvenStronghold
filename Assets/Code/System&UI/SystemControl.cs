@@ -19,6 +19,7 @@ public class SystemControl : MonoBehaviour
         waveStats = FindObjectOfType<SpawnEnemy>();
         musicPlayer = GetComponent<AudioSource>();
         musicPlayer.clip = music[0];
+        musicPlayer.loop = true;
         musicPlayer.Play();
     }
 
