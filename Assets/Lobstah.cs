@@ -39,7 +39,7 @@ public class Lobstah : MonoBehaviour
             txt.text = "";
         }
 
-        if (start.revealed)
+        if (start.revealed && !started)
         {
             started = true;
             Cycle();

@@ -30,5 +30,14 @@ public class pauseText : MonoBehaviour
                 Text.fontSize = 20;
             }
         }
+
+        if (FindObjectOfType<MainCharacterController>().transform.position.y < -5)
+        {
+            Text.transform.position = new Vector3(0, -11, 0);
+        }
+        else
+        {
+            Text.transform.position = new Vector3(0, 0, 0);
+        }
     }
 }
