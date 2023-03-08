@@ -21,12 +21,14 @@ public class ShadowFade : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        player = FindObjectOfType<MainCharacterController>();
         if (!player)
         {
             return;
         }
         if (player.transform.position.y <= -14.5)
         {
+            Debug.Log("fading");
             StartCoroutine(FadeAway());
         }
     }
